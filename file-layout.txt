@@ -1,0 +1,22 @@
+﻿project-directory/
+├── node_modules/
+├── public/
+│   ├── assets/
+│   │   ├── style.css
+│   │   ├── jquerystyle.css
+│   │   ├── js/
+│   │   │   ├── jquery.min.js
+│   │   │   ├── jquery-ui.min.js
+│   │   │   ├── select.js
+|	|	|--fonts/
+│   ├── images/
+│   │   ├── site_logo.jpg
+|	|--Jplayer
+|	|--videos
+├── server.js/
+|		|-- controllers
+├── package.json
+|-- text instruction inc. deployment
+|-- app.js
+|-- views/
+|	|--structure.ejs

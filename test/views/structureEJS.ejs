@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths inCoding</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/public/images/linux_site_logo.jpg" sizes="32x32">
+    <link href="public/assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+    <header class="SiteHeader">
+        <h1>Maths inCoding<img style = "float: right;" width="120" height = "120" src="public\images\linux_site_logo.jpg" alt="Pi with numbers">
+	</h1>
+        <div id="missionStatement">
+            <h3>... learning maths through coding computer games</h3>
+        </div>
+    </header>
+
+<div class="content-container">
+
+    <!-- Display sections -->
+
+ <% const sections = [
+    {
+        id: 'number',
+        title: 'Number',
+        imgSrc: 'public/images/number_image.jpg',
+        imgAlt: 'Number',
+    },
+    {
+        id: 'algebra',
+        title: 'Algebra',
+        imgSrc: 'public/images/algebra_image.jfif',
+        imgAlt: 'Algebra',
+    },
+    {
+        id: 'ratio',
+        title: 'Ratio and Proportion',
+        imgSrc: 'public/images/ratio2.jpg',
+        imgAlt: 'Ratio and Proportion',
+    },
+    {
+        id: 'probability',
+        title: 'Probability',
+        imgSrc: 'public/images/probability.png',
+        imgAlt: 'Probability',
+    },
+    {
+        id: 'geometry',
+        title: 'Geometry',
+        imgSrc: 'public/images/geometry.jpg',
+        imgAlt: 'Geometry',
+    },
+    {
+        id: 'statistics',
+        title: 'Statistics',
+        imgSrc: 'public/images/statistics.png',
+        imgAlt: 'Statistics',
+    },
+    ]; %>
+
+<div class = "content-container">
+     <% sections.forEach(section => { %>
+      <div class = "container">
+       <section class="math-section" id="<%= section.id %>">
+                <h1><%= section.title %></h1>
+                <div class= "imgWrap">
+	            <a href="<%= section.id %>.html"> <!--  Add the appropriate URL here -->
+                    <img id="<%= section.id %>_img" class="imgToHover" src="<%= section.imgSrc %>" alt="<%= section.imgAlt %>">
+                </div>
+		</div>
+            </a>
+        </section>
+        <% }); %>
+	</div>
+    </main>
+
+
+<footer id="FatFooter">
+    <div class="wordWrapper">
+        <h3>How to set up</h3>
+    </div>
+    <div>
+        <a href="https://www.youtube.com/watch?v=F1LzrEUtcHI" target="_blank">
+            <div class="footerImgOne">
+                <img width="150" src="public/images/scratch.png" alt="Scratch">
+            </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=PcEbSoSGioY&t" target="_blank">
+            <div class="footerImgTwo">
+                <img width="195" height="125" src="public/images/roblox.jfif" alt="Roblox">
+            </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=qhFMKs74DvU" target="_blank">
+            <div class="footerImgThree">
+                <img width="175" height="125" src="public/images/unreal engine.jfif" alt="Unreal Engine">
+            </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=nCut7t2oNwA" target="_blank">
+            <div class="footerImgFour">
+                <img width="175" height="125" src="public/images/visual studio.jfif" alt="Visual Studio">
+            </div>
+        </a>
+    </div>
+    <a href="../assets/feedback_form.html" target="_blank">
+        <div class="wordWrapper2">
+            <h4>If you have any queries about the information presented here, please click this link</h4>
+        </div>
+    </a>
+</footer>
+</body>
+</html>

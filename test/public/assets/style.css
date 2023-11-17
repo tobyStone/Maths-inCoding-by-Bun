@@ -1,0 +1,126 @@
+/* Reset browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'ModernPictograms';
+    src: url("fonts/modernpics-webfont.eot");
+    src: url("fonts/modernpics-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/modernpics-webfont.woff") format("woff"), url("fonts/modernpics-webfont.ttf") format("truetype"), font-weight: normal;
+    font-style: normal;
+}
+
+/* Global styles */
+body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #82a2c2;
+    margin: 0;
+}
+
+/* Header styles */
+header.SiteHeader {
+    background: #6d7bab;
+    padding: 12px 0;
+    text-align: center;
+    color: white;
+}
+
+    header.SiteHeader h1 {
+        font-size: 5em;
+        text-align: center;
+    }
+
+.containerImg {
+    vertical-align: right;
+    width: 20%;
+    float: right;
+}
+
+#missionStatement {
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+    color: white;
+}
+
+/* Main content container */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Container styles */
+.container {
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Image wrapping styles */
+
+.imgWrap {
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: transform 0.3s;
+    width: 100%; /* Adjust the width to fit the container */
+    max-height: 200px; /* Set the maximum height for the images */
+    overflow: hidden; /* Hide overflowing parts of images */
+}
+
+    .imgWrap img {
+        width: 100%; /* Make the image fill the container width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .imgWrap:hover {
+        transform: scale(1.05);
+    }
+
+/* Heading styles */
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Footer styles */
+#FatFooter {
+    background: rgba(44, 66, 91, 0.8);
+    border-top: 1px solid black;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Button styles */
+#myButton {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+/* Feedback link */
+.wordWrapper2 {
+    margin-top: 20px;
+}

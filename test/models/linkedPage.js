@@ -18,6 +18,6 @@ var layoutSchema = new Schema({
     },
 });
 
-var layouts = mongoose.model('layouts', layoutSchema)
+var layouts = mongoose.model('layouts', layoutSchema);
 
-module.exports = layouts:
+module.exports = layouts;

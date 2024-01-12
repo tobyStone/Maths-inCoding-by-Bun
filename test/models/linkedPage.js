@@ -24,3 +24,5 @@ const Layout = mongoose.model('Layout', layoutSchema); // Use a singular name fo
 
 module.exports = Layout;
 
+.
+

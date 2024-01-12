@@ -3,7 +3,7 @@ const app = express();
 var mongoose = require('mongoose');
 var config = require('./config');
 var setupController = require('./controllers/setupController');
-var apiController = require('./apiController');
+var apiController = require('./controllers/apiController');
 
 
 
@@ -19,6 +19,7 @@ app.use('/public', express.static(__dirname + '/public'));
 // Define routes for other pages, using their respective EJS templates.
 
 mongoose.connect(config.getDbConnectionString());
+const db = mongoose.connection;
 setupController(app);
 apiController(app);
 

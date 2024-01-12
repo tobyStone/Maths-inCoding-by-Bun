@@ -1,16 +1,14 @@
 const mongoose = require('mongoose');
 const Layout = require('../models/linkedPage');
 
-// Connect to MongoDB.
-mongoose.connect('mongodb://localhost/your_database_name', { useNewUrlParser: true, useUnifiedTopology: true });
-const db = mongoose.connection;
+
 
 // Define your seed data
 const seedData = [
     {
         page: {
-            url_stub: 'page1',
-            description: 'Description for Page 1',
+            url_stub: '~/Maths_inCoding',
+            description: 'Landing page for Maths inCoding website',
             sections: [
                 {
                     id: 'number',
@@ -61,8 +59,8 @@ const seedData = [
     },
     {
         page: {
-            url_stub: 'page2',
-            description: 'Description for Page 2',
+            url_stub: 'student_age',
+            description: 'portal to level of maths knowledge in games-coding, depending on age of student',
             sections: [
                 {
                     id: 'Age 11-12',
@@ -128,8 +126,8 @@ const seedData = [
     },
     {
         page: {
-            url_stub: 'page3',
-            description: 'Description for Page 3',
+            url_stub: '11_12_age_maths',
+            description: 'games with inbuilt 11 to 12 age curriculum maths',
             sections: [
                 {
 
@@ -194,8 +192,8 @@ const seedData = [
     },
     {
         page: {
-            url_stub: 'page4',
-            description: 'Description for Page 4',
+            url_stub: '12_13_age_maths',
+            description: 'games with inbuilt 12 to 13 age curriculum maths',
             sections: [
                 {
 
@@ -260,8 +258,8 @@ const seedData = [
     },
     {
         page: {
-            url_stub: 'page5',
-            description: 'Description for Page 5',
+            url_stub: '13_14_age_maths',
+            description: 'games with inbuilt 13 to 14 age curriculum maths',
             sections: [
                 {
 
@@ -326,8 +324,142 @@ const seedData = [
     },
     {
         page: {
-            url_stub: 'page6',
-            description: 'Description for Page 6',
+            url_stub: '14_15_age_maths',
+            description: 'games with inbuilt 14 to 15 age curriculum maths',
+            sections: [
+                {
+
+                    id: 'Lemonoids',
+                    title: "Lemonoids",
+                    picture: 'public/images/games/lemonoids.jpg',
+                    imgAlt: 'Lemonoids',
+                    link: null,
+
+                },
+
+                {
+
+                    id: '3D game engine',
+                    title: "3D game engine",
+                    picture: 'public/images/games/3D_game_engine.jpg',
+                    imgAlt: '3D game engine',
+                    link: null,
+                },
+
+                {
+
+                    id: 'water bucket',
+                    title: "Water Bucket",
+                    picture: 'public/images/games/water_bucket.jpg',
+                    imgAlt: 'water bucket',
+                    link: null,
+
+                },
+
+                {
+
+                    id: null,
+                    title: null,
+                    picture: null,
+                    imgAlt: null,
+                    link: null,
+
+                },
+
+                {
+
+                    id: null,
+                    title: null,
+                    picture: null,
+                    imgAlt: null,
+                    link: null,
+
+                },
+
+                {
+
+                    id: null,
+                    title: null,
+                    picture: null,
+                    imgAlt: null,
+                    link: null,
+
+                },
+            ],
+        },
+    },
+
+    {
+        page: {
+            url_stub: '15_16_age_maths',
+            description: 'games with inbuilt 15 to 16 age curriculum maths',
+            sections: [
+                {
+
+                    id: 'Lemonoids',
+                    title: "Lemonoids",
+                    picture: 'public/images/games/lemonoids.jpg',
+                    imgAlt: 'Lemonoids',
+                    link: null,
+
+                },
+
+                {
+
+                    id: '3D game engine',
+                    title: "3D game engine",
+                    picture: 'public/images/games/3D_game_engine.jpg',
+                    imgAlt: '3D game engine',
+                    link: null,
+                },
+
+                {
+
+                    id: 'water bucket',
+                    title: "Water Bucket",
+                    picture: 'public/images/games/water_bucket.jpg',
+                    imgAlt: 'water bucket',
+                    link: null,
+
+                },
+
+                {
+
+                    id: null,
+                    title: null,
+                    picture: null,
+                    imgAlt: null,
+                    link: null,
+
+                },
+
+                {
+
+                    id: null,
+                    title: null,
+                    picture: null,
+                    imgAlt: null,
+                    link: null,
+
+                },
+
+                {
+
+                    id: null,
+                    title: null,
+                    picture: null,
+                    imgAlt: null,
+                    link: null,
+
+                },
+            ],
+        },
+    },
+
+    {
+        page: {
+            url_stub: '16_18_age_maths',
+            description: 'games with inbuilt 16 to 18 age curriculum maths',
             sections: [
                 {
 

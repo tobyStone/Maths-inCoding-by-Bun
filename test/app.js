@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/public', express.static(__dirname + '/public'));
-// Define routes for other pages, using their respective EJS templates
+// Define routes for other pages, using their respective EJS templates.
 
 mongoose.connect(config.getDbConnectionString());
 setupController(app);

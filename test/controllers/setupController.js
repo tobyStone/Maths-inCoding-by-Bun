@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Layout = require('../models/linkedPage');
 
-// Connect to MongoDB
+// Connect to MongoDB.
 mongoose.connect('mongodb://localhost/your_database_name', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 

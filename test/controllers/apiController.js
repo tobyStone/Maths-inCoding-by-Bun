@@ -15,7 +15,7 @@ module.exports = function(app) {
         // USING URL STUB AND LINK
         //TO GET POPULATION OF EACH PAGE
         //LIKE THIS, BUT MORE... var todos = Todos.findOne().sort('-_id').exec({ todos },
-   //         function(){
+   //         function(){.
   //                  if(err) throw err;    }
                     res.render('structure');
   

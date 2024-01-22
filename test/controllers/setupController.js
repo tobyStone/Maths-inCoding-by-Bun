@@ -15,7 +15,7 @@ const seedData = [
                     title: 'Number',
                     imgSrc: 'public/images/number_image.jpg',
                     imgAlt: 'Number',
-                    link: null,
+                    link: '~/student_age',
 
                 },
                 {
@@ -23,28 +23,28 @@ const seedData = [
                     title: 'Algebra',
                     imgSrc: 'public/images/algebra_image.jfif',
                     imgAlt: 'Algebra',
-                    link: null,
+                    link: '~/student_age',
                 },
                 {
                     id: 'ratio',
                     title: 'Ratio and Proportion',
                     imgSrc: 'public/images/ratio2.jpg',
                     imgAlt: 'Ratio and Proportion',
-                    link: null,
+                    link: '~/student_age',
                 },
                 {
                     id: 'probability',
                     title: 'Probability',
                     imgSrc: 'public/images/probability.png',
                     imgAlt: 'Probability',
-                    link: null,
+                    link: '~/student_age',
                 },
                 {
                     id: 'geometry',
                     title: 'Geometry',
                     imgSrc: 'public/images/geometry.jpg',
                     imgAlt: 'Geometry',
-                    link: null,
+                    link: '~/student_age',
 
                 },
                 {
@@ -52,31 +52,31 @@ const seedData = [
                     title: 'Statistics',
                     imgSrc: 'public/images/statistics.png',
                     imgAlt: 'Statistics',
-                    link: null,
+                    link: '~/student_age',
                 },
             ],
         },
     },
     {
         page: {
-            url_stub: 'student_age',
+            url_stub: '~/student_age',
             description: 'portal to level of maths knowledge in games-coding, depending on age of student',
             sections: [
                 {
                     id: 'Age 11-12',
                     title: "Age 11-12",
-                    picture: 'public/images/age/age_11_12.jpg',
+                    imgSrc: 'public/images/age/age_11_12.jpg',
                     imgAlt: 'Age 11 to 12',
-                    link: null,
+                    link: '~/11_12_age_maths',
                 },
 
                 {
 
                     id: 'Age 12-13',
                     title: "Age 12-13",
-                    picture: 'public/images/age/age_12_13.jpg',
+                    imgSrc: 'public/images/age/age_12_13.jpg',
                     imgAlt: 'Age 12 to 13',
-                    link: null,
+                    link: '~/12_13_age_maths',
 
                 },
 
@@ -84,9 +84,9 @@ const seedData = [
 
                     id: 'Age 13-14',
                     title: "Age 13-14",
-                    picture: 'public/images/age/age_13_14.jpg',
+                    imgSrc: 'public/images/age/age_13_14.jpg',
                     imgAlt: 'Age 13 to 14',
-                    link: null,
+                    link: '~/13_14_age_maths',
 
                 },
 
@@ -94,9 +94,9 @@ const seedData = [
 
                     id: 'Age 14-15',
                     title: "Age 14-15",
-                    picture: 'public/images/age/age_14_15.jpg',
+                    imgSrc: 'public/images/age/age_14_15.jpg',
                     imgAlt: 'Age 14 to 15',
-                    link: null,
+                    link: '~/14_15_age_maths',
 
                 },
 
@@ -104,9 +104,9 @@ const seedData = [
 
                     id: 'Age 15-16',
                     title: "Age 15-16",
-                    picture: 'public/images/age/age_15_16.jpg',
+                    imgSrc: 'public/images/age/age_15_16.jpg',
                     imgAlt: 'Age 15 to 16',
-                    link: null,
+                    link: '~/15_16_age_maths',
 
                 },
 
@@ -114,9 +114,9 @@ const seedData = [
 
                     id: 'Age 16-18',
                     title: "Age 16-18",
-                    picture: 'public/images/age/age_16_18.jpg',
+                    imgSrc: 'public/images/age/age_16_18.jpg',
                     imgAlt: 'Age 16 to 18',
-                    link: null
+                    link: '~/16_18_age_maths'
 
                 },
 
@@ -126,16 +126,16 @@ const seedData = [
     },
     {
         page: {
-            url_stub: '11_12_age_maths',
+            url_stub: '~/11_12_age_maths',
             description: 'games with inbuilt 11 to 12 age curriculum maths',
             sections: [
                 {
 
                     id: 'Lemonoids',
                     title: "Lemonoids",
-                    picture: 'public/images/games/lemonoids.jpg',
+                    imgSrc: 'public/images/games/lemonoids.jpg',
                     imgAlt: 'Lemonoids',
-                    link: null,
+                    link: '~/videoPlayer/lemonoids_coding.js',
 
                 },
 
@@ -143,18 +143,18 @@ const seedData = [
 
                     id: '3D game engine',
                     title: "3D game engine",
-                    picture: 'public/images/games/3D_game_engine.jpg',
+                    imgSrc: 'public/images/games/3D_game_engine.jpg',
                     imgAlt: '3D game engine',
-                    link: null,
+                    link: '~/videoPlayer/3D_game_engine_Scratch.js',
                 },
 
                 {
 
                     id: 'water bucket',
                     title: "Water Bucket",
-                    picture: 'public/images/games/water_bucket.jpg',
+                    imgSrc: 'public/images/games/water_bucket.jpg',
                     imgAlt: 'water bucket',
-                    link: null,
+                    link: '~/videoPlayer/water_bucket_Python.js',
 
                 },
 
@@ -162,7 +162,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -172,7 +172,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -182,7 +182,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -192,16 +192,16 @@ const seedData = [
     },
     {
         page: {
-            url_stub: '12_13_age_maths',
+            url_stub: '~/12_13_age_maths',
             description: 'games with inbuilt 12 to 13 age curriculum maths',
             sections: [
                 {
 
                     id: 'Lemonoids',
                     title: "Lemonoids",
-                    picture: 'public/images/games/lemonoids.jpg',
+                    imgSrc: 'public/images/games/lemonoids.jpg',
                     imgAlt: 'Lemonoids',
-                    link: null,
+                    link: '~/videoPlayer/lemonoids_coding.js',
 
                 },
 
@@ -209,18 +209,18 @@ const seedData = [
 
                     id: '3D game engine',
                     title: "3D game engine",
-                    picture: 'public/images/games/3D_game_engine.jpg',
+                    imgSrc: 'public/images/games/3D_game_engine.jpg',
                     imgAlt: '3D game engine',
-                    link: null,
+                    link: '~/videoPlayer/3D_game_engine_Scratch.js',
                 },
 
                 {
 
                     id: 'water bucket',
                     title: "Water Bucket",
-                    picture: 'public/images/games/water_bucket.jpg',
+                    imgSrc: 'public/images/games/water_bucket.jpg',
                     imgAlt: 'water bucket',
-                    link: null,
+                    link: '~/videoPlayer/water_bucket_Python.js',
 
                 },
 
@@ -228,7 +228,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -238,7 +238,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -248,7 +248,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -258,16 +258,16 @@ const seedData = [
     },
     {
         page: {
-            url_stub: '13_14_age_maths',
+            url_stub: '~/13_14_age_maths',
             description: 'games with inbuilt 13 to 14 age curriculum maths',
             sections: [
                 {
 
                     id: 'Lemonoids',
                     title: "Lemonoids",
-                    picture: 'public/images/games/lemonoids.jpg',
+                    imgSrc: 'public/images/games/lemonoids.jpg',
                     imgAlt: 'Lemonoids',
-                    link: null,
+                    link: '~/videoPlayer/lemonoids_coding.js',
 
                 },
 
@@ -275,18 +275,18 @@ const seedData = [
 
                     id: '3D game engine',
                     title: "3D game engine",
-                    picture: 'public/images/games/3D_game_engine.jpg',
+                    imgSrc: 'public/images/games/3D_game_engine.jpg',
                     imgAlt: '3D game engine',
-                    link: null,
+                    link: '~/videoPlayer/3D_game_engine_Scratch.js',
                 },
 
                 {
 
                     id: 'water bucket',
                     title: "Water Bucket",
-                    picture: 'public/images/games/water_bucket.jpg',
+                    imgSrc: 'public/images/games/water_bucket.jpg',
                     imgAlt: 'water bucket',
-                    link: null,
+                    link: '~/videoPlayer/water_bucket_Python.js',
 
                 },
 
@@ -294,7 +294,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -304,7 +304,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -314,7 +314,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -324,16 +324,16 @@ const seedData = [
     },
     {
         page: {
-            url_stub: '14_15_age_maths',
+            url_stub: '~/14_15_age_maths',
             description: 'games with inbuilt 14 to 15 age curriculum maths',
             sections: [
                 {
 
                     id: 'Lemonoids',
                     title: "Lemonoids",
-                    picture: 'public/images/games/lemonoids.jpg',
+                    imgSrc: 'public/images/games/lemonoids.jpg',
                     imgAlt: 'Lemonoids',
-                    link: null,
+                    link: '~/videoPlayer/lemonoids_coding.js',
 
                 },
 
@@ -341,18 +341,18 @@ const seedData = [
 
                     id: '3D game engine',
                     title: "3D game engine",
-                    picture: 'public/images/games/3D_game_engine.jpg',
+                    imgSrc: 'public/images/games/3D_game_engine.jpg',
                     imgAlt: '3D game engine',
-                    link: null,
+                    link: '~/videoPlayer/3D_game_engine_Scratch.js',
                 },
 
                 {
 
                     id: 'water bucket',
                     title: "Water Bucket",
-                    picture: 'public/images/games/water_bucket.jpg',
+                    imgSrc: 'public/images/games/water_bucket.jpg',
                     imgAlt: 'water bucket',
-                    link: null,
+                    link: '~/videoPlayer/water_bucket_Python.js',
 
                 },
 
@@ -360,7 +360,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -370,7 +370,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -380,7 +380,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -391,16 +391,16 @@ const seedData = [
 
     {
         page: {
-            url_stub: '15_16_age_maths',
+            url_stub: '~/15_16_age_maths',
             description: 'games with inbuilt 15 to 16 age curriculum maths',
             sections: [
                 {
 
                     id: 'Lemonoids',
                     title: "Lemonoids",
-                    picture: 'public/images/games/lemonoids.jpg',
+                    imgSrc: 'public/images/games/lemonoids.jpg',
                     imgAlt: 'Lemonoids',
-                    link: null,
+                    link: '~/videoPlayer/lemonoids_coding.js',
 
                 },
 
@@ -408,18 +408,18 @@ const seedData = [
 
                     id: '3D game engine',
                     title: "3D game engine",
-                    picture: 'public/images/games/3D_game_engine.jpg',
+                    imgSrc: 'public/images/games/3D_game_engine.jpg',
                     imgAlt: '3D game engine',
-                    link: null,
+                    link: '~/videoPlayer/3D_game_engine_Scratch.js',
                 },
 
                 {
 
                     id: 'water bucket',
                     title: "Water Bucket",
-                    picture: 'public/images/games/water_bucket.jpg',
+                    imgSrc: 'public/images/games/water_bucket.jpg',
                     imgAlt: 'water bucket',
-                    link: null,
+                    link: '~/videoPlayer/water_bucket_Python.js',
 
                 },
 
@@ -427,7 +427,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -437,7 +437,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -447,7 +447,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -458,16 +458,16 @@ const seedData = [
 
     {
         page: {
-            url_stub: '16_18_age_maths',
+            url_stub: '~/16_18_age_maths',
             description: 'games with inbuilt 16 to 18 age curriculum maths',
             sections: [
                 {
 
                     id: 'Lemonoids',
                     title: "Lemonoids",
-                    picture: 'public/images/games/lemonoids.jpg',
+                    imgSrc: 'public/images/games/lemonoids.jpg',
                     imgAlt: 'Lemonoids',
-                    link: null,
+                    link: '~/videoPlayer/lemonoids_coding.js',
 
                 },
 
@@ -475,18 +475,18 @@ const seedData = [
 
                     id: '3D game engine',
                     title: "3D game engine",
-                    picture: 'public/images/games/3D_game_engine.jpg',
+                    imgSrc: 'public/images/games/3D_game_engine.jpg',
                     imgAlt: '3D game engine',
-                    link: null,
+                    link: '~/videoPlayer/3D_game_engine_Scratch.js',
                 },
 
                 {
 
                     id: 'water bucket',
                     title: "Water Bucket",
-                    picture: 'public/images/games/water_bucket.jpg',
+                    imgSrc: 'public/images/games/water_bucket.jpg',
                     imgAlt: 'water bucket',
-                    link: null,
+                    link: '~/videoPlayer/water_bucket_Python.js',
 
                 },
 
@@ -494,7 +494,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -504,7 +504,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -514,7 +514,7 @@ const seedData = [
 
                     id: null,
                     title: null,
-                    picture: null,
+                    imgSrc: null,
                     imgAlt: null,
                     link: null,
 
@@ -526,16 +526,18 @@ const seedData = [
 
 ];
 
-// Seed the database with the data
+//empty database of previous entries and
+// seed the database with the data
 db.once('open', async () => {
     try {
+        await Layout.deleteMany({});
         await Layout.insertMany(seedData);
         console.log('Data seeding completed.');
     } catch (error) {
         console.error('Error seeding data:', error);
     } finally {
         // Close the database connection
-        db.close();
+        mongoose.connection.close();
     }
 });
 

@@ -1,29 +1,22 @@
-var sections = require('./models/linkedPage');
-var bodyParser = require('body-parser');
-const { get } = require('mongoose');
+const bodyParser = require('body-parser');
+const Layout = require('./models/linkedPage'); // Import your data model
 
-
-module.exports = function(app) {
-
-
+module.exports = function (app) {
     app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({extended: true}));
+    app.use(bodyParser.urlencoded({ extended: true }));
 
-    app.get('/', function(req, res) {
+    app.get('/', async function (req, res) {
+        try {
+            const sections = await Layout.find(); // Fetch data from MongoDB
 
-        //     CODE IN HERE FOR ITERATING THROUGH PAGES VARIABLE
-        // USING URL STUB AND LINK
-        //TO GET POPULATION OF EACH PAGE
-        //LIKE THIS, BUT MORE... var todos = Todos.findOne().sort('-_id').exec({ todos },
-   //         function(){.
-  //                  if(err) throw err;    }
-                    res.render('structure');
-  
-        
-     
+            // Render your EJS view and pass the sections as a variable
+            res.render('structureEJS.ejs', { sections });
+        } catch (err) {
+            console.error('Error fetching sections:', err);
+            res.status(500).send('Internal Server Error');
+        }
     });
+};
 
-  
 
-        
-}
+

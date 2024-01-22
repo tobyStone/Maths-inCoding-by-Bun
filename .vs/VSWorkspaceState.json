@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\test",
+    "\\test\\bun",
+    "\\test\\config",
+    "\\test\\controllers",
+    "\\test\\models"
+  ],
+  "SelectedNode": "\\test\\controllers\\setupController.js",
+  "PreviewInSolutionExplorer": false
+}

@@ -21,61 +21,27 @@
 
 <div class="content-container">
 
-    <!-- Display sections -->
 
- <% const sections = [
-    {
-        id: 'number',
-        title: 'Number',
-        imgSrc: 'public/images/number_image.jpg',
-        imgAlt: 'Number',
-    },
-    {
-        id: 'algebra',
-        title: 'Algebra',
-        imgSrc: 'public/images/algebra_image.jfif',
-        imgAlt: 'Algebra',
-    },
-    {
-        id: 'ratio',
-        title: 'Ratio and Proportion',
-        imgSrc: 'public/images/ratio2.jpg',
-        imgAlt: 'Ratio and Proportion',
-    },
-    {
-        id: 'probability',
-        title: 'Probability',
-        imgSrc: 'public/images/probability.png',
-        imgAlt: 'Probability',
-    },
-    {
-        id: 'geometry',
-        title: 'Geometry',
-        imgSrc: 'public/images/geometry.jpg',
-        imgAlt: 'Geometry',
-    },
-    {
-        id: 'statistics',
-        title: 'Statistics',
-        imgSrc: 'public/images/statistics.png',
-        imgAlt: 'Statistics',
-    },
-    ]; %>
+       <!-- Display sections -->
 
-<div class = "content-container">
-     <% sections.forEach(section => { %>
-      <div class = "container">
-       <section class="math-section" id="<%= section.id %>">
-                <h1><%= section.title %></h1>
-                <div class= "imgWrap">
-	            <a href="<%= section.id %>.html"> <!--  Add the appropriate URL here -->
-                    <img id="<%= section.id %>_img" class="imgToHover" src="<%= section.imgSrc %>" alt="<%= section.imgAlt %>">
-                </div>
-		</div>
-            </a>
-        </section>
-        <% }); %>
-	</div>
+        <div class="content-container">
+            <% sections.forEach(page => { %>
+                <% page.page.sections.forEach(section => { %>
+                    <div class="container">
+                        <section class="math-section" id="<%= page.page.url_stub %>">
+                            <h1><%= section.title %></h1>
+                            <div class="imgWrap">
+                                <a href="<%= section.link %>">
+                                    <img id="<%= section.id %>_img" class="imgToHover" src="<%= section.imgSrc %>" alt="<%= section.imgAlt %>">
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                <% }); %>
+            <% }); %>
+        </div>
+
+    </div>
     </main>
 
 

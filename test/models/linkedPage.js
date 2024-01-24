@@ -20,7 +20,7 @@ const layoutSchema = new Schema({
     page: pageSchema,
 });
 
-const Layout = mongoose.model('Layout', layoutSchema, 'layouts'); // Use a singular name for the model
+const Layout = mongoose.model('Layout', layoutSchema, 'maths_through_coding'); // Use a singular name for the model
 
 module.exports = Layout;
 

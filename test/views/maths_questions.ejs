@@ -11,49 +11,55 @@
     <!--questions for the Geometry in Scratch Physics simulator-->
     <div>
         <form id="question-form">
-            <img id="question1_img" src="../images/question_images/<%= questionData.image1 %>" width="525" height="350" />
+            <% for (let i = 0; i < questionData.length; i++) { %>
+            <% const currentQuestion = questionData[i]; %>
+            
+            <% if (currentQuestion.url_stub === window.location.pathname) { %>
+            <img src="../images/question_images/<%= currentQuestion.image1 %>" width="525" height="350" />
             <br>
             <span class="label">Choose one</span>
             <br>
-            <input type="checkbox" name="answer" class="1" value="<%= questionData.answer1a %>">
-            <label for="1a"><%= questionData.choice1a %></label>
-            <input type="checkbox" name="answer" class="1" value="<%= questionData.answer1b %>">
-            <label for="1b"><%= questionData.choice1b %></label>
-            <input type="checkbox" name="answer" class="1" value="<%= questionData.answer1c %>">
-            <label for="1c"><%= questionData.choice1c %></label>
-            <input type="checkbox" name="answer" class="1" value="<%= questionData.answer1d %>">
-            <label for="1d"><%= questionData.choice1d %></label>
+            <input type="checkbox" name="answer" class="1" value="<%= currentQuestion.answer1a %>">
+            <label for="1a"><%= currentQuestion.choice1a %></label>
+            <input type="checkbox" name="answer" class="1" value="<%= currentQuestion.answer1b %>">
+            <label for="1b"><%= currentQuestion.choice1b %></label>
+            <input type="checkbox" name="answer" class="1" value="<%= currentQuestion.answer1c %>">
+            <label for="1c"><%= currentQuestion.choice1c %></label>
+            <input type="checkbox" name="answer" class="1" value="<%= currentQuestion.answer1d %>">
+            <label for="1d"><%= currentQuestion.choice1d %></label>
             <br>
             <div>
-                <img id="question2_img" src="../images/question_images/<%= questionData.image2 %>" width="525" height="350" />
+                <img src="../images/question_images/<%= currentQuestion.image2 %>" width="525" height="350" />
                 <br>
                 <span class="label">Choose one</span>
                 <br>
-                <input type="checkbox" name="answer" class="2" value="<%= questionData.answer2a %>">
-                <label for="2a"><%= questionData.choice2a %></label>
-                <input type="checkbox" name="answer" class="2" value="<%= questionData.answer2b %>">
-                <label for="2b"><%= questionData.choice2b %></label>
-                <input type="checkbox" name="answer" class="2" value="<%= questionData.answer2c %>">
-                <label for="2c"><%= questionData.choice2c %></label>
-                <input type="checkbox" name="answer" class="2" value="<%= questionData.answer2d %>">
-                <label for="2d"><%= questionData.choice2d %></label>
+                <input type="checkbox" name="answer" class="2" value="<%= currentQuestion.answer2a %>">
+                <label for="2a"><%= currentQuestion.choice2a %></label>
+                <input type="checkbox" name="answer" class="2" value="<%= currentQuestion.answer2b %>">
+                <label for="2b"><%= currentQuestion.choice2b %></label>
+                <input type="checkbox" name="answer" class="2" value="<%= currentQuestion.answer2c %>">
+                <label for="2c"><%= currentQuestion.choice2c %></label>
+                <input type="checkbox" name="answer" class="2" value="<%= currentQuestion.answer2d %>">
+                <label for="2d"><%= currentQuestion.choice2d %></label>
             </div>
             <br>
             <div>
-                <img id="question3_img" src="../images/question_images/<%= questionData.image3 %>" width="525" height="350" />
+                <img src="../images/question_images/<%= currentQuestion.image3 %>" width="525" height="350" />
                 <br>
                 <span class="label">Choose one</span>
                 <br>
-                <input type="checkbox" name="answer" class="3" value="<%= questionData.answer3a %>">
-                <label for="3a"><%= questionData.choice3a %></label>
-                <input type="checkbox" name="answer" class="3" value="<%= questionData.answer3b %>">
-                <label for="3b"><%= questionData.choice3b %></label>
-                <input type="checkbox" name="answer" class="3" value="<%= questionData.answer3c %>">
-                <label for="3c"><%= questionData.choice3c %></label>
-                <input type="checkbox" name="answer" class="3" value="<%= questionData.answer3d %>">
-                <label for="3d"><%= questionData.choice3d %></label>
+                <input type="checkbox" name="answer" class="3" value="<%= currentQuestion.answer3a %>">
+                <label for="3a"><%= currentQuestion.choice3a %></label>
+                <input type="checkbox" name="answer" class="3" value="<%= currentQuestion.answer3b %>">
+                <label for="3b"><%= currentQuestion.choice3b %></label>
+                <input type="checkbox" name="answer" class="3" value="<%= currentQuestion.answer3c %>">
+                <label for="3c"><%= currentQuestion.choice3c %></label>
+                <input type="checkbox" name="answer" class="3" value="<%= currentQuestion.answer3d %>">
+                <label for="3d"><%= currentQuestion.choice3d %></label>
                 <button type="submit">Send answer</button>
             </div>
+            <% } %>
+            <% } %>
         </form>
         <script src="anglesGrade.js"></script>
         <script>
@@ -64,14 +70,14 @@
                 const answers = questionForm.querySelectorAll("input[type=checkbox]:checked");
                 const score = answers.length; // Calculate the score
 
-                        <% if (score >= 2) { %>
-                    // Redirect to a different video if the score is greater than or equal to 2
-                    window.location.href = 'different_video.html';
-                        <% } else { %>
-                    // Redirect back to the original video player
-                    window.location.href = 'original_video_player.html';
-                        <% } %>
-                    });
+                <% if (score >= 2) { %>
+                // Redirect to a different video if the score is greater than or equal to 2
+                window.location.href = 'different_video.html';
+                <% } else { %>
+                // Redirect back to the original video player
+                window.location.href = 'original_video_player.html';
+                <% } %>
+            });
         </script>
     </div>
 </body>

@@ -6,7 +6,8 @@
     <title>Maths inCoding</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/public/images/linux_site_logo.jpg" sizes="32x32">
-    <link href="public/assets/styleVideo.css" rel="stylesheet"></head>
+    <link href="public/assets/styleVideo.css" rel="stylesheet">
+</head>
 <body>
     <div class="container">
         <!-- Display Psuedo URL options -->
@@ -184,7 +185,11 @@
 
         function padZero(number) {
             return number < 10 ? `0${number}` : number;
-        }
+    }
+
+        localStorage.setItem("previousVideoURL", window.location.pathname)
+        localStorage.setItem("previousVideoTimestamp", timestampToLoadQuestions)
+
     </script>
 </body>
 </html>

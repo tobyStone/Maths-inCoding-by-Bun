@@ -2,27 +2,24 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 
-const sectionSchema = new Schema({
-    id: String,
-    title: String,
-    picture: String,
+const questionSchema = new Schema({
+    Qnumber: Number,
+    imgSrc: String,
     imgAlt: String,
-    link: String,
+    questionText: String,
+    answer: String,
 });
 
 const pageSchema = new Schema({
     url_stub: String,
     description: String,
-    sections: [sectionSchema], // Embed the section schema as an array
+    questionData: [questionSchema], // Embed the question schema as an array
 });
 
-const layoutSchema = new Schema({
-    page: pageSchema,
+const mathQuestionsSchema = new Schema({
+    page: [pageSchema], // Embed the page schema as an array
 });
 
-const Layout = mongoose.model('Layout', layoutSchema, 'layouts'); // Use a singular name for the model
+const MathQuestions = mongoose.model('MathQuestions', mathQuestionsSchema, 'maths_through_coding'); // Use a singular name for the model
 
-module.exports = Layout;
-
-
-
+module.exports = MathQuestions;

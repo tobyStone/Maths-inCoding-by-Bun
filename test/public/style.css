@@ -9,17 +9,12 @@
 }
 
 /* Fonts */
-}
-
 @font-face {
     font-family: 'old_standard_ttregular';
-    src: url('fonts/oldstandardtt-regular-webfont.woff2') format('woff2'),
-         url('fonts/oldstandardtt-regular-webfont.woff') format('woff');
+    src: url('fonts/oldstandardtt-regular-webfont.woff2') format('woff2'), url('fonts/oldstandardtt-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 /* Global styles */
 body {
@@ -27,33 +22,50 @@ body {
     font-size: 16px;
     line-height: 1.5;
     background-color: #82a2c2;
-    margin: 0;
+    color: #333; /* Enhanced for better readability */
 }
 
 /* Header styles */
 header.SiteHeader {
     background: #6d7bab;
-    padding: 12px 0;
+    padding: 20px 0; /* Adjusted padding for balance */
     text-align: center;
     color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Added shadow for depth */
 }
 
     header.SiteHeader h1 {
-        font-size: 5em;
-        text-align: center;
+        font-size: 4em; /* Adjusted for proportion */
+        margin-bottom: 0.5em;
     }
 
+/* Image and heading container */
+.image-and-heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 .containerImg {
-    vertical-align: right;
-    width: 20%;
+    width: 75%; /* Adjusted for layout consistency */
     float: right;
 }
 
 #missionStatement {
-    margin-top: 20px;
-    margin-left: 20px;
-    float: left;
+    font-size: 1.2em;
     color: white;
+    margin-right: 20px;
+    flex: 1; /* Added to control the size */
+}
+
+/* Heading for game subject selection */
+.game-subject-heading {
+    flex: 1; /* Allocate space */
+    font-size: 1.5em;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
 }
 
 /* Main content container */
@@ -61,35 +73,36 @@ header.SiteHeader {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 40px;
+    padding: 0 20px;
 }
 
 /* Container styles */
 .container {
     width: calc(33.33% - 20px);
-    margin: 0 10px;
+    margin: 10px;
     margin-bottom: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Added for depth */
     text-align: center;
 }
 
 /* Image wrapping styles */
-
 .imgWrap {
     display: inline-block;
     border: 1px solid transparent;
     transition: transform 0.3s;
-    width: 100%; /* Adjust the width to fit the container */
-    max-height: 200px; /* Set the maximum height for the images */
-    overflow: hidden; /* Hide overflowing parts of images */
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
 }
 
     .imgWrap img {
-        width: 100%; /* Make the image fill the container width */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto;
     }
 
     .imgWrap:hover {
@@ -97,16 +110,18 @@ header.SiteHeader {
     }
 
 /* Heading styles */
-h1 {
-    font-family: old_standard_ttregular;
-    font-size: 2em;
+h1, h3 {
+    font-family: 'old_standard_ttregular';
     margin-bottom: 0.5em;
+    color: #333; /* Enhanced for consistency and readability */
+}
+
+h1 {
+    font-size: 2.5em;
 }
 
 h3 {
-    font-family: old_standard_ttregular;
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
+    font-size: 1.8em;
 }
 
 /* Footer styles */

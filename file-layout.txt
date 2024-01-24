@@ -1,22 +1,30 @@
-﻿project-directory/
-├── node_modules/
-├── public/
-│   ├── assets/
-│   │   ├── style.css
-│   │   ├── jquerystyle.css
-│   │   ├── js/
-│   │   │   ├── jquery.min.js
-│   │   │   ├── jquery-ui.min.js
-│   │   │   ├── select.js
-|	|	|--fonts/
-│   ├── images/
-│   │   ├── site_logo.jpg
-|	|--Jplayer
-|	|--videos
-├── server.js/
-|		|-- controllers
-├── package.json
-|-- text instruction inc. deployment
-|-- app.js
-|-- views/
-|	|--structure.ejs
+﻿Maths-inCoding-by-Bun
+├── test
+├── bun
+│   └── structure.ejs
+├── config
+│   ├── config.json
+│   └── index.js
+├── controllers
+│   ├── apiController.js
+│   └── setupController.js
+├── models
+│   ├── linkedPage.js
+│   ├── mathQuestionsModel.js
+│   └── videoModel.js
+├── public
+│   ├── fonts
+│   ├── images
+│   └── VideoPlayer
+│       ├── anglesGrade.js
+│       ├── style.css
+│       └── styleVideo.css
+├── views
+│   ├── maths_questions.ejs
+│   ├── structureEJS.ejs
+│   └── VideoPlayer.ejs
+├── app.js
+├── express.js
+├── deploymentinstructions.txt
+├── file-layout.txt
+└── README.md

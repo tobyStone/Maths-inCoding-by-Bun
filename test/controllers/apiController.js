@@ -1,12 +1,7 @@
 const bodyParser = require('body-parser');
-const Layout = require('./models/linkedPage'); // Import your data model
-const Layout = require('./models/videoModel');
-const Layout = require('./models/mathQuestionsModel');
-
-const bodyParser = require('body-parser');
-const Layout = require('./models/Layout'); // Import the Layout model
-const Videos = require('./models/VideoData'); // Import the VideoData model
-const Questions = require('./models/MathQuestions'); // Import the MathQuestions model
+const Layout = require('../models/linkedPage'); // Import the Layout model
+const Videos = require('../models/videoModel'); // Import the VideoData model
+const Questions = require('../models/mathQuestionsModel'); // Import the MathQuestions model
 
 module.exports = function (app) {
     app.use(bodyParser.json());

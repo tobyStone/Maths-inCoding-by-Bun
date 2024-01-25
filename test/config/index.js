@@ -5,7 +5,7 @@ module.exports = {
     getDbConnectionString: function () {
         return 'mongodb+srv://' + configValues.uname
             + ':' + configValues.pwd
-            + '@cluster0.ntuqn.mongodb.net/maths_through_coding?retryWrites=true&w=majority?retryWrites=true&w=majority';
+            + '@cluster0.ntuqn.mongodb.net/maths_through_coding?retryWrites=true&w=majority';
     }
 
 

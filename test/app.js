@@ -18,9 +18,8 @@ app.get('/', (req, res) => {
 app.use('/public', express.static(__dirname + '/public'));
 // Define routes for other pages, using their respective EJS templates.
 
-mongoose.connect(config.getDbConnectionString(){
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+mongoose.connect(config.getDbConnectionString(), {
+    useUnifiedTopology: true
 });
 const db = mongoose.connection;
 setupController(app);

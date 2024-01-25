@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const Layout = require('../models/linkedPage');
-const Layout = require('../models/videoModel');
-const Layout = require('../models/mathQuestionsModel');
+const Videos = require('../models/videoModel');
+const Questions = require('../models/mathQuestionsModel');
+const config = require('../config/index');
 
 
 
@@ -630,26 +631,26 @@ const videoData = [
                 },
             ],
         },
-    
 
-    page: {
+
+        page: {
 
             url_stub: '/11_12_age_maths/videoPlayer/3D_game_engine_Scratch.js',
             description: 'games with inbuilt 11 to 12 age curriculum maths',
             videoData: [
 
                 {
-                video: '3D_game_engine.mp4',
-                time_stop_1: '10',
-                time_stop_2: null,
-                time_stop_3: null,
-                poster: '3D_game_engine',
-                imgSrc: 'public/images/3D_game_engine.jpg',
-                imgAlt: '3D_game_engine',
-                link_questions_1: 'maths_questions/ratio1.html',
-                link_questions_2: null,
-                link_questions_3: null,
-            }],
+                    video: '3D_game_engine.mp4',
+                    time_stop_1: '10',
+                    time_stop_2: null,
+                    time_stop_3: null,
+                    poster: '3D_game_engine',
+                    imgSrc: 'public/images/3D_game_engine.jpg',
+                    imgAlt: '3D_game_engine',
+                    link_questions_1: 'maths_questions/ratio1.html',
+                    link_questions_2: null,
+                    link_questions_3: null,
+                }],
 
             url_stub: '/12_13_age_maths/videoPlayer/3D_game_engine_Scratch.js',
             description: 'games with inbuilt 12 to 13 age curriculum maths',
@@ -851,7 +852,7 @@ const mathsQuestionsData = [
                     imgSrc: 'public/images/11_12_angle_question_1.jpg',
                     imgAlt: '11_12_angle_question_1',
                     questionText: "Which is the correct answer?",
-                    answer: b,
+                    answer: 'b',
 
                 },
                 {
@@ -859,7 +860,7 @@ const mathsQuestionsData = [
                     imgSrc: 'public/images/11_12_angle_question_2.jpg',
                     imgAlt: '11_12_angle_question_2',
                     questionText: "Which is the correct answer?",
-                    answer: a,
+                    answer: 'a',
 
                 },
                 {
@@ -867,7 +868,7 @@ const mathsQuestionsData = [
                     imgSrc: 'public/images/11_12_angle_question_3.jpg',
                     imgAlt: '11_12_angle_question_3',
                     questionText: "Which is the correct answer?",
-                    answer: c,
+                    answer: 'c',
 
                 },
                 {
@@ -875,7 +876,7 @@ const mathsQuestionsData = [
                     imgSrc: 'public/images/11_12_angle_question_4.jpg',
                     imgAlt: '11_12_angle_question_4',
                     questionText: "Which is the correct answer?",
-                    answer: b,
+                    answer: 'b',
 
                 },
                 {
@@ -883,7 +884,7 @@ const mathsQuestionsData = [
                     imgSrc: 'public/images/11_12_angle_question_5.jpg',
                     imgAlt: '11_12_angle_question_5',
                     questionText: "Which is the correct answer?",
-                    answer: b,
+                    answer: 'b',
 
                 },
                 {
@@ -891,7 +892,7 @@ const mathsQuestionsData = [
                     imgSrc: 'public/images/11_12_angle_question_6.jpg',
                     imgAlt: '11_12_angle_question_6',
                     questionText: "Which is the correct answer?",
-                    answer: a,
+                    answer: 'a',
 
                 },
 
@@ -908,7 +909,7 @@ const mathsQuestionsData = [
                     imgSrc: 'public/images/12_13_angle_question_1.jpg',
                     imgAlt: '12_13_angle_question_1',
                     questionText: "Which is the correct answer?",
-                    answer: c,
+                    answer: 'c',
 
                 },
                 {
@@ -916,7 +917,7 @@ const mathsQuestionsData = [
                     imgSrc: 'public/images/12_13_angle_question_2.jpg',
                     imgAlt: '12_13_angle_question_2',
                     questionText: "Which is the correct answer?",
-                    answer: a,
+                    answer: 'a',
 
                 },
                 {
@@ -924,7 +925,7 @@ const mathsQuestionsData = [
                     imgSrc: 'public/images/12_13_angle_question_3.jpg',
                     imgAlt: '12_13_angle_question_3',
                     questionText: "Which is the correct answer?",
-                    answer: b,
+                    answer: 'b',
 
                 },
                 {
@@ -932,7 +933,7 @@ const mathsQuestionsData = [
                     imgSrc: 'public/images/12_13_angle_question_4.jpg',
                     imgAlt: '12_13_angle_question_4',
                     questionText: "Which is the correct answer?",
-                    answer: a,
+                    answer: 'a',
 
                 },
                 {
@@ -940,7 +941,7 @@ const mathsQuestionsData = [
                     imgSrc: 'public/images/12_13_angle_question_5.jpg',
                     imgAlt: '12_13_angle_question_5',
                     questionText: "Which is the correct answer?",
-                    answer: c,
+                    answer: 'c',
 
                 },
                 {
@@ -948,68 +949,68 @@ const mathsQuestionsData = [
                     imgSrc: 'public/images/12_13_angle_question_6.jpg',
                     imgAlt: '12_13_angle_question_6',
                     questionText: "Which is the correct answer?",
-                    answer: a,
+                    answer: 'a',
 
                 },
 
-  
-        ],
-    },
 
-    page: {
+            ],
+        },
+
+        page: {
             url_stub: 'maths_questions/angles1',
             description: '13_14 age range questions on angles',
             questionData: [
-                    {
-                        Qnumber: 1,
-                        imgSrc: 'public/images/13_14_angle_question_1.jpg',
-                        imgAlt: '13_14_angle_question_1',
-                        questionText: "Which is the correct answer?",
-                        answer: c,
+                {
+                    Qnumber: 1,
+                    imgSrc: 'public/images/13_14_angle_question_1.jpg',
+                    imgAlt: '13_14_angle_question_1',
+                    questionText: "Which is the correct answer?",
+                    answer: 'c',
 
-                    },
-                    {
-                        Qnumber: 2,
-                        imgSrc: 'public/images/13_14_angle_question_2.jpg',
-                        imgAlt: '13_14_angle_question_2',
-                        questionText: "Which is the correct answer?",
-                        answer: b,
+                },
+                {
+                    Qnumber: 2,
+                    imgSrc: 'public/images/13_14_angle_question_2.jpg',
+                    imgAlt: '13_14_angle_question_2',
+                    questionText: "Which is the correct answer?",
+                    answer: 'b',
 
-                    },
-                    {
-                        Qnumber: 3,
-                        imgSrc: 'public/images/13_14_angle_question_3.jpg',
-                        imgAlt: '13_14_angle_question_3',
-                        questionText: "Which is the correct answer?",
-                        answer: a,
+                },
+                {
+                    Qnumber: 3,
+                    imgSrc: 'public/images/13_14_angle_question_3.jpg',
+                    imgAlt: '13_14_angle_question_3',
+                    questionText: "Which is the correct answer?",
+                    answer: 'a',
 
-                    },
-                    {
-                        Qnumber: 4,
-                        imgSrc: 'public/images/13_14_angle_question_4.jpg',
-                        imgAlt: '13_14_angle_question_4',
-                        questionText: "Which is the correct answer?",
-                        answer: c,
+                },
+                {
+                    Qnumber: 4,
+                    imgSrc: 'public/images/13_14_angle_question_4.jpg',
+                    imgAlt: '13_14_angle_question_4',
+                    questionText: "Which is the correct answer?",
+                    answer: 'c',
 
-                    },
-                    {
-                        Qnumber: 5,
-                        imgSrc: 'public/images/13_14_angle_question_5.jpg',
-                        imgAlt: '13_14_angle_question_5',
-                        questionText: "Which is the correct answer?",
-                        answer: b,
+                },
+                {
+                    Qnumber: 5,
+                    imgSrc: 'public/images/13_14_angle_question_5.jpg',
+                    imgAlt: '13_14_angle_question_5',
+                    questionText: "Which is the correct answer?",
+                    answer: 'b',
 
-                    },
-                    {
-                        Qnumber: 6,
-                        imgSrc: 'public/images/13_14_angle_question_6.jpg',
-                        imgAlt: '13_14_angle_question_6',
-                        questionText: "Which is the correct answer?",
-                        answer: a,
+                },
+                {
+                    Qnumber: 6,
+                    imgSrc: 'public/images/13_14_angle_question_6.jpg',
+                    imgAlt: '13_14_angle_question_6',
+                    questionText: "Which is the correct answer?",
+                    answer: 'a',
 
-                    },
+                },
 
-                ],
+            ],
         },
     },
 
@@ -1017,11 +1018,24 @@ const mathsQuestionsData = [
 ];
 
 
-//empty database of previous entries and
-// seed the database with the data
-db.once('open', async () => {
+
+// Database Connection and Seeding Function
+async function seedDatabase() {
     try {
-//        await Layout.deleteMany({});
+        const connectionString = config.getDbConnectionString();
+        await mongoose.connect(connectionString, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        });
+
+        console.log('Connected to database. Starting data seeding.');
+
+        // Clear existing data
+        await Layout.deleteMany({});
+        await Videos.deleteMany({});
+        await Questions.deleteMany({});
+
+        // Seed new data
         await Layout.insertMany(seedData);
         await Videos.insertMany(videoData);
         await Questions.insertMany(mathsQuestionsData);
@@ -1030,9 +1044,17 @@ db.once('open', async () => {
     } catch (error) {
         console.error('Error seeding data:', error);
     } finally {
-        // Close the database connection
+        // Ensure the database connection is closed
         mongoose.connection.close();
+        console.log('Database connection closed.');
     }
-});
+}
 
+// Export the seeding function
+module.exports = function (app) {
+    // Here you can set up your endpoints, middleware, etc., with the `app` object if necessary
+    // e.g., app.get('/api/seed', seedDatabase);
 
+    // For now, we'll just call seedDatabase directly
+    seedDatabase();
+};

@@ -5,7 +5,7 @@ const { Schema } = mongoose;
 const sectionSchema = new Schema({
     id: String,
     title: String,
-    picture: String,
+    imgSrc: String,
     imgAlt: String,
     link: String,
 });

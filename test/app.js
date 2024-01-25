@@ -11,9 +11,6 @@ const port = 3000;
 
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => {
-    res.render('structureEJS.ejs');
-});
 
 app.use('/public', express.static(__dirname + '/public'));
 // Define routes for other pages, using their respective EJS templates.
@@ -22,10 +19,13 @@ mongoose.connect(config.getDbConnectionString(), {
     useUnifiedTopology: true
 });
 const db = mongoose.connection;
-setupController(app);
-apiController(app);
 
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function () {
 
+    setupController(app);
+    apiController(app);
+});
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);

@@ -11,6 +11,7 @@ module.exports = function (app) {
     app.get('/', async function (req, res) {
         try {
             const sections = await Layout.find().exec();
+            console.log(sections)
             res.render('structureEJS.ejs', { sections: sections });
         } catch (err) {
             console.error('Error fetching sections data:', err);

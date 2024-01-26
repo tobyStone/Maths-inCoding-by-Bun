@@ -6,7 +6,7 @@
     <title>Maths inCoding</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/public/images/linux_site_logo.jpg" sizes="32x32">
-    <link href="public/assets/style.css" rel="stylesheet">
+    <link href="../public/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,19 +25,22 @@
        <!-- Display sections -->
 
         <div class="content-container">
+
             <% sections.forEach(page => { %>
-                <% page.page.sections.forEach(section => { %>
-                    <div class="container">
-                        <section class="math-section" id="<%= page.page.url_stub %>">
-                            <h1><%= section.title %></h1>
-                            <div class="imgWrap">
-                                <a href="<%= section.link %>">
-                                    <img id="<%= section.id %>_img" class="imgToHover" src="<%= section.imgSrc %>" alt="<%= section.imgAlt %>">
-                                </a>
-                            </div>
-                        </section>
-                    </div>
+                <% if (page && page.page && page.page.sections) { %>
+                    <% page.page.sections.forEach(section => { %>
+                        <div class="container">
+                            <section class="math-section" id="<%= page.page.url_stub %>">
+                                <h1><%= section.title %></h1>
+                                <div class="imgWrap">
+                                    <a href="<%= section.link %>">
+                                        <img id="<%= section.id %>_img" class="imgToHover" src="<%= section.imgSrc %>" alt="<%= section.imgAlt %>">
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
                 <% }); %>
+                <% } %>
             <% }); %>
         </div>
 

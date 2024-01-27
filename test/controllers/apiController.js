@@ -7,17 +7,32 @@ module.exports = function (app) {
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
 
-    // Route for the main page - structureEJS
-    app.get('/', async function (req, res) {
+    app.get(/^\/(?!.*(?:question|videoPlayer)).*$/, async function (req, res) {
         try {
-            const sections = await Layout.find().exec();
-            console.log(sections)
-            res.render('structureEJS.ejs', { sections: sections });
+            // Adjust for root path
+            const urlPath = req.path;
+            console.log(`Adjusted URL Path: ${urlPath}`);
+
+            // Make sure the query is correctly formatted
+            const query = { 'page.url_stub': urlPath };
+            console.log(`Database Query: ${JSON.stringify(query)}`);
+
+            // Execute the query
+            const sections = await Layout.findOne(query).exec();
+            console.log(`Sections: ${sections}`);
+
+            if (sections) {
+                // Ensure that you are passing the correct data to the EJS template
+                res.render('structureEJS.ejs', { page: sections.page });
+            } else {
+                res.status(404).send('Page not found');
+            }
         } catch (err) {
             console.error('Error fetching sections data:', err);
             res.status(500).send('Internal Server Error');
         }
     });
+
 
     // Route for video content - VideoPlayer
     app.get('*/videoPlayer/*', async function (req, res) {

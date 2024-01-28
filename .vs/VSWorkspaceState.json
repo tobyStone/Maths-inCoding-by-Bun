@@ -5,8 +5,10 @@
     "\\test\\bun",
     "\\test\\config",
     "\\test\\controllers",
-    "\\test\\models"
+    "\\test\\models",
+    "\\test\\public",
+    "\\test\\views"
   ],
-  "SelectedNode": "\\test\\controllers\\setupController.js",
+  "SelectedNode": "\\test\\views\\structureEJS.ejs",
   "PreviewInSolutionExplorer": false
 }

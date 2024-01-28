@@ -7,127 +7,128 @@ const config = require('../config/index');
 
 
 // Define your layout seed data
-const seedData =
-{
-    page: {
-        url_stub: '~/Maths_inCoding',
-        description: 'Landing page for Maths inCoding website',
-        sections: [
-            {
-                id: 'number',
-                title: 'Number',
-                imgSrc: 'public/images/number_image.jpg',
-                imgAlt: 'Number',
-                link: '/student_age',
+const seedData = [
+    {
+        page: {
+            url_stub: '/',
+            description: 'Landing page for Maths inCoding website',
+            sections: [
+                {
+                    id: 'number',
+                    title: 'Number',
+                    imgSrc: 'public/images/number_image.jpg',
+                    imgAlt: 'Number',
+                    link: '/number',
 
-            },
-            {
-                id: 'algebra',
-                title: 'Algebra',
-                imgSrc: 'public/images/algebra_image.jfif',
-                imgAlt: 'Algebra',
-                link: '/student_age',
-            },
-            {
-                id: 'ratio',
-                title: 'Ratio and Proportion',
-                imgSrc: 'public/images/ratio2.jpg',
-                imgAlt: 'Ratio and Proportion',
-                link: '/student_age',
-            },
-            {
-                id: 'probability',
-                title: 'Probability',
-                imgSrc: 'public/images/probability.png',
-                imgAlt: 'Probability',
-                link: '/student_age',
-            },
-            {
-                id: 'geometry',
-                title: 'Geometry',
-                imgSrc: 'public/images/geometry.jpg',
-                imgAlt: 'Geometry',
-                link: '/student_age',
+                },
+                {
+                    id: 'algebra',
+                    title: 'Algebra',
+                    imgSrc: 'public/images/algebra_image.jfif',
+                    imgAlt: 'Algebra',
+                    link: '/algebra',
+                },
+                {
+                    id: 'ratio',
+                    title: 'Ratio and Proportion',
+                    imgSrc: 'public/images/ratio2.jpg',
+                    imgAlt: 'Ratio and Proportion',
+                    link: '/ratio',
+                },
+                {
+                    id: 'probability',
+                    title: 'Probability',
+                    imgSrc: 'public/images/probability.png',
+                    imgAlt: 'Probability',
+                    link: '/probability',
+                },
+                {
+                    id: 'geometry',
+                    title: 'Geometry',
+                    imgSrc: 'public/images/geometry.jpg',
+                    imgAlt: 'Geometry',
+                    link: '/geometry',
 
-            },
-            {
-                id: 'statistics',
-                title: 'Statistics',
-                imgSrc: 'public/images/statistics.png',
-                imgAlt: 'Statistics',
-                link: '/student_age',
-            },
-        ],
+                },
+                {
+                    id: 'statistics',
+                    title: 'Statistics',
+                    imgSrc: 'public/images/statistics.png',
+                    imgAlt: 'Statistics',
+                    link: '/statistics',
+                },
+            ],
+        },
     },
-}
 
-//{
-//    page: {
-//        url_stub: '/student_age',
-//        description: 'portal to level of maths knowledge in games-coding, depending on age of student',
-//        sections: [
-//            {
-//                id: 'Age 11-12',
-//                title: "Age 11-12",
-//                imgSrc: 'public/images/age/age_11_12.jpg',
-//                imgAlt: 'Age 11 to 12',
-//                link: '/11_12_age_maths',
-//            },
+    {
+        page: {
+            url_stub: '/number',
+            description: 'portal to level of maths knowledge in games-coding, depending on age of student',
+            sections: [
+                {
+                    id: 'Age 11-12',
+                    title: "Age 11-12",
+                    imgSrc: 'public/images/statistics.png',
+                    imgAlt: 'Age 11 to 12',
+                    link: '/11_12_age_maths',
+                },
 
-//            {
+                {
 
-//                id: 'Age 12-13',
-//                title: "Age 12-13",
-//                imgSrc: 'public/images/age/age_12_13.jpg',
-//                imgAlt: 'Age 12 to 13',
-//                link: '/12_13_age_maths',
+                    id: 'Age 12-13',
+                    title: "Age 12-13",
+                    imgSrc: 'public/images/geometry.jpg',
+                    imgAlt: 'Age 12 to 13',
+                    link: '/12_13_age_maths',
 
-//            },
+                },
 
-//            {
+                {
 
-//                id: 'Age 13-14',
-//                title: "Age 13-14",
-//                imgSrc: 'public/images/age/age_13_14.jpg',
-//                imgAlt: 'Age 13 to 14',
-//                link: '/13_14_age_maths',
+                    id: 'Age 13-14',
+                    title: "Age 13-14",
+                    imgSrc: 'public/images/probability.png',
+                    imgAlt: 'Age 13 to 14',
+                    link: '/13_14_age_maths',
 
-//            },
+                },
 
-//            {
+                {
 
-//                id: 'Age 14-15',
-//                title: "Age 14-15",
-//                imgSrc: 'public/images/age/age_14_15.jpg',
-//                imgAlt: 'Age 14 to 15',
-//                link: '/14_15_age_maths',
+                    id: 'Age 14-15',
+                    title: "Age 14-15",
+                    imgSrc: 'public/images/ratio2.jpg',
+                    imgAlt: 'Age 14 to 15',
+                    link: '/14_15_age_maths',
 
-//            },
+                },
 
-//            {
+                {
 
-//                id: 'Age 15-16',
-//                title: "Age 15-16",
-//                imgSrc: 'public/images/age/age_15_16.jpg',
-//                imgAlt: 'Age 15 to 16',
-//                link: '/15_16_age_maths',
+                    id: 'Age 15-16',
+                    title: "Age 15-16",
+                    imgSrc: 'public/images/algebra_image.jfif',
+                    imgAlt: 'Age 15 to 16',
+                    link: '/15_16_age_maths',
 
-//            },
+                },
 
-//            {
+                {
 
-//                id: 'Age 16-18',
-//                title: "Age 16-18",
-//                imgSrc: 'public/images/age/age_16_18.jpg',
-//                imgAlt: 'Age 16 to 18',
-//                link: '/16_18_age_maths'
+                    id: 'Age 16-18',
+                    title: "Age 16-18",
+                    imgSrc: 'public/images/number_image.jpg',
+                    imgAlt: 'Age 16 to 18',
+                    link: '/16_18_age_maths'
 
-//            },
+                },
+            ]
+        },
+    }
+]
+//        ]
 
-
-//        ],
-//    },
-//},
 ////{
 //    page: {
 //        url_stub: '/11_12_age_maths',

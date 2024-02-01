@@ -9,6 +9,6 @@
     "\\test\\public",
     "\\test\\views"
   ],
-  "SelectedNode": "\\test\\views\\structureEJS.ejs",
+  "SelectedNode": "\\test\\models\\mathQuestionsModel.js",
   "PreviewInSolutionExplorer": false
 }

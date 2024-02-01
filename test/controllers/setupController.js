@@ -2871,14 +2871,14 @@ const videoData = [
             description: 'Lemonoids; a game of space shoot-them-up in Scratch',
             videoData: [
                 {
-                    video: 'public/videos/Ball.mp4',
-                    time_stop_1: '10',
+                    video: '/public/videos/Ball.mp4',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
-                    imgSrc: 'public/images/algebra_image.jfif',
+                    imgSrc: '/public/images/algebra_image.jfif',
                     imgAlt: 'Lemonoids',
-                    link_questions_1: 'maths_questions/angles1.html',
+                    link_questions_1: '/maths_questions/angles1.ejs',
                     link_questions_2: null,
                     link_questions_3: null,
                 },
@@ -2892,7 +2892,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'Lemonoids.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -2912,7 +2912,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'Lemonoids.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -2993,7 +2993,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'public/videos/Ball.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3013,7 +3013,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'Lemonoids.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3033,7 +3033,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'Lemonoids.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3114,7 +3114,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'public/videos/Ball.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3134,7 +3134,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'Lemonoids.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3154,7 +3154,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'Lemonoids.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3235,7 +3235,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'public/videos/Ball.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3255,7 +3255,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'Lemonoids.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3275,7 +3275,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'Lemonoids.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3357,7 +3357,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'public/videos/Ball.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3377,7 +3377,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'Lemonoids.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3397,7 +3397,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'Lemonoids.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3479,7 +3479,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'public/videos/Ball.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3499,7 +3499,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'Lemonoids.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3519,7 +3519,7 @@ const videoData = [
             videoData: [
                 {
                     video: 'Lemonoids.mp4',
-                    time_stop_1: '10',
+                    time_stop_1: 10,
                     time_stop_2: null,
                     time_stop_3: null,
                     poster: 'Lemonoids',
@@ -3599,181 +3599,179 @@ const videoData = [
 ];
 
 
-//const mathsQuestionsData = [
-//    {
-//        page: {
-//            url_stub: 'maths_questions/angles1',
-//            description: '11_12 age range questions on angles',
-//            questionData: [
-//                {
-//                    Qnumber: 1,
-//                    imgSrc: 'public/images/11_12_angle_question_1.jpg',
-//                    imgAlt: '11_12_angle_question_1',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'b',
+const mathsQuestionsData = [
+    {
+        page: [
+            {
+                url_stub: '/maths_questions/angles1.ejs',
+                description: '11_12 age range questions on angles',
+                questionData: [
+                    {
+                        Qnumber: 1,
+                        imgSrc: 'public/images/11_12_angle_question_1.jpg',
+                        imgAlt: '11_12_angle_question_1',
+                        questionText: "Which is the correct answer?",
+                        answer: 'b',
+                    },
 
-//                },
-//                {
-//                    Qnumber: 2,
-//                    imgSrc: 'public/images/11_12_angle_question_2.jpg',
-//                    imgAlt: '11_12_angle_question_2',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'a',
+                    {
+                        Qnumber: 2,
+                        imgSrc: 'public/images/11_12_angle_question_2.jpg',
+                        imgAlt: '11_12_angle_question_2',
+                        questionText: "Which is the correct answer?",
+                        answer: 'a',
 
-//                },
-//                {
-//                    Qnumber: 3,
-//                    imgSrc: 'public/images/11_12_angle_question_3.jpg',
-//                    imgAlt: '11_12_angle_question_3',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'c',
+                    },
+                    {
+                        Qnumber: 3,
+                        imgSrc: 'public/images/11_12_angle_question_3.jpg',
+                        imgAlt: '11_12_angle_question_3',
+                        questionText: "Which is the correct answer?",
+                        answer: 'c',
 
-//                },
-//                {
-//                    Qnumber: 4,
-//                    imgSrc: 'public/images/11_12_angle_question_4.jpg',
-//                    imgAlt: '11_12_angle_question_4',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'b',
+                    },
+                    {
+                        Qnumber: 4,
+                        imgSrc: 'public/images/11_12_angle_question_4.jpg',
+                        imgAlt: '11_12_angle_question_4',
+                        questionText: "Which is the correct answer?",
+                        answer: 'b',
 
-//                },
-//                {
-//                    Qnumber: 5,
-//                    imgSrc: 'public/images/11_12_angle_question_5.jpg',
-//                    imgAlt: '11_12_angle_question_5',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'b',
+                    },
+                    {
+                        Qnumber: 5,
+                        imgSrc: 'public/images/11_12_angle_question_5.jpg',
+                        imgAlt: '11_12_angle_question_5',
+                        questionText: "Which is the correct answer?",
+                        answer: 'b',
 
-//                },
-//                {
-//                    Qnumber: 6,
-//                    imgSrc: 'public/images/11_12_angle_question_6.jpg',
-//                    imgAlt: '11_12_angle_question_6',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'a',
+                    },
+                    {
+                        Qnumber: 6,
+                        imgSrc: 'public/images/11_12_angle_question_6.jpg',
+                        imgAlt: '11_12_angle_question_6',
+                        questionText: "Which is the correct answer?",
+                        answer: 'a',
 
-//                },
+                    },
 
+                ],
+            },
+            {
+                url_stub: '/maths_questions/angles2',
+                description: '12_13 age range questions on angles',
+                questionData: [
+                    {
+                        Qnumber: 1,
+                        imgSrc: 'public/images/12_13_angle_question_1.jpg',
+                        imgAlt: '12_13_angle_question_1',
+                        questionText: "Which is the correct answer?",
+                        answer: 'c',
+                    },
+                    {
+                        Qnumber: 2,
+                        imgSrc: 'public/images/12_13_angle_question_2.jpg',
+                        imgAlt: '12_13_angle_question_2',
+                        questionText: "Which is the correct answer?",
+                        answer: 'a',
 
-//            ],
-//        },
+                    },
+                    {
+                        Qnumber: 3,
+                        imgSrc: 'public/images/12_13_angle_question_3.jpg',
+                        imgAlt: '12_13_angle_question_3',
+                        questionText: "Which is the correct answer?",
+                        answer: 'b',
 
-//        page: {
-//            url_stub: 'maths_questions/angles2',
-//            description: '12_13 age range questions on angles',
-//            questionData: [
-//                {
-//                    Qnumber: 1,
-//                    imgSrc: 'public/images/12_13_angle_question_1.jpg',
-//                    imgAlt: '12_13_angle_question_1',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'c',
+                    },
+                    {
+                        Qnumber: 4,
+                        imgSrc: 'public/images/12_13_angle_question_4.jpg',
+                        imgAlt: '12_13_angle_question_4',
+                        questionText: "Which is the correct answer?",
+                        answer: 'a',
 
-//                },
-//                {
-//                    Qnumber: 2,
-//                    imgSrc: 'public/images/12_13_angle_question_2.jpg',
-//                    imgAlt: '12_13_angle_question_2',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'a',
+                    },
+                    {
+                        Qnumber: 5,
+                        imgSrc: 'public/images/12_13_angle_question_5.jpg',
+                        imgAlt: '12_13_angle_question_5',
+                        questionText: "Which is the correct answer?",
+                        answer: 'c',
 
-//                },
-//                {
-//                    Qnumber: 3,
-//                    imgSrc: 'public/images/12_13_angle_question_3.jpg',
-//                    imgAlt: '12_13_angle_question_3',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'b',
+                    },
+                    {
+                        Qnumber: 6,
+                        imgSrc: 'public/images/12_13_angle_question_6.jpg',
+                        imgAlt: '12_13_angle_question_6',
+                        questionText: "Which is the correct answer?",
+                        answer: 'a',
 
-//                },
-//                {
-//                    Qnumber: 4,
-//                    imgSrc: 'public/images/12_13_angle_question_4.jpg',
-//                    imgAlt: '12_13_angle_question_4',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'a',
-
-//                },
-//                {
-//                    Qnumber: 5,
-//                    imgSrc: 'public/images/12_13_angle_question_5.jpg',
-//                    imgAlt: '12_13_angle_question_5',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'c',
-
-//                },
-//                {
-//                    Qnumber: 6,
-//                    imgSrc: 'public/images/12_13_angle_question_6.jpg',
-//                    imgAlt: '12_13_angle_question_6',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'a',
-
-//                },
+                    },
 
 
-//            ],
-//        },
+                ],
+            },
+            {
+                url_stub: '/maths_questions/angles3',
+                description: '13_14 age range questions on angles',
+                questionData: [
+                    {
+                        Qnumber: 1,
+                        imgSrc: 'public/images/13_14_angle_question_1.jpg',
+                        imgAlt: '13_14_angle_question_1',
+                        questionText: "Which is the correct answer?",
+                        answer: 'c',
+                    },
+                    {
+                        Qnumber: 2,
+                        imgSrc: 'public/images/13_14_angle_question_2.jpg',
+                        imgAlt: '13_14_angle_question_2',
+                        questionText: "Which is the correct answer?",
+                        answer: 'b',
 
-//        page: {
-//            url_stub: 'maths_questions/angles1',
-//            description: '13_14 age range questions on angles',
-//            questionData: [
-//                {
-//                    Qnumber: 1,
-//                    imgSrc: 'public/images/13_14_angle_question_1.jpg',
-//                    imgAlt: '13_14_angle_question_1',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'c',
+                    },
+                    {
+                        Qnumber: 3,
+                        imgSrc: 'public/images/13_14_angle_question_3.jpg',
+                        imgAlt: '13_14_angle_question_3',
+                        questionText: "Which is the correct answer?",
+                        answer: 'a',
 
-//                },
-//                {
-//                    Qnumber: 2,
-//                    imgSrc: 'public/images/13_14_angle_question_2.jpg',
-//                    imgAlt: '13_14_angle_question_2',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'b',
+                    },
+                    {
+                        Qnumber: 4,
+                        imgSrc: 'public/images/13_14_angle_question_4.jpg',
+                        imgAlt: '13_14_angle_question_4',
+                        questionText: "Which is the correct answer?",
+                        answer: 'c',
 
-//                },
-//                {
-//                    Qnumber: 3,
-//                    imgSrc: 'public/images/13_14_angle_question_3.jpg',
-//                    imgAlt: '13_14_angle_question_3',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'a',
+                    },
+                    {
+                        Qnumber: 5,
+                        imgSrc: 'public/images/13_14_angle_question_5.jpg',
+                        imgAlt: '13_14_angle_question_5',
+                        questionText: "Which is the correct answer?",
+                        answer: 'b',
 
-//                },
-//                {
-//                    Qnumber: 4,
-//                    imgSrc: 'public/images/13_14_angle_question_4.jpg',
-//                    imgAlt: '13_14_angle_question_4',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'c',
+                    },
+                    {
+                        Qnumber: 6,
+                        imgSrc: 'public/images/13_14_angle_question_6.jpg',
+                        imgAlt: '13_14_angle_question_6',
+                        questionText: "Which is the correct answer?",
+                        answer: 'a',
 
-//                },
-//                {
-//                    Qnumber: 5,
-//                    imgSrc: 'public/images/13_14_angle_question_5.jpg',
-//                    imgAlt: '13_14_angle_question_5',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'b',
+                    },
 
-//                },
-//                {
-//                    Qnumber: 6,
-//                    imgSrc: 'public/images/13_14_angle_question_6.jpg',
-//                    imgAlt: '13_14_angle_question_6',
-//                    questionText: "Which is the correct answer?",
-//                    answer: 'a',
-
-//                },
-
-//            ],
-//        },
-//    },
+                ],
+            },
+        ],
+    },
+];
 
 
-//];
+
 
 
 
@@ -3791,12 +3789,12 @@ async function seedDatabase() {
         // Clear existing data
         await Layout.deleteMany({});
         await Videos.deleteMany({});
-        //        await Questions.deleteMany({});
+        await Questions.deleteMany({});
 
         // Seed new data
         await Layout.insertMany(seedData);
         await Videos.insertMany(videoData);
-        //       await Questions.insertMany(mathsQuestionsData);
+        await Questions.insertMany(mathsQuestionsData);
 
         console.log('Data seeding completed.');
     } catch (error) {

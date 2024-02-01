@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>Maths questions starter</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/public/images/linux_site_logo.jpg" sizes="32x32">
-
+    <link rel="icon" type="image/png" href="/images/linux_site_logo.jpg" sizes="32x32">
 </head>
 
 <body>
@@ -13,71 +12,50 @@
     <div>
         <form id="question-form">
             <% for (let i = 0; i < questionData.length; i++) { %>
-            <% const currentQuestion = questionData[i]; %>
-            
-            <% if (currentQuestion.url_stub === window.location.pathname) { %>
-            <img src="../images/question_images/<%= currentQuestion.image1 %>" width="525" height="350" />
-            <br>
-            <span class="label">Choose one</span>
-            <br>
-            <input type="checkbox" name="answer" class="1" value="<%= currentQuestion.answer1a %>">
-            <label for="1a"><%= currentQuestion.choice1a %></label>
-            <input type="checkbox" name="answer" class="1" value="<%= currentQuestion.answer1b %>">
-            <label for="1b"><%= currentQuestion.choice1b %></label>
-            <input type="checkbox" name="answer" class="1" value="<%= currentQuestion.answer1c %>">
-            <label for="1c"><%= currentQuestion.choice1c %></label>
-            <input type="checkbox" name="answer" class="1" value="<%= currentQuestion.answer1d %>">
-            <label for="1d"><%= currentQuestion.choice1d %></label>
-            <br>
-            <div>
-                <img src="../images/question_images/<%= currentQuestion.image2 %>" width="525" height="350" />
-                <br>
-                <span class="label">Choose one</span>
-                <br>
-                <input type="checkbox" name="answer" class="2" value="<%= currentQuestion.answer2a %>">
-                <label for="2a"><%= currentQuestion.choice2a %></label>
-                <input type="checkbox" name="answer" class="2" value="<%= currentQuestion.answer2b %>">
-                <label for="2b"><%= currentQuestion.choice2b %></label>
-                <input type="checkbox" name="answer" class="2" value="<%= currentQuestion.answer2c %>">
-                <label for="2c"><%= currentQuestion.choice2c %></label>
-                <input type="checkbox" name="answer" class="2" value="<%= currentQuestion.answer2d %>">
-                <label for="2d"><%= currentQuestion.choice2d %></label>
-            </div>
-            <br>
-            <div>
-                <img src="../images/question_images/<%= currentQuestion.image3 %>" width="525" height="350" />
-                <br>
-                <span class="label">Choose one</span>
-                <br>
-                <input type="checkbox" name="answer" class="3" value="<%= currentQuestion.answer3a %>">
-                <label for="3a"><%= currentQuestion.choice3a %></label>
-                <input type="checkbox" name="answer" class="3" value="<%= currentQuestion.answer3b %>">
-                <label for="3b"><%= currentQuestion.choice3b %></label>
-                <input type="checkbox" name="answer" class="3" value="<%= currentQuestion.answer3c %>">
-                <label for="3c"><%= currentQuestion.choice3c %></label>
-                <input type="checkbox" name="answer" class="3" value="<%= currentQuestion.answer3d %>">
-                <label for="3d"><%= currentQuestion.choice3d %></label>
-                <button type="submit">Send answer</button>
-            </div>
+                <% const currentQuestion = questionData[i]; %>
+                <div class="question-block">
+                    <img src="<%= currentQuestion.imgSrc %>" alt="<%= currentQuestion.imgAlt %>" width="525" height="350" />
+                    <p><%= currentQuestion.questionText %></p>
+                    <div class="choices">
+                        <% for (let j = 0; j < currentQuestion.choices.length; j++) { %>
+                            <input type="radio" name="answer<%= i %>" id="choice<%= i %>-<%= j %>" value="<%= j %>">
+                            <label for="choice<%= i %>-<%= j %>"><%= currentQuestion.choices[j] %></label>
+                        <% } %>
+                    </div>
+                </div>
             <% } %>
-            <% } %>
+            <button type="submit">Send answer</button>
         </form>
-        <script src="anglesGrade.js"></script>
+        <script src="/javascript/anglesGrade.js"></script>
         <script>
-            // JavaScript logic to keep track of the score and redirect based on it
+            // Assuming the correct answers are passed as an array of correct indices
+            const correctAnswers = [<%- JSON.stringify(questionData.map(q => q.answer)) %>];
+
             const questionForm = document.getElementById("question-form");
             questionForm.addEventListener("submit", function (event) {
                 event.preventDefault(); // Prevent form submission
-                const answers = questionForm.querySelectorAll("input[type=checkbox]:checked");
-                const score = answers.length; // Calculate the score
 
-                <% if (score >= 2) { %>
-                // Redirect to a different video if the score is greater than or equal to 2
-                window.location.href = 'https://corbettmaths.com/2013/05/03/sine-rule-missing-sides/';
-                <% } else { %>
-                // Redirect back to the original video player
-                window.location.href = previousVideoURL + '?t=' + previousVideoTimestamp;;
-                <% } %>
+                const selectedAnswers = Array.from(questionForm.querySelectorAll("input[type=radio]:checked")).map(input => Number(input.value));
+                let score = 0;
+
+                // Calculate the score
+                selectedAnswers.forEach((answer, index) => {
+                    if (answer === correctAnswers[index]) {
+                        score++;
+                    }
+                });
+
+                // Example redirection logic based on the score
+                if (score <= questionData.length * 0.8) { // If the score is not 80% or above
+                    window.location.href = 'https://corbettmaths.com/2013/05/03/sine-rule-missing-sides/';
+                } else {
+                    // Redirect back to the original video player
+                    const previousVideoURL = localStorage.getItem("previousVideoURL");
+                    const previousVideoTimestamp = localStorage.getItem("previousVideoTimestamp");
+ 
+                    // (Ensure you have the previousVideoURL and previousVideoTimestamp variables set)
+                    window.location.href = previousVideoURL + '?t=' + previousVideoTimestamp;
+                }
             });
         </script>
     </div>

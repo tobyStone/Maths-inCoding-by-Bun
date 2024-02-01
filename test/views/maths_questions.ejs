@@ -3,12 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>Maths questions starter</title>
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/images/linux_site_logo.jpg" sizes="32x32">
 </head>
 
 <body>
-    <!--questions for the Geometry in Scratch Physics simulator-->
+    <!-- Questions for the Geometry in Scratch Physics simulator -->
     <div>
         <form id="question-form">
             <% for (let i = 0; i < questionData.length; i++) { %>
@@ -26,38 +25,35 @@
             <% } %>
             <button type="submit">Send answer</button>
         </form>
-        <script src="/javascript/anglesGrade.js"></script>
-        <script>
-            // Assuming the correct answers are passed as an array of correct indices
-            const correctAnswers = [<%- JSON.stringify(questionData.map(q => q.answer)) %>];
+    </div>
 
-            const questionForm = document.getElementById("question-form");
-            questionForm.addEventListener("submit", function (event) {
-                event.preventDefault(); // Prevent form submission
+    <script src="/javascript/anglesGrade.js"></script>
+    <script>
+        const correctAnswers = [<%- JSON.stringify(questionData.map(q => q.answer)) %>];
 
-                const selectedAnswers = Array.from(questionForm.querySelectorAll("input[type=radio]:checked")).map(input => Number(input.value));
-                let score = 0;
+        const questionForm = document.getElementById("question-form");
+        questionForm.addEventListener("submit", function (event) {
+            event.preventDefault();
 
-                // Calculate the score
-                selectedAnswers.forEach((answer, index) => {
-                    if (answer === correctAnswers[index]) {
-                        score++;
-                    }
-                });
+            const selectedAnswers = Array.from(questionForm.querySelectorAll("input[type=radio]:checked")).map(input => Number(input.value));
+            let score = 0;
 
-                // Example redirection logic based on the score
-                if (score <= questionData.length * 0.8) { // If the score is not 80% or above
-                    window.location.href = 'https://corbettmaths.com/2013/05/03/sine-rule-missing-sides/';
-                } else {
-                    // Redirect back to the original video player
-                    const previousVideoURL = localStorage.getItem("previousVideoURL");
-                    const previousVideoTimestamp = localStorage.getItem("previousVideoTimestamp");
- 
-                    // (Ensure you have the previousVideoURL and previousVideoTimestamp variables set)
-                    window.location.href = previousVideoURL + '?t=' + previousVideoTimestamp;
+            // Calculate the score
+            selectedAnswers.forEach((answer, index) => {
+                if (answer === correctAnswers[index]) {
+                    score++;
                 }
             });
-        </script>
-    </div>
+
+            // Example redirection logic based on the score
+            if (score <= questionData.length * 0.8) {
+                window.location.href = 'https://corbettmaths.com/2013/05/03/sine-rule-missing-sides/';
+            } else {
+                const previousVideoURL = localStorage.getItem("previousVideoURL");
+                const previousVideoTimestamp = localStorage.getItem("previousVideoTimestamp");
+                window.location.href = previousVideoURL + '?t=' + previousVideoTimestamp;
+            }
+        });
+    </script>
 </body>
 </html>

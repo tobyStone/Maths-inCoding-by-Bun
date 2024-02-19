@@ -5,10 +5,10 @@
     "\\test\\bun",
     "\\test\\config",
     "\\test\\controllers",
+    "\\test\\controllers\\seeds",
     "\\test\\models",
     "\\test\\public",
     "\\test\\views"
   ],
-  "SelectedNode": "\\test\\models\\mathQuestionsModel.js",
   "PreviewInSolutionExplorer": false
 }

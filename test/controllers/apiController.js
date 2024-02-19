@@ -25,8 +25,11 @@ module.exports = function (app) {
      * Middleware for handling requests to video player pages.
      * Fetches video data based on the URL and renders the video player page.
      */
+
+
+
     app.get('*/videoPlayer/*', asyncRouteHandler(async (req, res) => {
-        const fullPath = req.originalUrl;
+        const fullPath = req.path;
         const videoContent = await Videos.findOne({
             'page.url_stub': fullPath
         }).exec();
@@ -34,7 +37,7 @@ module.exports = function (app) {
         if (videoContent && videoContent.page &&
             videoContent.page.videoData &&
             videoContent.page.videoData.length > 0) {
-            res.render('VideoPlayer.ejs', {
+            res.render('VideoPlayer', {
                 videoData: videoContent.page.videoData
             });
         } else {
@@ -46,15 +49,29 @@ module.exports = function (app) {
      * Middleware for handling requests to question pages.
      * Fetches question data based on the URL and renders the question page.
      */
-    app.get('*/question/*', asyncRouteHandler(async (req, res) => {
-        const questionContent = await Questions.findOne({
-            _id: req.params.id
-        }).exec();
-        res.render('maths_questions.ejs', {
-            questionData: questionContent
-        });
-    }));
+    app.get('*/maths_questions/*', asyncRouteHandler(async (req, res) => {
+        const fullPath = req.originalUrl;
+        console.log("In question get");
+        try {
+            const questionContent = await Questions.findOne({
+                'page.url_stub': fullPath
+            }).exec();
 
+            if (questionContent && questionContent.page &&
+                questionContent.page.questionData &&
+                questionContent.page.questionData.length > 0) {
+                res.render('maths_questions', {
+                    questionData: questionContent.page.questionData
+                });
+            } else {
+                console.error(`Questions not found for URL: ${fullPath}`);
+                res.status(404).send('Questions not found');
+            }
+        } catch (error) {
+            console.error(`Error fetching questions for URL: ${fullPath}`, error);
+            res.status(500).send('An error occurred while fetching questions');
+        }
+    }));
     /**
      * Middleware for handling all other page requests.
      * Fetches page data based on the URL and renders the appropriate page.
@@ -65,8 +82,10 @@ module.exports = function (app) {
         const sections = await Layout.findOne(query).exec();
 
         if (sections) {
-            res.render('structureEJS.ejs', {
-                page: sections.page
+            res.render('structureEJS', {
+                page: sections.page,
+                clearVideoFlags: true // Add a flag to tell the client to clear localStorage flags
+
             });
         } else {
             res.status(404).send('Page not found');

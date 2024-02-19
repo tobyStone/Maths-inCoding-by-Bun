@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,8 +29,11 @@
                 const video = document.getElementById('video');
                 const videoData = JSON.parse('<%- JSON.stringify(videoData[0]) %>');
 
+
                 video.addEventListener('timeupdate', function () {
-                    if (video.currentTime >= videoData.time_stop_1) {
+                    const questionsAnswered = localStorage.getItem(`questionsAnswered_${videoData.time_stop_1}`);
+                    if (video.currentTime >= videoData.time_stop_1 && !questionsAnswered) {
+                        localStorage.setItem(`questionsAnswered_${videoData.time_stop_1}`, 'true');
                         video.pause();
                         window.location.href = videoData.link_questions_1;
                     }
@@ -81,8 +86,13 @@
                 seekBar.value = video.currentTime;
                 currentTimeDisplay.textContent = formatTime(video.currentTime);
             });
-
-            function formatTime(seconds) {
+ 
+             /**
+             * Formats a number of seconds into a time string in 'minutes:seconds' format.
+             * @param {number} seconds - The number of seconds to format.
+             * @returns {string} The formatted time string.
+             */
+             function formatTime(seconds) {
                 const minutes = Math.floor(seconds / 60);
                 seconds = Math.floor(seconds % 60);
                 return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;

@@ -6,6 +6,9 @@
     <link rel="icon" type="image/png" href="/images/linux_site_logo.jpg" sizes="32x32">
 </head>
 
+
+
+
 <body>
     <!-- Questions for the Geometry in Scratch Physics simulator -->
     <div>
@@ -13,13 +16,12 @@
             <% for (let i = 0; i < questionData.length; i++) { %>
                 <% const currentQuestion = questionData[i]; %>
                 <div class="question-block">
-                    <img src="<%= currentQuestion.imgSrc %>" alt="<%= currentQuestion.imgAlt %>" width="525" height="350" />
-                    <p><%= currentQuestion.questionText %></p>
-                    <div class="choices">
-                        <% for (let j = 0; j < currentQuestion.choices.length; j++) { %>
+                    <img src="<%= '/' + currentQuestion.imgSrc %>" alt="<%= currentQuestion.imgAlt %>" width="525" height="350" />     
+                   <div class="choices">
+                        <% currentQuestion.choices.forEach((choice, j) => { %>
                             <input type="radio" name="answer<%= i %>" id="choice<%= i %>-<%= j %>" value="<%= j %>">
-                            <label for="choice<%= i %>-<%= j %>"><%= currentQuestion.choices[j] %></label>
-                        <% } %>
+                            <label for="choice<%= i %>-<%= j %>"><%= choice %></label>
+                        <% }); %>
                     </div>
                 </div>
             <% } %>
@@ -27,33 +29,52 @@
         </form>
     </div>
 
-    <script src="/javascript/anglesGrade.js"></script>
-    <script>
-        const correctAnswers = [<%- JSON.stringify(questionData.map(q => q.answer)) %>];
 
-        const questionForm = document.getElementById("question-form");
-        questionForm.addEventListener("submit", function (event) {
-            event.preventDefault();
 
-            const selectedAnswers = Array.from(questionForm.querySelectorAll("input[type=radio]:checked")).map(input => Number(input.value));
-            let score = 0;
 
-            // Calculate the score
-            selectedAnswers.forEach((answer, index) => {
-                if (answer === correctAnswers[index]) {
-                    score++;
-                }
-            });
+<script>
+const correctAnswers = <%- JSON.stringify(questionData.map(q => q.answer)) %>;
+alert('Correct Answers: ' + correctAnswers);
+const questionDataLength = <%= questionData.length %>;
 
-            // Example redirection logic based on the score
-            if (score <= questionData.length * 0.8) {
-                window.location.href = 'https://corbettmaths.com/2013/05/03/sine-rule-missing-sides/';
-            } else {
-                const previousVideoURL = localStorage.getItem("previousVideoURL");
-                const previousVideoTimestamp = localStorage.getItem("previousVideoTimestamp");
-                window.location.href = previousVideoURL + '?t=' + previousVideoTimestamp;
+// Mapping function to convert index to corresponding letter
+const indexToLetter = (index) => {
+    const mapping = ['a', 'b', 'c', 'd'];
+    return mapping[index];
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    const questionForm = document.getElementById("question-form");
+    questionForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        console.log('Form submit event triggered');
+
+        // Get the selected radio button values as numbers and then map them to letters
+        const selectedAnswers = Array.from(questionForm.querySelectorAll("input[type=radio]:checked"))
+                                     .map(input => indexToLetter(parseInt(input.value)));
+        let score = 0;
+
+        // Calculate the score
+        selectedAnswers.forEach((selected, index) => {
+            if (selected === correctAnswers[index]) {
+                score++;
             }
         });
-    </script>
+
+        alert('Selected answers: ' + selectedAnswers); 
+        alert('Score: ' + score + ', Length: ' + questionDataLength);
+
+        // Redirection logic based on score
+        if (score <= questionDataLength * 0.8) {
+            window.location.href = 'https://corbettmaths.com/2013/05/03/sine-rule-missing-sides/';
+        } else {
+            const previousVideoURL = localStorage.getItem("previousVideoURL");
+            const previousVideoTimestamp = localStorage.getItem("previousVideoTimestamp");
+            window.location.href = previousVideoURL + '?t=' + previousVideoTimestamp;
+        }
+    });
+});
+</script>
+
 </body>
 </html>

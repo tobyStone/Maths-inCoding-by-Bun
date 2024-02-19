@@ -12,7 +12,7 @@
           "poster": "Lemonoids",
           "imgSrc": "/public/images/algebra_image.jfif",
           "imgAlt": "Lemonoids",
-          "link_questions_1": "/maths_questions/angles1.ejs",
+          "link_questions_1": "/maths_questions/angles1",
           "link_questions_2": null,
           "link_questions_3": null
         }

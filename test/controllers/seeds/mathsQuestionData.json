@@ -3,10 +3,15 @@
 		"page": {
 			"url_stub": "/maths_questions/angles1",
 			"description": "11_12 age range questions on angles",
+			"helpVideo": {
+				"videoSrc": "/public/videos/HelpWithAngles.mp4",
+				"imgSrc": "/public/images/help_video_poster.png",
+				"videoTitle": "Understanding Angles"
+			},
 			"questionData": [
 				{
 					"Qnumber": 1,
-					"imgSrc": "images/question_images/angle_question_1.png",
+					"imgSrc": "public/images/question_images/angle_question_1.png",
 					"imgAlt": "11_12_angle_question_1",
 					"questionText": "Which is the correct answer?",
 					"answer": "b",
@@ -14,7 +19,7 @@
 				},
 				{
 					"Qnumber": 2,
-					"imgSrc": "images/question_images/angle_question_2.png",
+					"imgSrc": "public/images/question_images/angle_question_2.png",
 					"imgAlt": "11_12_angle_question_2",
 					"questionText": "Which is the correct answer?",
 					"answer": "a",
@@ -22,39 +27,35 @@
 				},
 				{
 					"Qnumber": 3,
-					"imgSrc": "images/question_images/angle_question_1.png",
+					"imgSrc": "public/images/question_images/angle_question_1.png",
 					"imgAlt": "11_12_angle_question_3",
 					"questionText": "Which is the correct answer?",
 					"answer": "c",
 					"choices": [ "a", "b", "c", "d" ]
-
 				},
 				{
 					"Qnumber": 4,
-					"imgSrc": "images/question_images/angle_question_1.png",
+					"imgSrc": "public/images/question_images/angle_question_1.png",
 					"imgAlt": "11_12_angle_question_4",
 					"questionText": "Which is the correct answer?",
 					"answer": "b",
 					"choices": [ "a", "b", "c", "d" ]
-
 				},
 				{
 					"Qnumber": 5,
-					"imgSrc": "images/question_images/angle_question_1.png",
+					"imgSrc": "public/images/question_images/angle_question_1.png",
 					"imgAlt": "11_12_angle_question_5",
 					"questionText": "Which is the correct answer?",
 					"answer": "b",
 					"choices": [ "a", "b", "c", "d" ]
-
 				},
 				{
 					"Qnumber": 6,
-					"imgSrc": "images/question_images/angle_question_1.png",
+					"imgSrc": "public/images/question_images/angle_question_1.png",
 					"imgAlt": "11_12_angle_question_6",
 					"questionText": "Which is the correct answer?",
 					"answer": "a",
 					"choices": [ "a", "b", "c", "d" ]
-
 				}
 			]
 		}
@@ -63,10 +64,15 @@
 		"page": {
 			"url_stub": "/maths_questions/angles2",
 			"description": "12_13 age range questions on angles",
+			"helpVideo": {
+				"videoSrc": "/public/videos/HelpWithAngles.mp4",
+				"imgSrc": "/public/images/help_video_poster.jpg",
+				"videoTitle": "Understanding Angles"
+			},
 			"questionData": [
 				{
 					"Qnumber": 1,
-					"imgSrc": "images/12_13_angle_question_1.jpg",
+					"imgSrc": "public/images/12_13_angle_question_1.jpg",
 					"imgAlt": "12_13_angle_question_1",
 					"questionText": "Which is the correct answer?",
 					"answer": "c",
@@ -74,7 +80,7 @@
 				},
 				{
 					"Qnumber": 2,
-					"imgSrc": "images/12_13_angle_question_2.jpg",
+					"imgSrc": "public/images/12_13_angle_question_2.jpg",
 					"imgAlt": "12_13_angle_question_2",
 					"questionText": "Which is the correct answer?",
 					"answer": "a",
@@ -82,39 +88,35 @@
 				},
 				{
 					"Qnumber": 3,
-					"imgSrc": "images/12_13_angle_question_3.jpg",
+					"imgSrc": "public/images/12_13_angle_question_3.jpg",
 					"imgAlt": "12_13_angle_question_3",
 					"questionText": "Which is the correct answer?",
 					"answer": "b",
 					"choices": [ "a", "b", "c", "d" ]
-
 				},
 				{
 					"Qnumber": 4,
-					"imgSrc": "images/12_13_angle_question_4.jpg",
+					"imgSrc": "public/images/12_13_angle_question_4.jpg",
 					"imgAlt": "12_13_angle_question_4",
 					"questionText": "Which is the correct answer?",
 					"answer": "a",
 					"choices": [ "a", "b", "c", "d" ]
-
 				},
 				{
 					"Qnumber": 5,
-					"imgSrc": "images/12_13_angle_question_5.jpg",
+					"imgSrc": "public/images/12_13_angle_question_5.jpg",
 					"imgAlt": "12_13_angle_question_5",
 					"questionText": "Which is the correct answer?",
 					"answer": "c",
 					"choices": [ "a", "b", "c", "d" ]
-
 				},
 				{
 					"Qnumber": 6,
-					"imgSrc": "images/12_13_angle_question_6.jpg",
+					"imgSrc": "public/images/12_13_angle_question_6.jpg",
 					"imgAlt": "12_13_angle_question_6",
 					"questionText": "Which is the correct answer?",
 					"answer": "a",
 					"choices": [ "a", "b", "c", "d" ]
-
 				}
 			]
 		}
@@ -123,10 +125,15 @@
 		"page": {
 			"url_stub": "/maths_questions/angles3",
 			"description": "13_14 age range questions on angles",
+			"helpVideo": {
+				"videoSrc": "/public/videos/HelpWithAngles.mp4",
+				"imgSrc": "/public/images/help_video_poster.jpg",
+				"videoTitle": "Understanding Angles"
+			},
 			"questionData": [
 				{
 					"Qnumber": 1,
-					"imgSrc": "images/13_14_angle_question_1.jpg",
+					"imgSrc": "public/images/13_14_angle_question_1.jpg",
 					"imgAlt": "13_14_angle_question_1",
 					"questionText": "Which is the correct answer?",
 					"answer": "c",
@@ -134,7 +141,7 @@
 				},
 				{
 					"Qnumber": 2,
-					"imgSrc": "images/13_14_angle_question_2.jpg",
+					"imgSrc": "public/images/13_14_angle_question_2.jpg",
 					"imgAlt": "13_14_angle_question_2",
 					"questionText": "Which is the correct answer?",
 					"answer": "b",
@@ -142,39 +149,35 @@
 				},
 				{
 					"Qnumber": 3,
-					"imgSrc": "images/13_14_angle_question_3.jpg",
+					"imgSrc": "public/images/13_14_angle_question_3.jpg",
 					"imgAlt": "13_14_angle_question_3",
 					"questionText": "Which is the correct answer?",
 					"answer": "a",
 					"choices": [ "a", "b", "c", "d" ]
-
 				},
 				{
 					"Qnumber": 4,
-					"imgSrc": "images/13_14_angle_question_4.jpg",
+					"imgSrc": "public/images/13_14_angle_question_4.jpg",
 					"imgAlt": "13_14_angle_question_4",
 					"questionText": "Which is the correct answer?",
 					"answer": "c",
 					"choices": [ "a", "b", "c", "d" ]
-
 				},
 				{
 					"Qnumber": 5,
-					"imgSrc": "images/13_14_angle_question_5.jpg",
+					"imgSrc": "public/images/13_14_angle_question_5.jpg",
 					"imgAlt": "13_14_angle_question_5",
 					"questionText": "Which is the correct answer?",
 					"answer": "b",
 					"choices": [ "a", "b", "c", "d" ]
-
 				},
 				{
 					"Qnumber": 6,
-					"imgSrc": "images/13_14_angle_question_6.jpg",
+					"imgSrc": "public/images/13_14_angle_question_6.jpg",
 					"imgAlt": "13_14_angle_question_6",
 					"questionText": "Which is the correct answer?",
 					"answer": "a",
 					"choices": [ "a", "b", "c", "d" ]
-
 				}
 			]
 		}

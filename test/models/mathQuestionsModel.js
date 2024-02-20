@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
-
 const { Schema } = mongoose;
+
+const helpVideoSchema = new Schema({
+    videoSrc: String,
+    imgSrc: String,
+    videoTitle: String
+});
 
 const questionSchema = new Schema({
     Qnumber: Number,
@@ -8,18 +13,20 @@ const questionSchema = new Schema({
     imgAlt: String,
     questionText: String,
     answer: String,
+    choices: [String]
 });
 
 const pageSchema = new Schema({
     url_stub: String,
     description: String,
-    questionData: [questionSchema], // Embed the question schema as an array
+    helpVideo: helpVideoSchema, // Added help video schema here
+    questionData: [questionSchema]
 });
 
 const mathQuestionsSchema = new Schema({
-    page: [pageSchema], // Embed the page schema as an array
+    page: pageSchema
 });
 
-const MathQuestions = mongoose.model('MathQuestions', mathQuestionsSchema, 'maths_through_coding'); // Use a singular name for the model
+const MathQuestions = mongoose.model('MathQuestions', mathQuestionsSchema, 'maths_through_coding');
 
 module.exports = MathQuestions;

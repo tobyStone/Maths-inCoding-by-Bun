@@ -5,31 +5,38 @@
     <title>Maths questions starter</title>
     <link rel="icon" type="image/png" href="/images/linux_site_logo.jpg" sizes="32x32">
 </head>
-
-
-
-
 <body>
-    <!-- Questions for the Geometry in Scratch Physics simulator -->
-    <div>
+    <!-- Video Player Section -->
+    <% if (helpVideo && helpVideo.videoSrc) { %>
+    <div id="help-video-container" style="display:none;">
+        <video id="help-video" width="640" height="360" controls>
+            <source src="<%= helpVideo.videoSrc %>" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <% } %>
+
+    <!-- Questions Section -->
+    <div id="questions-container">
         <form id="question-form">
-            <% for (let i = 0; i < questionData.length; i++) { %>
-                <% const currentQuestion = questionData[i]; %>
+            <% questionData.forEach((currentQuestion, i) => { %>
                 <div class="question-block">
-                    <img src="<%= '/' + currentQuestion.imgSrc %>" alt="<%= currentQuestion.imgAlt %>" width="525" height="350" />     
-                   <div class="choices">
+                    <img src="<%= '/' + currentQuestion.imgSrc %>" alt="<%= currentQuestion.imgAlt %>" width="525" height="350" />
+                    <div class="choices">
                         <% currentQuestion.choices.forEach((choice, j) => { %>
                             <input type="radio" name="answer<%= i %>" id="choice<%= i %>-<%= j %>" value="<%= j %>">
                             <label for="choice<%= i %>-<%= j %>"><%= choice %></label>
                         <% }); %>
                     </div>
                 </div>
-            <% } %>
+            <% }); %>
             <button type="submit">Send answer</button>
         </form>
     </div>
 
-
+<script>
+    console.log("Video Source: <%= helpVideo ? helpVideo.videoSrc : 'No video source provided' %>");
+</script>
 
 
 <script>
@@ -45,10 +52,12 @@ const indexToLetter = (index) => {
 
 document.addEventListener('DOMContentLoaded', function() {
     const questionForm = document.getElementById("question-form");
+    const helpVideoContainer = document.getElementById("help-video-container");
+    const helpVideo = document.getElementById("help-video");
+
     questionForm.addEventListener("submit", function (event) {
         event.preventDefault();
-        console.log('Form submit event triggered');
-
+        
         // Get the selected radio button values as numbers and then map them to letters
         const selectedAnswers = Array.from(questionForm.querySelectorAll("input[type=radio]:checked"))
                                      .map(input => indexToLetter(parseInt(input.value)));
@@ -66,13 +75,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Redirection logic based on score
         if (score <= questionDataLength * 0.8) {
-            window.location.href = 'https://corbettmaths.com/2013/05/03/sine-rule-missing-sides/';
+            if (helpVideoExists) {
+                showHelpVideo();
+            } else {
+                alert("Not found video")
+                window.location.href = 'https://corbettmaths.com/2013/05/03/sine-rule-missing-sides/';
+            }
         } else {
-            const previousVideoURL = localStorage.getItem("previousVideoURL");
-            const previousVideoTimestamp = localStorage.getItem("previousVideoTimestamp");
-            window.location.href = previousVideoURL + '?t=' + previousVideoTimestamp;
+            redirectToPreviousVideo();
         }
     });
+
+    const helpVideoExists = <%= !!helpVideo %>;
+    if (helpVideoExists) {
+        helpVideo.addEventListener('ended', redirectToQuestions);
+    }
+
+    function showHelpVideo() {
+        document.getElementById("questions-container").style.display = "none";
+        helpVideoContainer.style.display = "block";
+        helpVideo.play();
+    }
+
+    function redirectToQuestions() {
+        helpVideoContainer.style.display = "none";
+        document.getElementById("questions-container").style.display = "block";
+    }
+
+    function redirectToPreviousVideo() {
+        const previousVideoURL = localStorage.getItem("previousVideoURL");
+        const previousVideoTimestamp = localStorage.getItem("previousVideoTimestamp");
+        window.location.href = previousVideoURL + '?t=' + previousVideoTimestamp;
+    }
 });
 </script>
 

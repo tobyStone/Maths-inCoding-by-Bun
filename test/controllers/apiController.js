@@ -45,10 +45,6 @@ module.exports = function (app) {
         }
     }));
 
-    /**
-     * Middleware for handling requests to question pages.
-     * Fetches question data based on the URL and renders the question page.
-     */
     app.get('*/maths_questions/*', asyncRouteHandler(async (req, res) => {
         const fullPath = req.originalUrl;
         console.log("In question get");
@@ -60,8 +56,14 @@ module.exports = function (app) {
             if (questionContent && questionContent.page &&
                 questionContent.page.questionData &&
                 questionContent.page.questionData.length > 0) {
+                // Check if helpVideo data is also available
+                const helpVideo = questionContent.page.helpVideo; // Assuming the structure includes helpVideo
+                console.log("helpVideo data", helpVideo);
+                console.log("videoSrc", helpVideo ? helpVideo.videoSrc : "No videoSrc found");
+
                 res.render('maths_questions', {
-                    questionData: questionContent.page.questionData
+                    questionData: questionContent.page.questionData,
+                    helpVideo: helpVideo // Now passing helpVideo to the template
                 });
             } else {
                 console.error(`Questions not found for URL: ${fullPath}`);
@@ -72,6 +74,9 @@ module.exports = function (app) {
             res.status(500).send('An error occurred while fetching questions');
         }
     }));
+
+
+
     /**
      * Middleware for handling all other page requests.
      * Fetches page data based on the URL and renders the appropriate page.

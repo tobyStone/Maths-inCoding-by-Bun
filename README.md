@@ -2,4 +2,4 @@
 using Bun to bundle Maths inCoding website and NodeJS/Express server
 
 
-![](https://github.com/tobyStone/Maths-inCoding-Website-Server/blob/main/gif_folder/front%20page%20maths%20inCoding.gif)
+![](https://github.com/tobyStone/Maths-inCoding-by-Bun/blob/main/gif_folder/front%20page%20maths%20inCoding.gif)

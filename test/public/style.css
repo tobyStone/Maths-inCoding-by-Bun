@@ -9,34 +9,31 @@
 }
 
 /* Fonts */
-@font-face {
-    font-family: 'old_standard_ttregular';
-    src: url('fonts/oldstandardtt-regular-webfont.woff2') format('woff2'), url('fonts/oldstandardtt-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
 
 /* Global styles */
 body {
-    font-family: 'old_standard_ttregular', "Trebuchet MS", Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     background-color: #82a2c2;
-    color: #333; /* Enhanced for better readability */
+    color: #333;
 }
 
 /* Header styles */
 header.SiteHeader {
     background: #6d7bab;
-    padding: 20px 0; /* Adjusted padding for balance */
+    padding: 20px 0;
     text-align: center;
     color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Added shadow for depth */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
     header.SiteHeader h1 {
-        font-size: 4em; /* Adjusted for proportion */
+        font-family: 'Roboto Slab', serif;
+        font-size: 4em;
         margin-bottom: 0.5em;
+        font-weight: 700;
     }
 
 /* Image and heading container */
@@ -48,7 +45,7 @@ header.SiteHeader {
 }
 
 .containerImg {
-    width: 75%; /* Adjusted for layout consistency */
+    width: 75%;
     float: right;
 }
 
@@ -56,16 +53,17 @@ header.SiteHeader {
     font-size: 1.2em;
     color: white;
     margin-right: 20px;
-    flex: 1; /* Added to control the size */
+    flex: 1;
 }
 
 /* Heading for game subject selection */
 .game-subject-heading {
-    flex: 1; /* Allocate space */
+    flex: 1;
     font-size: 1.5em;
     color: #fff;
     text-align: left;
     padding: 10px;
+    font-weight: 600;
 }
 
 /* Main content container */
@@ -86,7 +84,7 @@ header.SiteHeader {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Added for depth */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     text-align: center;
 }
 
@@ -110,18 +108,25 @@ header.SiteHeader {
     }
 
 /* Heading styles */
-h1, h3 {
-    font-family: 'old_standard_ttregular';
+h1, h3, h4 {
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 0.5em;
-    color: #333; /* Enhanced for consistency and readability */
+    color: #333;
 }
 
 h1 {
     font-size: 2.5em;
+    font-weight: 700;
 }
 
 h3 {
     font-size: 1.8em;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.3em;
+    font-weight: 400;
 }
 
 /* Footer styles */

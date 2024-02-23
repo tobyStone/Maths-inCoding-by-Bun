@@ -6,24 +6,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maths inCoding</title>
-    <link rel="icon" type="image/png" href="/public/images/linux_site_logo.jpg" sizes="32x32">
-    <link href="/public/styleVideo.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/public/images/linux_site_logo.png" sizes="32x32">
+    <link href="/../public/styleVideo.css" rel="stylesheet">
 </head>
 <body>
+    <main>
+        <header class="SiteHeader">
+        <h1>Maths inCoding<img style = "float: right;" width="120" height = "120" src="\public\images\linux_site_logo.PNG" alt="Pi with numbers">
+	</h1>
+        <div id="missionStatement">
+            <h3>... learning maths through coding computer games</h3>
+        </div>
+    </header>
     <% if (videoData && videoData.length > 0) { %>
         <div class="video-container" id="video-container">
             <video controls class="video" id="video" preload="auto" poster="<%= videoData[0].imgSrc %>">
                 <source src="<%= videoData[0].video %>" type="video/mp4">
             </video>
 
-            <div class="video-controls hidden" id="video-controls">
+            <div class="video-controls" id="video-controls">
                 <button id="play-pause-btn">Play</button>
                 <input type="range" id="volume-control" min="0" max="1" step="0.1">
                 <input type="range" id="seek-bar" min="0" value="0">
                 <span id="current-time">00:00</span> / <span id="total-duration">00:00</span>
             </div>
         </div>
-
+        </main>
         <script>
             document.addEventListener('DOMContentLoaded', (event) => {
                 const video = document.getElementById('video');

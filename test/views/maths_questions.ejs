@@ -3,37 +3,51 @@
 <head>
     <meta charset="utf-8">
     <title>Maths questions starter</title>
-    <link rel="icon" type="image/png" href="/images/linux_site_logo.jpg" sizes="32x32">
+    <link rel="icon" type="image/png" href="/public/images/linux_site_logo.png" sizes="32x32">
+    <link href="/../public/styleVideo.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Video Player Section -->
-    <% if (helpVideo && helpVideo.videoSrc) { %>
-    <div id="help-video-container" style="display:none;">
-        <video id="help-video" width="640" height="360" controls>
-            <source src="<%= helpVideo.videoSrc %>" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <% } %>
+    <main>
+        <header class="SiteHeader">
+            <h1>Maths inCoding<img style="float: right;" width="120" height="120" src="/public/images/linux_site_logo.PNG" alt="Pi with numbers">
+            </h1>
+            <div id="missionStatement">
+                <h3>... learning maths through coding computer games</h3>
+            </div>
+        </header>
 
-    <!-- Questions Section -->
-    <div id="questions-container">
-        <form id="question-form">
-            <% questionData.forEach((currentQuestion, i) => { %>
-                <div class="question-block">
-                    <img src="<%= '/' + currentQuestion.imgSrc %>" alt="<%= currentQuestion.imgAlt %>" width="525" height="350" />
-                    <div class="choices">
-                        <% currentQuestion.choices.forEach((choice, j) => { %>
-                            <input type="radio" name="answer<%= i %>" id="choice<%= i %>-<%= j %>" value="<%= j %>">
-                            <label for="choice<%= i %>-<%= j %>"><%= choice %></label>
-                        <% }); %>
+    <main class="content-container">
+        <!-- Questions Section -->
+        <div id="questions-container" class="video-container">
+            <form id="question-form">
+                <% questionData.forEach((currentQuestion, i) => { %>
+                    <div class="question-block">
+                        <img src="<%= '/' + currentQuestion.imgSrc %>" alt="<%= currentQuestion.imgAlt %>" width="525" height="350" />
+                        <div class="choices">
+                            <% currentQuestion.choices.forEach((choice, j) => { %>
+                                <input type="radio" name="answer<%= i %>" id="choice<%= i %>-<%= j %>" value="<%= j %>">
+                                <label for="choice<%= i %>-<%= j %>"><%= choice %></label>
+                            <% }); %>
+                        </div>
                     </div>
+                <% }); %>
+                <button type="submit" class="myButton">Send answer</button>
+            </form>
+        </div>
+        
+        <!-- Video Player Section -->
+        <% if (helpVideo && helpVideo.videoSrc) { %>
+            <div id="help-video-container" class="video-container" style="display:none;">
+                <video id="help-video" controls>
+                    <source src="<%= helpVideo.videoSrc %>" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-controls">
+                    <!-- Video controls here, if any custom controls are used -->
                 </div>
-            <% }); %>
-            <button type="submit">Send answer</button>
-        </form>
-    </div>
-
+            </div>
+        <% } %>
+    
 <script>
     console.log("Video Source: <%= helpVideo ? helpVideo.videoSrc : 'No video source provided' %>");
 </script>
@@ -109,6 +123,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
-
+</main>
 </body>
 </html>

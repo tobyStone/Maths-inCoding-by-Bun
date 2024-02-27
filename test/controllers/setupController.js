@@ -37,6 +37,8 @@ async function seedDatabase() {
         console.log('Data seeding completed.');
     } catch (error) {
         console.error('Error seeding data:', error);
+        // Throw the error so it can be caught by the test
+        throw error;
     } finally {
         // Close the database connection
         // Uncomment these lines if you want to close the connection after seeding
@@ -45,11 +47,17 @@ async function seedDatabase() {
     }
 }
 
+
+// Named export for seedDatabase
+exports.seedDatabase = seedDatabase;
+
+
+
 /**
  * Exports a function to seed the database.
  * This function is executed when this module is required.
  * @param {Object} app - The Express application object.
  */
-module.exports = function (app) {
-    seedDatabase();
+exports.init = function (app) {
+    return seedDatabase();
 };

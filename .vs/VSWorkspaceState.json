@@ -2,13 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\test",
-    "\\test\\bun",
     "\\test\\config",
     "\\test\\controllers",
     "\\test\\controllers\\seeds",
     "\\test\\models",
-    "\\test\\public",
-    "\\test\\views"
+    "\\test\\test"
   ],
+  "SelectedNode": "\\test\\test\\maths_questions.test.js",
   "PreviewInSolutionExplorer": false
 }

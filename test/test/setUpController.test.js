@@ -7,7 +7,7 @@ const config = require('../config/index');
 const sinon = require('sinon');
 
 describe('Database Seeding Error Handling', function () {
-    this.timeout(30000); // Increase the timeout to 10 seconds for these tests
+    this.timeout(30000); // Increase the timeout to 30 seconds for these tests
     let expect;
     let connectStub;
     let insertManyStub;
@@ -54,7 +54,8 @@ describe('Database Seeding Error Handling', function () {
             // If seedDatabase doesn't throw, this test should fail
             expect.fail('seedDatabase should throw an error when insertion fails');
         } catch (error) {
-            expect(error.message).to.include('buffering timed out');;
+            // Update this to match the actual error message you expect
+            expect(error.message).to.include('Insertion failed');
         }
     });
 });
@@ -97,3 +98,5 @@ describe('Database Seeding', function () {
         expect(questionsCount).to.be.greaterThan(0);
     });
 });
+
+

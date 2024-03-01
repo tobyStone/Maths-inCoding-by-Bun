@@ -100,6 +100,28 @@ describe('Math Questions View', function () {
             // The regex has been adjusted to account for potential attributes and whitespace within the h1 tag
             expect(html).to.match(/<h1[^>]*>Maths inCoding.*?<\/h1>/s);
 
+            // Loop through each question in the pageData object
+            pageData.page.questionData.forEach(question => {
+                // Adjust the imgSrc value to match the expected src attribute in the rendered HTML
+                // Here, if the original imgSrc in the JSON doesn't start with '/public', we prepend it
+                const expectedSrc = question.imgSrc.replace('public', '/public');
+
+                // Construct a regex pattern that describes the expected HTML for the image tag
+                // \s+ matches one or more whitespace characters
+                // The src, alt, width, and height attributes are matched exactly as they are expected to be in the HTML
+                // The pattern is flexible enough to match additional whitespace or different attribute order
+                // The \s* matches any amount of whitespace, including none
+                // The /? allows for self-closing tags (which may or may not have a slash before the closing angle bracket)
+                const regexPattern = `<img\\s+src="${expectedSrc}"\\s+alt="${question.imgAlt}"\\s+width="525"\\s+height="350"\\s*/?>`;
+
+                // Create a new RegExp object using the pattern and the 'i' flag to make the regex case-insensitive
+                const regex = new RegExp(regexPattern, 'i');
+
+                // Use Chai's expect method to assert that the rendered HTML matches the regex pattern
+                // If the pattern is not found in the HTML, the test will fail and output the specified message
+                expect(html).to.match(regex, `Question number ${question.Qnumber} img tag does not match.`);
+            });
+
 
         } catch (error) {
             // If an assertion fails, throw the error

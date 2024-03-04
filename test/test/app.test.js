@@ -1,32 +1,22 @@
-// Import your app
-const app = require('../app');
-const db = app.db; // Assuming you export your DB connection as shown in your app.js file
+let chai;
+let request, expect, app;
 
-describe('App and Database Integration Tests', function() {
-    // Increase the timeout if your database connection takes longer
+describe('App and Database Integration Tests', function () {
     this.timeout(5000);
 
-    before((done) => {
-        // Check if the database is connected
-        const chai = require('chai');
-        const chaiHttp = require('chai-http');
-        const { expect } = chai;
-        chai.use(chaiHttp);
-
-
-        db.once('open', done);
+    before(async function () {
+        chai = await import('chai');
+        const appModule = await import('../app.js');
+        const supertestModule = await import('supertest');
+        request = supertestModule.default;
+        app = appModule.default;
+        expect = chai.expect;
     });
 
-    describe('Server Connection', () => {
-        it('should connect to the HTTP server', (done) => {
-            chai.request(app)
-                .get('/')
-                .end((err, res) => {
-                    expect(res).to.have.status(200);
-                    done();
-                });
+    describe('Server Connection', function () {
+        it('should connect to the HTTP server', async function () {
+            const res = await request(app).get('/');
+            expect(res.status).to.equal(200);
         });
     });
-
-    // Add more tests as needed for your controllers and other parts of your application
 });

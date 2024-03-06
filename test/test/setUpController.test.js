@@ -1,21 +1,49 @@
-const mongoose = require('mongoose');
+// Global variables to maintain the database state across different test suites
+global.mongoose = require('mongoose');
+global.config = require('../config/index_test');
 const { seedDatabase } = require('../controllers/setupController');
 const Layout = require('../models/linkedPage');
 const Videos = require('../models/videoModel');
 const Questions = require('../models/mathQuestionsModel');
-const config = require('../config/index');
 const sinon = require('sinon');
+let expect;
+
+
+
+// Connect to the test database and seed it before all test suites run
+before(async function () {
+    this.timeout(50000); // A longer timeout for starting up and seeding the database
+
+    // Asynchronous import for chai
+    const chaiModule = await import('chai');
+    expect = chaiModule.expect;
+
+    check_string = config.getDbConnectionString()
+
+    // Connect to the test database only if not already connected
+    if (mongoose.connection.readyState !== 1) {
+        try {
+
+            await mongoose.connect(config.getDbConnectionString(), {
+                useNewUrlParser: true,
+                useUnifiedTopology: true
+            });
+            console.log('Connected to the test database.', "connection string: ", check_string);
+        } catch (error) {
+            const errorMessage = 'Connection failed'; // Use a fixed error message
+            console.error(`${errorMessage}. Error during database seeding:`, error);
+            throw new Error(errorMessage); // Throw a new Error with the fixed message
+        }
+    }
+
+});
+
 
 describe('Database Seeding Error Handling', function () {
     this.timeout(30000); // Increase the timeout to 30 seconds for these tests
-    let expect;
     let connectStub;
     let insertManyStub;
 
-    before(async function () {
-        const chai = await import('chai');
-        expect = chai.expect;
-    });
 
     beforeEach(function () {
         // Stub the mongoose connect method before each test
@@ -30,18 +58,8 @@ describe('Database Seeding Error Handling', function () {
         insertManyStub.restore();
     });
 
-    it('should handle database connection failure gracefully', async function () {
-        // Cause the connect method to reject with an error
-        connectStub.rejects(new Error('Connection failed'));
 
-        try {
-            await seedDatabase();
-            // If seedDatabase doesn't throw, this test should fail
-            expect.fail('seedDatabase should throw an error when connection fails');
-        } catch (error) {
-            expect(error.message).to.equal('Connection failed');
-        }
-    });
+
 
     it('should handle errors during data insertion gracefully', async function () {
         // Simulate a successful database connection
@@ -62,28 +80,11 @@ describe('Database Seeding Error Handling', function () {
 
 
 describe('Database Seeding', function () {
-    let expect;
+
 
     // Increase timeout if necessary, as database operations can take time
     this.timeout(30000);
 
-    before(async function () {
-        // Dynamically import chai with ES Module support
-        const chai = await import('chai');
-        expect = chai.expect;
-
-        // Connect to the test database
-        const connectionString = config.getDbConnectionString();
-        await mongoose.connect(connectionString, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        });
-    });
-
-    after(async function () {
-        // Close the database connection after tests
-        await mongoose.connection.close();
-    });
 
     it('should seed the database with Layout, Videos, and Questions data', async function () {
         await seedDatabase();

@@ -13,9 +13,11 @@
   "scripts": {
     "start": "cross-env SEED_DB=true nodemon app.js -e js,ejs,json",
     "test": "cross-env NODE_ENV=test mocha --require @babel/register test/test_runner.js",
-    "test:watch": "cross-env NODE_ENV=test mocha --require @babel/register --watch test/test_runner.js",
-    "dev": "concurrently \"npm run start\" \"npm run test:watch\""
+    "watch:json": "nodemon --verbose --watch controllers/seeds/*.json -e json --exec npm run test",
+    "dev": "concurrently --kill-others-on-fail \"npm run start\" \"npm run test\" \"npm run watch:json\""
   },
+
+
 
   "devDependencies": {
     "@babel/core": "^7.24.0",

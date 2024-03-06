@@ -1,60 +1,52 @@
 // Use dynamic imports to load all dependencies
-let request, expect, app;
-let Video, Question, Layout, seedDatabase;
+let request, expect, app, Video;
+
+
+// Connect to the test database and seed it before all test suites run
+before(async function () {
+    this.timeout(TIMEOUT); // A longer timeout for starting up and seeding the database
+
+    // Asynchronous import for chai
+    const chaiModule = await import('chai');
+    expect = chaiModule.expect;
+
+
+});
+
+
+
 
 // Increase the timeout for all tests in this file
 const TIMEOUT = 30000;
 
 // Mocha's `describe` is used for grouping tests
 describe('API Controller', function () {
-    this.timeout(TIMEOUT); // Set the timeout for all tests
+    this.timeout(30000); // Set the timeout for all tests
 
     // Mocha's `before` hook runs before all tests
     before(async function () {
-        this.timeout(TIMEOUT); // Extend timeout to accommodate seeding time if needed
+        // Extend timeout to accommodate seeding time if needed
+        this.timeout(30000);
 
         console.log('Starting dynamic imports for tests...');
 
-        // Dynamic imports for chai, supertest, and your app
-        const chaiModule = await import('chai');
-        expect = chaiModule.expect;
+        // Dynamically import supertest and the app
         const supertestModule = await import('supertest');
         request = supertestModule.default;
         const appModule = await import('../app.js');
         app = appModule.default;
 
-        // Dynamic imports for your models
+        // Dynamically import your models
         const videoModule = await import('../models/videoModel.js');
-        Video = videoModule.default;
-
+        global.Video = videoModule.default;
         const questionModule = await import('../models/mathQuestionsModel.js');
-        Question = questionModule.default;
-
+        global.Question = questionModule.default;
         const layoutModule = await import('../models/linkedPage.js');
-        Layout = layoutModule.default;
+        global.Layout = layoutModule.default;
 
-        // Dynamic import for your seedDatabase function
-        const setupControllerModule = await import('../controllers/setupController.js');
-        seedDatabase = setupControllerModule.seedDatabase;
-
-        console.log('Dynamic imports completed. Starting database seeding...');
-
-        // Seed the database and wait for completion
-        try {
-            await seedDatabase();
-            console.log('Database seeding completed. Waiting for data to settle...');
-            await new Promise(resolve => setTimeout(resolve, 5000)); // Wait for 5 seconds
-            console.log('Proceeding with tests...');
-        } catch (error) {
-            console.error('Error during database seeding:', error);
-            throw error; // This will fail the tests if seeding fails
-        }
+        console.log('Dynamic imports completed. Tests can now start.');
     });
 
-    // Mocha's `after` hook runs after all tests
-    after(async function () {
-        // Perform cleanup, such as closing database connections
-    });
 
     // Describe a group of tests for the video player endpoint
     describe('Video Player Endpoint', function () {
@@ -84,6 +76,29 @@ describe('API Controller', function () {
         });
     });
 
+    describe('Catch-All Page Endpoint', function () {
+        // Test for getting page data for a generic page that is not a maths question or video player
+        it('should respond with the correct page data for a non-specific page', async function () {
+            // Use a URL that does not contain 'question' or 'videoPlayer' and is expected to exist
+            const validPagePath = '/number';
+
+            const response = await request(app).get(validPagePath);
+
+            expect(response.status).to.equal(200);
+
+            expect(response.text).to.include('inCoding');
+        });
+
+        // Test for 404 response for a page that does not exist
+        it('should respond with a 404 status for a non-existing page', async function () {
+            const invalidPagePath = '/thispagedoesnotexist';
+
+            const response = await request(app).get(invalidPagePath);
+
+            expect(response.status).to.equal(404);
+            expect(response.text).to.equal('Page not found'); // This should match the text sent by the 404 response
+        });
+    });
 
 
 

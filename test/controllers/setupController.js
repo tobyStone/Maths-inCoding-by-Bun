@@ -7,22 +7,29 @@ const layoutData = require('./seeds/layoutData.json');
 const videoData = require('./seeds/videoData.json');
 const mathsQuestionsData = require('./seeds/mathsQuestionData.json');
 
-/**
- * Connects to the database and seeds it with initial data.
- * It performs the following steps:
- * 1. Connects to the MongoDB database using the connection string from the config.
- * 2. Clears existing data from the Layout, Videos, and Questions collections.
- * 3. Inserts new data into these collections from the respective JSON seed files.
- */
-async function seedDatabase() {
+// Connects to the database, seeds it, and returns the connection
+async function connectAndSeed() {
+    // Establishing database connection
+    const connectionString = config.getDbConnectionString();
+
     try {
-        // Establishing database connection
-        const connectionString = config.getDbConnectionString();
-        await mongoose.connect(connectionString, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        });
-        console.log('Connected to database. Starting data seeding.');
+        if (process.env.SEED_DB === 'true') {
+            // Ensure not to reconnect if already connected.
+            try {
+                if (mongoose.connection.readyState === 0) {
+                    await mongoose.connect(connectionString, {
+                        useNewUrlParser: true,
+                        useUnifiedTopology: true
+                    });
+                    console.log('Connected to database. Starting data seeding.');
+                }
+            } catch (error) {
+                const errorMessage = 'Connection failed'; // Use a fixed error message
+                console.error(`${errorMessage}. Error during database seeding:`, error);
+                throw new Error(errorMessage); // Throw a new Error with the fixed message
+            }
+
+        }
 
         // Clear existing data
         await Layout.deleteMany({});
@@ -35,29 +42,36 @@ async function seedDatabase() {
         await Questions.insertMany(mathsQuestionsData);
 
         console.log('Data seeding completed.');
+        return mongoose.connection;
     } catch (error) {
-        console.error('Error seeding data:', error);
-        // Throw the error so it can be caught by the test
-        throw error;
-    } finally {
-        // Close the database connection
-        // Uncomment these lines if you want to close the connection after seeding
-        // mongoose.connection.close();
-        // console.log('Database connection closed.');
+        const errorMessage = 'Insertion failed.'; // Use a fixed error message
+        console.error(`${errorMessage}. Error during database seeding:`, error);
+        throw new Error(errorMessage); // Throw a new Error with the fixed message
     }
+
+
 }
 
-
 // Named export for seedDatabase
-exports.seedDatabase = seedDatabase;
+exports.seedDatabase = connectAndSeed;
 
+exports.init = async function (app) {
+    try {
 
+        // Check if we should seed the database
+        // You can control this with an environment variable, e.g., SEED_DB
+        if (process.env.SEED_DB === 'true') {
+            await connectAndSeed();
+            // After seeding, you might want to reset the SEED_DB environment variable
+            // Or handle this logic in another way that fits your workflow
+        }
 
-/**
- * Exports a function to seed the database.
- * This function is executed when this module is required.
- * @param {Object} app - The Express application object.
- */
-exports.init = function (app) {
-    return seedDatabase();
+    } catch (error) {
+        const errorMessage = 'Connection failed'; // Use a fixed error message
+        console.error(`${errorMessage}. Error during database seeding:`, error);
+        throw new Error(errorMessage); // Throw a new Error with the fixed message
+        // Exit process if cannot connect to DB or if seeding fails
+        process.exit(1);
+    }
 };
+

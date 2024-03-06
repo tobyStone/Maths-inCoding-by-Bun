@@ -63,7 +63,13 @@ describe('CSS Styling for Video Page', function () {
         expect(computedStyle.fontSize).to.equal('64px'); // Check if this matches the actual size
     });
 
+
+    // Disconnect from the test database after all test suites have run
+    //then disconnect the browser
     after(async function () {
+        await mongoose.connection.close();
+        console.log('Disconnected from the test database.');
+
         await browser.close();
     });
 });

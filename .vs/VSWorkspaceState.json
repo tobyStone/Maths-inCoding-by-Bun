@@ -6,8 +6,9 @@
     "\\test\\controllers",
     "\\test\\controllers\\seeds",
     "\\test\\models",
-    "\\test\\test"
+    "\\test\\test",
+    "\\test\\views"
   ],
-  "SelectedNode": "\\test\\test\\maths_questions.test.js",
+  "SelectedNode": "\\test\\config\\index.js",
   "PreviewInSolutionExplorer": false
 }

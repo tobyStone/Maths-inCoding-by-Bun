@@ -1,4 +1,8 @@
-﻿/* Reset browser styles */
+﻿/* Fonts - Using the same font import as the filtering page */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+﻿
+/* Reset browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +11,6 @@
     vertical-align: baseline;
     box-sizing: border-box;
 }
-
-/* Fonts - Using the same font import as the filtering page */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
 
 
 /* Global styles - Match the filtering page */
@@ -131,4 +132,75 @@ button {
 /* Feedback link */
 .wordWrapper2 {
     margin-top: 20px;
+}
+
+
+/* Responsive video styles */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (9/16 = 0.5625) */
+    overflow: hidden;
+}
+
+    .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+/* Media query for small devices */
+@media (max-width: 576px) {
+    /* Additional responsive adjustments for small devices */
+    .video-container {
+        padding-top: 75%; /* Adjust the padding-top value for a 4:3 Aspect Ratio, if needed */
+    }
+
+        .video-container video {
+            width: 100%;
+            height: auto; /* Adjust height automatically to maintain aspect ratio */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the video in the container */
+        }
+
+    /* Adjust titles and images for small screens */
+    .math-section h1 {
+        font-size: 14px; /* Decrease font size for titles */
+        margin: 0;
+        padding: 5px;
+    }
+
+    .imgToHover {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Ensure the SiteHeader scales correctly */
+    .SiteHeader h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* Ensure the SiteHeader image scales correctly */
+    .SiteHeader img {
+        width: 50px;
+        height: auto;
+    }
+
+    /* Adjust footer images for small screens */
+    .footerImgOne img, .footerImgTwo img, .footerImgThree img, .footerImgFour img {
+        width: 80%; /* Slightly reduce image width */
+        height: auto;
+        margin: 0 auto; /* Center the images within their container */
+        display: block; /* Ensures that images are block-level for margin auto to work */
+    }
+
+
+    /* Adjust font size in the footer for small screens */
+    .wordWrapper2 h4 {
+        font-size: 12px; /* Reduce the font size for the footer text */
+    }
 }

@@ -1,6 +1,5 @@
-// Global variables to maintain the database state across different test suites
-global.mongoose = require('mongoose');
-global.config = require('../config/index_test');
+const mongoose = require('mongoose');
+const config = require('../config/index_test');
 const { seedDatabase } = require('../controllers/setupController');
 const Layout = require('../models/linkedPage');
 const Videos = require('../models/videoModel');
@@ -8,88 +7,83 @@ const Questions = require('../models/mathQuestionsModel');
 const sinon = require('sinon');
 let expect;
 
-
-
-// Connect to the test database and seed it before all test suites run
+/**
+ * Set up the testing environment before running any tests.
+ */
 before(async function () {
-    this.timeout(50000); // A longer timeout for starting up and seeding the database
+    this.timeout(50000); // Extend timeout for database connection and seeding
 
-    // Asynchronous import for chai
+    // Import chai for assertions
     const chaiModule = await import('chai');
     expect = chaiModule.expect;
 
-    check_string = config.getDbConnectionString()
+    let check_string = config.getDbConnectionString();
 
-    // Connect to the test database only if not already connected
+    // Connect to the test database if not already connected
     if (mongoose.connection.readyState !== 1) {
         try {
-
-            await mongoose.connect(config.getDbConnectionString(), {
+            await mongoose.connect(check_string, {
                 useNewUrlParser: true,
                 useUnifiedTopology: true
             });
             console.log('Connected to the test database.', "connection string: ", check_string);
         } catch (error) {
-            const errorMessage = 'Connection failed'; // Use a fixed error message
-            console.error(`${errorMessage}. Error during database seeding:`, error);
-            throw new Error(errorMessage); // Throw a new Error with the fixed message
+            console.error('Connection failed. Error during database seeding:', error);
+            throw new Error('Connection failed'); // Provide a clear error message
         }
     }
-
 });
 
-
+/**
+ * Group tests related to database seeding error handling.
+ */
 describe('Database Seeding Error Handling', function () {
-    this.timeout(30000); // Increase the timeout to 30 seconds for these tests
+    this.timeout(30000); // Set a higher timeout for these tests
+
     let connectStub;
     let insertManyStub;
 
-
+    // Set up stubs before each test
     beforeEach(function () {
-        // Stub the mongoose connect method before each test
         connectStub = sinon.stub(mongoose, 'connect');
-        // Stub the insertMany method of models to simulate insertion errors
         insertManyStub = sinon.stub(mongoose.Model, 'insertMany');
     });
 
+    // Restore stubs after each test
     afterEach(function () {
-        // Restore the stubbed methods after each test
         connectStub.restore();
         insertManyStub.restore();
     });
 
-
-
-
+    /**
+     * Test that seeding errors are handled properly.
+     */
     it('should handle errors during data insertion gracefully', async function () {
-        // Simulate a successful database connection
-        connectStub.resolves();
-        // Cause the insertMany method to reject with an error
-        insertManyStub.rejects(new Error('Insertion failed'));
+        connectStub.resolves(); // Simulate a successful connection
+        insertManyStub.rejects(new Error('Insertion failed')); // Simulate an insertion error
 
         try {
             await seedDatabase();
-            // If seedDatabase doesn't throw, this test should fail
             expect.fail('seedDatabase should throw an error when insertion fails');
         } catch (error) {
-            // Update this to match the actual error message you expect
             expect(error.message).to.include('Insertion failed');
         }
     });
 });
 
-
+/**
+ * Group tests related to successful database seeding.
+ */
 describe('Database Seeding', function () {
+    this.timeout(30000); // Set a higher timeout for these tests
 
-
-    // Increase timeout if necessary, as database operations can take time
-    this.timeout(30000);
-
-
+    /**
+     * Test that the database is seeded with the initial data.
+     */
     it('should seed the database with Layout, Videos, and Questions data', async function () {
         await seedDatabase();
 
-        // Verify that data was inserted for each collection
+        // Check counts for each collection to verify seeding
         const layoutsCount = await Layout.countDocuments({});
         const videosCount = await Videos.countDocuments({});
         const questionsCount = await Questions.countDocuments({});
@@ -99,5 +93,3 @@ describe('Database Seeding', function () {
         expect(questionsCount).to.be.greaterThan(0);
     });
 });
-
-

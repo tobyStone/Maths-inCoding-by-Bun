@@ -2,7 +2,15 @@
 let request, expect, app, Video;
 
 
-// Connect to the test database and seed it before all test suites run
+// Increase the timeout for all tests in this file
+const TIMEOUT = 30000;
+
+
+/**
+ * Before all tests, set up the environment by importing necessary modules
+ * and initializing the test database.
+ */
+
 before(async function () {
     this.timeout(TIMEOUT); // A longer timeout for starting up and seeding the database
 
@@ -15,18 +23,17 @@ before(async function () {
 
 
 
+/**
+ * Test suite for API Controller.
+*/
 
-// Increase the timeout for all tests in this file
-const TIMEOUT = 30000;
-
-// Mocha's `describe` is used for grouping tests
 describe('API Controller', function () {
-    this.timeout(30000); // Set the timeout for all tests
+    this.timeout(TIMEOUT); // Set the timeout for all tests
 
     // Mocha's `before` hook runs before all tests
     before(async function () {
         // Extend timeout to accommodate seeding time if needed
-        this.timeout(30000);
+        this.timeout(TIMEOUT);
 
         console.log('Starting dynamic imports for tests...');
 

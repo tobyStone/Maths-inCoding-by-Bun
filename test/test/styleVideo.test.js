@@ -1,6 +1,10 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 
+/**
+ * Describes tests for validating CSS styling on the video page.
+ */
+
 
 describe('CSS Styling for Video Page', function () {
     this.timeout(10000);
@@ -67,8 +71,6 @@ describe('CSS Styling for Video Page', function () {
     // Disconnect from the test database after all test suites have run
     //then disconnect the browser
     after(async function () {
-        await mongoose.connection.close();
-        console.log('Disconnected from the test database.');
 
         await browser.close();
     });

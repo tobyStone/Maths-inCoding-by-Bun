@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
 /* Reset browser styles */
 * {
     margin: 0;
@@ -7,9 +10,6 @@
     vertical-align: baseline;
     box-sizing: border-box;
 }
-
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
 
 /* Global styles */
 body {
@@ -139,15 +139,116 @@ h4 {
 }
 
 /* Button styles */
-#myButton {
-    width: 30px;
-    height: 30px;
-    padding: 0;
+.myButton {
+    width: auto; /* Adjusted to 'auto' to fit content */
+    height: auto; /* Adjusted to 'auto' for a normal button height */
+    padding: 10px 20px; /* Added padding for visual appeal */
     border: none;
-    background: none;
+    background-color: #6d7bab; /* Adjusted to match the header color */
+    color: white; /* Text color */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Changes cursor to indicate it's clickable */
+    border-radius: 5px; /* Rounded corners for the button */
+    margin-top: 20px; /* Space above the button */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold text */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Shadow for depth /
+transition: background-color 0.3s; / Smooth transition for hover effect */
 }
+
+    .myButton:hover {
+        background-color: #575f8a; /* Darker shade on hover */
+    }
+
+
+.question-block {
+    margin-bottom: 50px; /* Vertical space after each question */
+    padding-bottom: 50px; /* Padding at the bottom of each question block */
+    border-bottom: 1px solid #ccc; /* Visual separator between questions */
+}
+
+/* Adjusting spacing around choices for clarity */
+.choices {
+    margin-top: 10px; /* Space above the choices */
+    padding-left: 20px; /* Indent choices for better alignment with question text */
+    margin-bottom: 30px; /* Increased space below the choices */
+    display: flex;
+    justify-content: center; /* This centers the children (radio buttons) horizontally */
+    flex-wrap: wrap; /* This allows items to wrap as needed */
+}
+
+    .choices label {
+        margin-right: 15px; /* Adjust the right margin to increase spacing */
+        margin-left: 15px; /* Adjust the left margin if needed */
+    }
 
 /* Feedback link */
 .wordWrapper2 {
     margin-top: 20px;
+}
+
+
+/* Custom styles for mobile responsiveness */
+@media (max-width: 768px) {
+    .imgToHover {
+        width: 100%; /* Make images full width on smaller screens */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .math-section h1, #missionStatement h3 {
+        font-size: 18px; /* Adjust title sizes for smaller screens */
+    }
+
+    /* Additional styles if needed for this breakpoint */
+}
+
+/* Media query for very small devices (mobile phones in portrait mode) */
+@media (max-width: 576px) {
+    .math-section h1 {
+        font-size: 12px; /* Smaller font size for titles to ensure they fit in their boxes */
+        line-height: 1.2; /* Adjust line height to ensure the text fits and looks balanced */
+        word-wrap: break-word; /* Allows long words to break and wrap onto the next line */
+        padding: 0 5px; /* Add padding on the sides if necessary */
+    }
+
+    .container {
+        padding: 0 5px; /* Adjust container padding to make sure content has breathing room */
+    }
+
+    /* Adjust section margins if needed to ensure they fit within the parent container */
+    .math-section {
+        margin: 5px;
+    }
+
+    /* For the images, ensure they take up the correct amount of space */
+    .imgWrap {
+        margin: 0; /* Adjust margins as needed */
+        padding: 0; /* Adjust padding as needed */
+    }
+
+    .imgToHover {
+        max-width: 100%; /* Full width */
+        height: auto; /* Maintain aspect ratio */
+        padding: 0; /* Remove padding to utilize all available space */
+    }
+
+    /* If the titles still don't fit, you might need to consider altering the layout a bit for mobile */
+    /* For example, stacking images and titles vertically */
+    .math-section {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center-align items for aesthetics */
+    }
+
+    /* Ensure that the image containers are not restricting the size of the content */
+    .imgWrap {
+        width: 100%; /* Allow image container to fill width of its container */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+
+    /* Adjustments to the header image if necessary */
+    .SiteHeader img {
+        width: 50px; /* Resize the header logo for small screens */
+        height: auto; /* Adjust height automatically to maintain aspect ratio */
+    }
 }

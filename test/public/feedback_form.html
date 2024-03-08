@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="icon" type="image/png" href="../public/images/linux_site_logo.PNG" sizes="32x32">
+
+    <!-- Link to your existing stylesheet for consistent styling -->
+    <link href="../public/style.css" rel="stylesheet">
+
+    <!-- Inline styles to enhance the feedback form -->
+    <style>
+        body {
+            /* Inherits the font-family and other styles from your main stylesheet */
+        }
+
+        .feedback-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+            .feedback-container h2 {
+                text-align: center;
+                margin-bottom: 30px;
+                color: #333;
+            }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+            .form-group label {
+                display: block;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+                padding: 15px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                margin-bottom: 10px; /* Spacing after each input */
+            }
+
+            .form-group textarea {
+                height: 120px; /* Fixed height for the textarea */
+            }
+
+        button.myButton {
+            width: 100%; /* Full width button */
+            padding: 15px; /* Larger padding for a bigger button */
+            font-size: 16px; /* Larger font size */
+            margin-top: 20px; /* Space above the button */
+            border-radius: 4px; /* Rounded corners for the button */
+            box-shadow: none; /* No shadow for a flatter design */
+            transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+        }
+
+            button.myButton:hover {
+                background-color: #575f8a; /* Darker shade on hover */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight elevation on hover */
+            }
+    </style>
+</head>
+<body>
+    <header class="SiteHeader">
+        <h1>
+            Maths inCoding
+            <img style="float: right;" width="120" height="120" src="/public/images/linux_site_logo.PNG" alt="Pi with numbers">
+        </h1>
+        <div id="missionStatement">
+            <h3>... learning maths through coding computer games</h3>
+        </div>
+    </header>
+    <div class="feedback-container">
+        <h2>Feedback Form</h2>
+        <form action="/submit-feedback" method="post">
+            <div class="form-group">
+                <label for="feedbackName">Name</label>
+                <input type="text" id="feedbackName" name="feedbackName" placeholder="Your Name" required class="myInput">
+            </div>
+            <div class="form-group">
+                <label for="emailAddress">Email Address</label>
+                <input type="email" id="emailAddress" name="emailAddress" placeholder="Your Email" required class="myInput">
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback</label>
+                <textarea id="feedback" name="feedback" placeholder="Your Feedback" required class="myInput"></textarea>
+            </div>
+            <button type="submit" class="myButton">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>

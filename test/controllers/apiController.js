@@ -2,6 +2,7 @@ const bodyParser = require('body-parser');
 const Layout = require('../models/linkedPage');
 const Videos = require('../models/videoModel');
 const Questions = require('../models/mathQuestionsModel');
+const Feedback = require('../models/feedbackModel');
 
 /**
  * Middleware to handle try/catch for async routes.
@@ -96,4 +97,22 @@ module.exports = function (app) {
             res.status(404).send('Page not found');
         }
     }));
+
+    // Route to handle form submissions
+    app.post('/submit-feedback', asyncRouteHandler(async (req, res) => {
+        // Extracting feedback details from the request body
+        const { feedbackName, emailAddress, feedback } = req.body;
+
+        try {
+            // Create and save the feedback document
+            await Feedback.create({ feedbackName, emailAddress, feedback });
+
+            console.log("Feedback submitted:", { feedbackName, emailAddress, feedback });
+            res.redirect('/'); // Redirect to the home page or a 'thank you' page
+        } catch (err) {
+            console.error("Error submitting feedback:", err);
+            res.status(500).send('Error submitting feedback');
+        }
+    }));
+
 };

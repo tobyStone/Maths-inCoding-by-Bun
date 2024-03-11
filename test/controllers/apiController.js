@@ -3,6 +3,7 @@ const Layout = require('../models/linkedPage');
 const Videos = require('../models/videoModel');
 const Questions = require('../models/mathQuestionsModel');
 const Feedback = require('../models/feedbackModel');
+const geoip = require('geoip-lite');
 
 /**
  * Middleware to handle try/catch for async routes.
@@ -59,7 +60,6 @@ module.exports = function (app) {
                 questionContent.page.questionData.length > 0) {
                 // Check if helpVideo data is also available
                 const helpVideo = questionContent.page.helpVideo; // Assuming the structure includes helpVideo
-                console.log("helpVideo data", helpVideo);
                 console.log("videoSrc", helpVideo ? helpVideo.videoSrc : "No videoSrc found");
 
                 res.render('maths_questions', {
@@ -88,10 +88,36 @@ module.exports = function (app) {
         const sections = await Layout.findOne(query).exec();
 
         if (sections) {
+            const ip = req.ip || req.connection.remoteAddress;
+            // Alternatively, for real client IP if behind a proxy
+            // const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+            const geo = geoip.lookup(ip);
+            console.log("IP: ", ip, "Geo: ", geo); // Debugging line
+
+
+
+            let locality = 'US'; // Default to 'US' if geo-location fails or is ambiguous
+            if (geo && geo.country === 'GB') {
+                locality = 'UK'; // Assuming 'GB' is the code for the United Kingdom
+            }
+            console.log("Locality: ", locality); // Debugging line
+
+
+            sections.page.sections.forEach(section => {
+                if (section.UK_yearGroup || section.US_yearGroup) {
+                    let yearGroup = locality === 'UK' ? section.UK_yearGroup : section.US_yearGroup;
+                    // Perform replacement only if yearGroup is not undefined
+                    if (yearGroup) {
+                        section.title = section.title.replace(/Age \d{2}-\d{2}/, yearGroup);
+                    }
+                }
+
+            });
+
+
             res.render('structureEJS', {
                 page: sections.page,
-                clearVideoFlags: true // Add a flag to tell the client to clear localStorage flags
-
+                clearVideoFlags: true
             });
         } else {
             res.status(404).send('Page not found');

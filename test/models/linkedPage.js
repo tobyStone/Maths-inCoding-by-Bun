@@ -8,6 +8,8 @@ const sectionSchema = new Schema({
     imgSrc: String,
     imgAlt: String,
     link: String,
+    UK_yearGroup: String,
+    US_yearGroup: String
 });
 
 const pageSchema = new Schema({
@@ -23,6 +25,7 @@ const layoutSchema = new Schema({
 const Layout = mongoose.model('Layout', layoutSchema, 'maths_through_coding'); // Use a singular name for the model
 
 module.exports = Layout;
+
 
 
 

@@ -7,7 +7,7 @@
 				{
 					"id": "number",
 					"title": "Number",
-					"imgSrc": "public/images/number_image.jpg",
+					"imgSrc": "public/images/number_image.PNG",
 					"imgAlt": "Number",
 					"link": "/number"
 
@@ -15,28 +15,28 @@
 				{
 					"id": "algebra",
 					"title": "Algebra",
-					"imgSrc": "public/images/algebra_image.jfif",
+					"imgSrc": "public/images/algebra_image.PNG",
 					"imgAlt": "Algebra",
 					"link": "/algebra"
 				},
 				{
 					"id": "ratio",
 					"title": "Ratio and Proportion",
-					"imgSrc": "public/images/ratio2.jpg",
+					"imgSrc": "public/images/ratio2.PNG",
 					"imgAlt": "Ratio and Proportion",
 					"link": "/ratio"
 				},
 				{
 					"id": "probability",
 					"title": "Probability",
-					"imgSrc": "public/images/probability.png",
+					"imgSrc": "public/images/probability.PNG",
 					"imgAlt": "Probability",
 					"link": "/probability"
 				},
 				{
 					"id": "geometry",
 					"title": "Geometry",
-					"imgSrc": "public/images/geometry.jpg",
+					"imgSrc": "public/images/geometry.PNG",
 					"imgAlt": "Geometry",
 					"link": "/geometry"
 
@@ -44,7 +44,7 @@
 				{
 					"id": "statistics",
 					"title": "Statistics",
-					"imgSrc": "public/images/statistics.png",
+					"imgSrc": "public/images/statistics.PNG",
 					"imgAlt": "Statistics",
 					"link": "/statistics"
 				}
@@ -60,59 +60,56 @@
 				{
 					"id": "Age 11-12",
 					"title": "Age 11-12",
-					"imgSrc": "public/images/statistics.png",
+					"imgSrc": "public/images/age11_12.PNG",
 					"imgAlt": "Age 11 to 12",
-					"link": "/number/11_12_age_maths"
+					"link": "/number/11_12_age_maths",
+					"UK_yearGroup": "Year 7",
+					"US_yearGroup": "6th Grade"
 				},
-
 				{
-
 					"id": "Age 12-13",
 					"title": "Age 12-13",
-					"imgSrc": "public/images/geometry.jpg",
+					"imgSrc": "public/images/age12_13.PNG",
 					"imgAlt": "Age 12 to 13",
-					"link": "/number/12_13_age_maths"
-
+					"link": "/number/12_13_age_maths",
+					"UK_yearGroup": "Year 8",
+					"US_yearGroup": "7th Grade"
 				},
-
 				{
-
 					"id": "Age 13-14",
 					"title": "Age 13-14",
-					"imgSrc": "public/images/probability.png",
+					"imgSrc": "public/images/age13_14.PNG",
 					"imgAlt": "Age 13 to 14",
-					"link": "/number/13_14_age_maths"
-
+					"link": "/number/13_14_age_maths",
+					"UK_yearGroup": "Year 9",
+					"US_yearGroup": "8th Grade"
 				},
-
 				{
-
 					"id": "Age 14-15",
 					"title": "Age 14-15",
-					"imgSrc": "public/images/ratio2.jpg",
+					"imgSrc": "public/images/age14_15.PNG",
 					"imgAlt": "Age 14 to 15",
-					"link": "/number/14_15_age_maths"
-
+					"link": "/number/14_15_age_maths",
+					"UK_yearGroup": "Year 10",
+					"US_yearGroup": "9th Grade"
 				},
-
 				{
-
 					"id": "Age 15-16",
 					"title": "Age 15-16",
-					"imgSrc": "public/images/algebra_image.jfif",
+					"imgSrc": "public/images/age15_16.PNG",
 					"imgAlt": "Age 15 to 16",
-					"link": "/number/15_16_age_maths"
-
+					"link": "/number/15_16_age_maths",
+					"UK_yearGroup": "Year 11",
+					"US_yearGroup": "10th Grade"
 				},
-
 				{
-
 					"id": "Age 16-18",
 					"title": "Age 16-18",
-					"imgSrc": "public/images/number_image.jpg",
+					"imgSrc": "public/images/age16_18.PNG",
 					"imgAlt": "Age 16 to 18",
-					"link": "/number/16_18_age_maths"
-
+					"link": "/number/16_18_age_maths",
+					"UK_yearGroup": "Year 12/13",
+					"US_yearGroup": "11th/12th Grade"
 				}
 			]
 		}
@@ -127,18 +124,24 @@
 				{
 					"id": "Age 11-12",
 					"title": "Age 11-12",
-					"imgSrc": "public/images/statistics.png",
+					"imgSrc": "public/images/age11_12.PNG",
 					"imgAlt": "Age 11 to 12",
-					"link": "/algebra/11_12_age_maths"
+					"link": "/algebra/11_12_age_maths",
+					"UK_yearGroup": "Year 7",
+					"US_yearGroup": "6th Grade"
+
 				},
 
 				{
 
 					"id": "Age 12-13",
 					"title": "Age 12-13",
-					"imgSrc": "public/images/geometry.jpg",
+					"imgSrc": "public/images/age12_13.PNG",
 					"imgAlt": "Age 12 to 13",
-					"link": "/algebra/12_13_age_maths"
+					"link": "/algebra/12_13_age_maths",
+					"UK_yearGroup": "Year 8",
+					"US_yearGroup": "7th Grade"
+
 
 				},
 
@@ -146,9 +149,12 @@
 
 					"id": "Age 13-14",
 					"title": "Age 13-14",
-					"imgSrc": "public/images/probability.png",
+					"imgSrc": "public/images/age13_14.PNG",
 					"imgAlt": "Age 13 to 14",
-					"link": "/algebra/13_14_age_maths"
+					"link": "/algebra/13_14_age_maths",
+					"UK_yearGroup": "Year 9",
+					"US_yearGroup": "8th Grade"
+
 
 				},
 
@@ -156,9 +162,12 @@
 
 					"id": "Age 14-15",
 					"title": "Age 14-15",
-					"imgSrc": "public/images/ratio2.jpg",
+					"imgSrc": "public/images/age14_15.PNG",
 					"imgAlt": "Age 14 to 15",
-					"link": "/algebra/14_15_age_maths"
+					"link": "/algebra/14_15_age_maths",
+					"UK_yearGroup": "Year 10",
+					"US_yearGroup": "9th Grade"
+
 
 				},
 
@@ -166,9 +175,12 @@
 
 					"id": "Age 15-16",
 					"title": "Age 15-16",
-					"imgSrc": "public/images/algebra_image.jfif",
+					"imgSrc": "public/images/age15_16.PNG",
 					"imgAlt": "Age 15 to 16",
-					"link": "/algebra/15_16_age_maths"
+					"link": "/algebra/15_16_age_maths",
+					"UK_yearGroup": "Year 11",
+					"US_yearGroup": "10th Grade"
+
 
 				},
 
@@ -176,9 +188,12 @@
 
 					"id": "Age 16-18",
 					"title": "Age 16-18",
-					"imgSrc": "public/images/number_image.jpg",
+					"imgSrc": "public/images/age16_18.PNG",
 					"imgAlt": "Age 16 to 18",
-					"link": "/algebra/16_18_age_maths"
+					"link": "/algebra/16_18_age_maths",
+					"UK_yearGroup": "Year 12/13",
+					"US_yearGroup": "11th/12th Grade"
+
 
 				}
 			]
@@ -192,18 +207,22 @@
 				{
 					"id": "Age 11-12",
 					"title": "Age 11-12",
-					"imgSrc": "public/images/statistics.png",
+					"imgSrc": "public/images/age11_12.PNG",
 					"imgAlt": "Age 11 to 12",
-					"link": "/ratio/11_12_age_maths"
+					"link": "/ratio/11_12_age_maths",
+					"UK_yearGroup": "Year 7",
+					"US_yearGroup": "6th Grade"
 				},
 
 				{
 
 					"id": "Age 12-13",
 					"title": "Age 12-13",
-					"imgSrc": "public/images/geometry.jpg",
+					"imgSrc": "public/images/age12_13.PNG",
 					"imgAlt": "Age 12 to 13",
-					"link": "/ratio/12_13_age_maths"
+					"link": "/ratio/12_13_age_maths",
+					"UK_yearGroup": "Year 8",
+					"US_yearGroup": "7th Grade"
 
 				},
 
@@ -211,9 +230,11 @@
 
 					"id": "Age 13-14",
 					"title": "Age 13-14",
-					"imgSrc": "public/images/probability.png",
+					"imgSrc": "public/images/age13_14.PNG",
 					"imgAlt": "Age 13 to 14",
-					"link": "/ratio/13_14_age_maths"
+					"link": "/ratio/13_14_age_maths",
+					"UK_yearGroup": "Year 9",
+					"US_yearGroup": "8th Grade"
 
 				},
 
@@ -221,9 +242,11 @@
 
 					"id": "Age 14-15",
 					"title": "Age 14-15",
-					"imgSrc": "public/images/ratio2.jpg",
+					"imgSrc": "public/images/age14_15.PNG",
 					"imgAlt": "Age 14 to 15",
-					"link": "/ratio/14_15_age_maths"
+					"link": "/ratio/14_15_age_maths",
+					"UK_yearGroup": "Year 10",
+					"US_yearGroup": "9th Grade"
 
 				},
 
@@ -231,9 +254,11 @@
 
 					"id": "Age 15-16",
 					"title": "Age 15-16",
-					"imgSrc": "public/images/algebra_image.jfif",
+					"imgSrc": "public/images/age15_16.PNG",
 					"imgAlt": "Age 15 to 16",
-					"link": "/ratio/15_16_age_maths"
+					"link": "/ratio/15_16_age_maths",
+					"UK_yearGroup": "Year 11",
+					"US_yearGroup": "10th Grade"
 
 				},
 
@@ -241,9 +266,11 @@
 
 					"id": "Age 16-18",
 					"title": "Age 16-18",
-					"imgSrc": "public/images/number_image.jpg",
+					"imgSrc": "public/images/age16_18.PNG",
 					"imgAlt": "Age 16 to 18",
-					"link": "/ratio/16_18_age_maths"
+					"link": "/ratio/16_18_age_maths",
+					"UK_yearGroup": "Year 12/13",
+					"US_yearGroup": "11th/12th Grade"
 
 				}
 			]
@@ -257,18 +284,22 @@
 				{
 					"id": "Age 11-12",
 					"title": "Age 11-12",
-					"imgSrc": "public/images/statistics.png",
+					"imgSrc": "public/images/age11_12.PNG",
 					"imgAlt": "Age 11 to 12",
-					"link": "/probability/11_12_age_maths"
+					"link": "/probability/11_12_age_maths",
+					"UK_yearGroup": "Year 7",
+					"US_yearGroup": "6th Grade"
 				},
 
 				{
 
 					"id": "Age 12-13",
 					"title": "Age 12-13",
-					"imgSrc": "public/images/geometry.jpg",
+					"imgSrc": "public/images/age12_13.PNG",
 					"imgAlt": "Age 12 to 13",
-					"link": "/probability/12_13_age_maths"
+					"link": "/probability/12_13_age_maths",
+					"UK_yearGroup": "Year 8",
+					"US_yearGroup": "7th Grade"
 
 				},
 
@@ -276,9 +307,11 @@
 
 					"id": "Age 13-14",
 					"title": "Age 13-14",
-					"imgSrc": "public/images/probability.png",
+					"imgSrc": "public/images/age13_14.PNG",
 					"imgAlt": "Age 13 to 14",
-					"link": "/probability/13_14_age_maths"
+					"link": "/probability/13_14_age_maths",
+					"UK_yearGroup": "Year 9",
+					"US_yearGroup": "8th Grade"
 
 				},
 
@@ -286,9 +319,11 @@
 
 					"id": "Age 14-15",
 					"title": "Age 14-15",
-					"imgSrc": "public/images/ratio2.jpg",
+					"imgSrc": "public/images/age14_15.PNG",
 					"imgAlt": "Age 14 to 15",
-					"link": "/probability/14_15_age_maths"
+					"link": "/probability/14_15_age_maths",
+					"UK_yearGroup": "Year 10",
+					"US_yearGroup": "9th Grade"
 
 				},
 
@@ -296,9 +331,11 @@
 
 					"id": "Age 15-16",
 					"title": "Age 15-16",
-					"imgSrc": "public/images/algebra_image.jfif",
+					"imgSrc": "public/images/age15_16.PNG",
 					"imgAlt": "Age 15 to 16",
-					"link": "/probability/15_16_age_maths"
+					"link": "/probability/15_16_age_maths",
+					"UK_yearGroup": "Year 11",
+					"US_yearGroup": "10th Grade"
 
 				},
 
@@ -306,9 +343,11 @@
 
 					"id": "Age 16-18",
 					"title": "Age 16-18",
-					"imgSrc": "public/images/number_image.jpg",
+					"imgSrc": "public/images/age16_18.PNG",
 					"imgAlt": "Age 16 to 18",
-					"link": "/probability/16_18_age_maths"
+					"link": "/probability/16_18_age_maths",
+					"UK_yearGroup": "Year 12/13",
+					"US_yearGroup": "11th/12th Grade"
 
 				}
 			]
@@ -322,18 +361,22 @@
 				{
 					"id": "Age 11-12",
 					"title": "Age 11-12",
-					"imgSrc": "public/images/statistics.png",
+					"imgSrc": "public/images/age11_12.PNG",
 					"imgAlt": "Age 11 to 12",
-					"link": "/geometry/11_12_age_maths"
+					"link": "/geometry/11_12_age_maths",
+					"UK_yearGroup": "Year 7",
+					"US_yearGroup": "6th Grade"
 				},
 
 				{
 
 					"id": "Age 12-13",
 					"title": "Age 12-13",
-					"imgSrc": "public/images/geometry.jpg",
+					"imgSrc": "public/images/age12_13.PNG",
 					"imgAlt": "Age 12 to 13",
-					"link": "/geometry/12_13_age_maths"
+					"link": "/geometry/12_13_age_maths",
+					"UK_yearGroup": "Year 8",
+					"US_yearGroup": "7th Grade"
 
 				},
 
@@ -341,9 +384,11 @@
 
 					"id": "Age 13-14",
 					"title": "Age 13-14",
-					"imgSrc": "public/images/probability.png",
+					"imgSrc": "public/images/age13_14.PNG",
 					"imgAlt": "Age 13 to 14",
-					"link": "/geometry/13_14_age_maths"
+					"link": "/geometry/13_14_age_maths",
+					"UK_yearGroup": "Year 9",
+					"US_yearGroup": "8th Grade"
 
 				},
 
@@ -351,9 +396,11 @@
 
 					"id": "Age 14-15",
 					"title": "Age 14-15",
-					"imgSrc": "public/images/ratio2.jpg",
+					"imgSrc": "public/images/age14_15.PNG",
 					"imgAlt": "Age 14 to 15",
-					"link": "/geometry/14_15_age_maths"
+					"link": "/geometry/14_15_age_maths",
+					"UK_yearGroup": "Year 10",
+					"US_yearGroup": "9th Grade"
 
 				},
 
@@ -361,9 +408,11 @@
 
 					"id": "Age 15-16",
 					"title": "Age 15-16",
-					"imgSrc": "public/images/algebra_image.jfif",
+					"imgSrc": "public/images/age15_16.PNG",
 					"imgAlt": "Age 15 to 16",
-					"link": "/geometry/15_16_age_maths"
+					"link": "/geometry/15_16_age_maths",
+					"UK_yearGroup": "Year 11",
+					"US_yearGroup": "10th Grade"
 
 				},
 
@@ -371,9 +420,11 @@
 
 					"id": "Age 16-18",
 					"title": "Age 16-18",
-					"imgSrc": "public/images/number_image.jpg",
+					"imgSrc": "public/images/age16_18.PNG",
 					"imgAlt": "Age 16 to 18",
-					"link": "/geometry/16_18_age_maths"
+					"link": "/geometry/16_18_age_maths",
+					"UK_yearGroup": "Year 12/13",
+					"US_yearGroup": "11th/12th Grade"
 
 				}
 			]
@@ -387,18 +438,22 @@
 				{
 					"id": "Age 11-12",
 					"title": "Age 11-12",
-					"imgSrc": "public/images/statistics.png",
+					"imgSrc": "public/images/age11_12.PNG",
 					"imgAlt": "Age 11 to 12",
-					"link": "/statistics/11_12_age_maths"
+					"link": "/statistics/11_12_age_maths",
+					"UK_yearGroup": "Year 7",
+					"US_yearGroup": "6th Grade"
 				},
 
 				{
 
 					"id": "Age 12-13",
 					"title": "Age 12-13",
-					"imgSrc": "public/images/geometry.jpg",
+					"imgSrc": "public/images/age12_13.PNG",
 					"imgAlt": "Age 12 to 13",
-					"link": "/statistics/12_13_age_maths"
+					"link": "/statistics/12_13_age_maths",
+					"UK_yearGroup": "Year 8",
+					"US_yearGroup": "7th Grade"
 
 				},
 
@@ -406,9 +461,11 @@
 
 					"id": "Age 13-14",
 					"title": "Age 13-14",
-					"imgSrc": "public/images/probability.png",
+					"imgSrc": "public/images/age13_14.PNG",
 					"imgAlt": "Age 13 to 14",
-					"link": "/statistics/13_14_age_maths"
+					"link": "/statistics/13_14_age_maths",
+					"UK_yearGroup": "Year 9",
+					"US_yearGroup": "8th Grade"
 
 				},
 
@@ -416,9 +473,11 @@
 
 					"id": "Age 14-15",
 					"title": "Age 14-15",
-					"imgSrc": "public/images/ratio2.jpg",
+					"imgSrc": "public/images/age14_15.PNG",
 					"imgAlt": "Age 14 to 15",
-					"link": "/statistics/14_15_age_maths"
+					"link": "/statistics/14_15_age_maths",
+					"UK_yearGroup": "Year 10",
+					"US_yearGroup": "9th Grade"
 
 				},
 
@@ -426,9 +485,11 @@
 
 					"id": "Age 15-16",
 					"title": "Age 15-16",
-					"imgSrc": "public/images/algebra_image.jfif",
+					"imgSrc": "public/images/age15_16.PNG",
 					"imgAlt": "Age 15 to 16",
-					"link": "/statistics/15_16_age_maths"
+					"link": "/statistics/15_16_age_maths",
+					"UK_yearGroup": "Year 11",
+					"US_yearGroup": "10th Grade"
 
 				},
 
@@ -436,9 +497,11 @@
 
 					"id": "Age 16-18",
 					"title": "Age 16-18",
-					"imgSrc": "public/images/number_image.jpg",
+					"imgSrc": "public/images/age16_18.PNG",
 					"imgAlt": "Age 16 to 18",
-					"link": "/statistics/16_18_age_maths"
+					"link": "/statistics/16_18_age_maths",
+					"UK_yearGroup": "Year 12/13",
+					"US_yearGroup": "11th/12th Grade"
 
 				}
 			]
@@ -455,7 +518,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/number/11_12_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -465,7 +528,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/number/11_12_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -474,7 +537,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/number/11_12_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -521,7 +584,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/algebra/11_12_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -531,7 +594,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/algebra/11_12_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -540,7 +603,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/algebra/11_12_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -587,7 +650,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/ratio/11_12_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -597,7 +660,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/ratio/11_12_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -606,7 +669,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/ratio/11_12_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -653,7 +716,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/probability/11_12_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -663,7 +726,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/probability/11_12_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -672,7 +735,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/probability/11_12_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -719,7 +782,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/geometry/11_12_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -729,7 +792,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/geometry/11_12_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -738,7 +801,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/geometry/11_12_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -785,7 +848,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/statistics/11_12_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -795,7 +858,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/statistics/11_12_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -804,7 +867,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/statistics/11_12_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -854,7 +917,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/number/12_13_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -864,7 +927,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/number/12_13_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -873,7 +936,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/number/12_13_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -920,7 +983,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/algebra/12_13_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -930,7 +993,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/algebra/12_13_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -939,7 +1002,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/algebra/12_13_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -986,7 +1049,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/ratio/12_13_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -996,7 +1059,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/ratio/12_13_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1005,7 +1068,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/ratio/12_13_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1052,7 +1115,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/probability/12_13_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1062,7 +1125,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/probability/12_13_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1071,7 +1134,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/probability/12_13_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1118,7 +1181,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/geometry/12_13_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1128,7 +1191,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/geometry/12_13_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1137,7 +1200,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/geometry/12_13_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1184,7 +1247,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/statistics/12_13_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1194,7 +1257,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/statistics/12_13_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1203,7 +1266,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/statistics/12_13_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1252,7 +1315,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/number/13_14_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1262,7 +1325,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/number/13_14_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1271,7 +1334,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/number/13_14_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1318,7 +1381,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/algebra/13_14_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1328,7 +1391,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/algebra/13_14_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1337,7 +1400,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/algebra/13_14_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1384,7 +1447,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/ratio/13_14_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1394,7 +1457,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/ratio/13_14_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1403,7 +1466,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/ratio/13_14_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1450,7 +1513,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/probability/13_14_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1460,7 +1523,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/probability/13_14_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1469,7 +1532,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/probability/13_14_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1516,7 +1579,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/geometry/13_14_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1526,7 +1589,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/geometry/13_14_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1535,7 +1598,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/geometry/13_14_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1582,7 +1645,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/statistics/13_14_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1592,7 +1655,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/statistics/13_14_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1601,7 +1664,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/statistics/13_14_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1651,7 +1714,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/number/14_15_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1661,7 +1724,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/number/14_15_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1670,7 +1733,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/number/14_15_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1718,7 +1781,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/algebra/14_15_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1728,7 +1791,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/algebra/14_15_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1737,7 +1800,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/algebra/14_15_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1785,7 +1848,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/ratio/14_15_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1795,7 +1858,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/ratio/14_15_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1804,7 +1867,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/ratio/14_15_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1852,7 +1915,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/probability/14_15_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1862,7 +1925,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/probability/14_15_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1871,7 +1934,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/probability/14_15_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1919,7 +1982,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/geometry/14_15_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1929,7 +1992,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/geometry/14_15_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1938,7 +2001,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/geometry/14_15_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -1986,7 +2049,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/statistics/14_15_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1996,7 +2059,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/statistics/14_15_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2005,7 +2068,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/statistics/14_15_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -2056,7 +2119,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/number/15_16_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2066,7 +2129,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/number/15_16_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2075,7 +2138,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/number/15_16_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -2123,7 +2186,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/algebra/15_16_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2133,7 +2196,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/algebra/15_16_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2142,7 +2205,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/algebra/15_16_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -2190,7 +2253,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/ratio/15_16_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2200,7 +2263,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/ratio/15_16_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2209,7 +2272,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/ratio/15_16_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -2257,7 +2320,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/probability/15_16_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2267,7 +2330,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/probability/15_16_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2276,7 +2339,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/probability/15_16_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -2324,7 +2387,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/geometry/15_16_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2334,7 +2397,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/geometry/15_16_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2343,7 +2406,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/geometry/15_16_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -2391,7 +2454,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/statistics/15_16_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2401,7 +2464,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/statistics/15_16_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2410,7 +2473,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/statistics/15_16_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -2459,7 +2522,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/number/16_18_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2469,7 +2532,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/number/16_18_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2478,7 +2541,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/number/16_18_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -2526,7 +2589,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/algebra/16_18_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2536,7 +2599,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/algebra/16_18_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2545,7 +2608,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/algebra/16_18_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -2593,7 +2656,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/ratio/16_18_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2603,7 +2666,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/ratio/16_18_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2612,7 +2675,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/ratio/16_18_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -2660,7 +2723,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/probability/16_18_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2670,7 +2733,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/probability/16_18_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2679,7 +2742,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/probability/16_18_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -2727,7 +2790,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/geometry/16_18_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2737,7 +2800,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/geometry/16_18_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2746,7 +2809,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/geometry/16_18_age_maths/videoPlayer/water_bucket_Python.js"
 
@@ -2794,7 +2857,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids",
-					"imgSrc": "public/images/games/lemonoids.jpg",
+					"imgSrc": "/public/images/lemonoids.PNG",
 					"imgAlt": "Lemonoids",
 					"link": "/statistics/16_18_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2804,7 +2867,7 @@
 
 					"id": "3D game engine",
 					"title": "3D game engine",
-					"imgSrc": "public/images/games/3D_game_engine.jpg",
+					"imgSrc": "/public/images/3D_game_engine.PNG",
 					"imgAlt": "3D game engine",
 					"link": "/statistics/16_18_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2813,7 +2876,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket",
-					"imgSrc": "public/images/games/water_bucket.jpg",
+					"imgSrc": "/public/images/water_bucket.PNG",
 					"imgAlt": "water bucket",
 					"link": "/statistics/16_18_age_maths/videoPlayer/water_bucket_Python.js"
 

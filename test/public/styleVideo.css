@@ -74,30 +74,37 @@ h4 {
 
 /* Video container should match the content container from the filtering page */
 .video-container {
-    width: 800px;
-    margin: 10px auto;
-    margin-bottom: 20px;
-    background-color: #fff; /* Same as the container on the filtering page */
-    border: 1px solid #ccc; /* Same as the container on the filtering page */
-    border-radius: 5px; /* Same as the container on the filtering page */
-    padding: 20px; /* Same as the container on the filtering page */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Same as the container on the filtering page */
-    text-align: center;
+    width: 75%; /* Increase width to make the video larger */
+    /* Do not set a height here to allow the aspect ratio to control the video size */
+    padding-top: 56.25%; /* This will create an aspect ratio of 16:9 */
+    position: relative;
+    margin: 20px auto; /* Center the container with auto margins */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    overflow: hidden; /* Hide overflow to keep everything neat */
 }
 
-video {
-    width: 100%;
-    height: auto;
-    border-radius: 4px; /* Same border-radius as the video container */
-}
+    .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Video will fill the width */
+        height: calc(100% - 40px); /* Subtract the height of the controls */
+    }
 
-/* Remove absolute positioning and place the controls below the video */
 .video-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Controls span the width of the container */
     padding: 10px;
-    background: #6d7bab; /* Same as the header on the filtering page */
-    color: white;
-    width: 100%; /* Ensure it spans the full width of its container */
+    background: #6d7bab; /* Match the site header color */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
 }
+
+/* Since we're now using absolute positioning for the controls, no need for a top padding */
 
 
 /* Seek bar should match the button color scheme from the filtering page */
@@ -135,21 +142,6 @@ button {
 }
 
 
-/* Responsive video styles */
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (9/16 = 0.5625) */
-    overflow: hidden;
-}
-
-    .video-container video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
 
 /* Media query for small devices */
 @media (max-width: 576px) {

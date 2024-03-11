@@ -20,6 +20,9 @@ body {
     color: #333;
 }
 
+
+
+
 /* Header styles */
 header.SiteHeader {
     background: #6d7bab;
@@ -27,6 +30,9 @@ header.SiteHeader {
     text-align: center;
     color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between;
 }
 
     header.SiteHeader h1 {
@@ -36,6 +42,12 @@ header.SiteHeader {
         font-weight: 700;
     }
 
+.header-bottom {
+    align-self: flex-start; /* Aligns the navigation to the left */
+    margin-left: 20px; /* Add margin to align with the rest of the content */
+    margin-bottom: 10px; /* Space from the bottom of the header */
+}
+
 /* Image and heading container */
 .image-and-heading-container {
     display: flex;
@@ -43,6 +55,21 @@ header.SiteHeader {
     justify-content: space-between;
     margin-top: 20px;
 }
+
+.about-us-link {
+    font-size: 1em;
+    color: white; /* or any color that fits your design */
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #6d7bab; /* or any other color */
+    border-radius: 4px;
+    margin-left: 20px; /* or adjust based on your layout */
+}
+
+    .about-us-link:hover {
+        background: #575f8a; /* Darker shade for hover */
+        text-decoration: underline; /* Optional: adds an underline on hover */
+    }
 
 .containerImg {
     width: 75%;
@@ -108,7 +135,7 @@ header.SiteHeader {
     }
 
 /* Heading styles */
-h1, h3, h4 {
+h1, h3 {
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 0.5em;
     color: #333;
@@ -127,6 +154,7 @@ h3 {
 h4 {
     font-size: 1.3em;
     font-weight: 400;
+    color: white;
 }
 
 /* Footer styles */
@@ -136,7 +164,10 @@ h4 {
     font-size: 14px;
     padding: 20px;
     text-align: center;
+    color: white;
 }
+
+
 
 /* Button styles */
 .myButton {
@@ -187,6 +218,52 @@ transition: background-color 0.3s; / Smooth transition for hover effect */
     margin-top: 20px;
 }
 
+.about-us-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #82a2c2; /* Change as needed */
+}
+
+.profile-images {
+    display: flex;
+    justify-content: center; /* Centers the images in the container */
+    align-items: center; /* Align the images vertically */
+    gap: 50px; /* Spacing between images */
+    margin-bottom: 30px; /* Spacing between images and text */
+}
+
+.imageLeft {
+    width: 160px; /* Decrease the size of the larger image */
+    height: 160px; /* Keep the same height to maintain the aspect ratio */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.imageRight {
+    width: 155px; /* Increase the size of the smaller image */
+    height: 155px; /* Keep the same height to maintain the aspect ratio */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-us-text {
+    max-width: 800px; /* Maximum width of the text block */
+    margin: auto; /* Centers the block horizontally */
+}
+
+    .about-us-text h2 {
+        font-size: 2.5em; /* Size of the heading */
+        margin-bottom: 1em; /* Spacing after the heading */
+    }
+
+    .about-us-text p {
+        font-size: 1em; /* Size of the paragraph text */
+        line-height: 1.5; /* Line height of the paragraph text */
+        text-align: left; /* Align text to the left */
+        margin-bottom: 2em; /* Spacing after each paragraph */
+    }
+
+
 
 /* Custom styles for mobile responsiveness */
 @media (max-width: 768px) {
@@ -199,7 +276,10 @@ transition: background-color 0.3s; / Smooth transition for hover effect */
         font-size: 18px; /* Adjust title sizes for smaller screens */
     }
 
-    /* Additional styles if needed for this breakpoint */
+    .profile-images {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        gap: 10px; /* Reduce gap on smaller screens */
+    }
 }
 
 /* Media query for very small devices (mobile phones in portrait mode) */
@@ -250,5 +330,10 @@ transition: background-color 0.3s; / Smooth transition for hover effect */
     .SiteHeader img {
         width: 50px; /* Resize the header logo for small screens */
         height: auto; /* Adjust height automatically to maintain aspect ratio */
+    }
+
+    .profile-images {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        gap: 10px; /* Reduce gap on smaller screens */
     }
 }

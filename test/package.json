@@ -6,19 +6,16 @@
   "dependencies": {
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "geoip-lite": "^1.4.10",
     "mongoose": "^8.1.1",
     "puppeteer": "^22.3.0"
   },
-
   "scripts": {
-    "start": "cross-env SEED_DB=true nodemon app.js -e js,ejs,json",
+    "start": "cross-env SEED_DB=true nodemon app.js -e js,ejs,json, css",
     "test": "cross-env NODE_ENV=test mocha --require @babel/register test/test_runner.js",
     "watch:json": "nodemon --verbose --watch controllers/seeds/*.json -e json --exec npm run test",
     "dev": "concurrently --kill-others-on-fail \"npm run start\" \"npm run test\" \"npm run watch:json\""
   },
-
-
-
   "devDependencies": {
     "@babel/core": "^7.24.0",
     "@babel/register": "^7.23.7",

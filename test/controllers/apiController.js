@@ -124,21 +124,29 @@ module.exports = function (app) {
         }
     }));
 
+
+
+    // Importing a library for escaping HTML
+    const escapeHtml = require('escape-html');
+
     // Route to handle form submissions
     app.post('/submit-feedback', asyncRouteHandler(async (req, res) => {
-        // Extracting feedback details from the request body
-        const { feedbackName, emailAddress, feedback } = req.body;
+        // Extracting and immediately sanitizing feedback details from the request body
+        const feedbackName = escapeHtml(req.body.feedbackName);
+        const emailAddress = escapeHtml(req.body.emailAddress);
+        const feedback = escapeHtml(req.body.feedback);
 
         try {
-            // Create and save the feedback document
+            // Create and save the sanitized feedback document
             await Feedback.create({ feedbackName, emailAddress, feedback });
 
             console.log("Feedback submitted:", { feedbackName, emailAddress, feedback });
-            res.redirect('/'); // Redirect to the home page or a 'thank you' page
+            res.redirect('/'); // Redirect to a 'thank you' page
         } catch (err) {
             console.error("Error submitting feedback:", err);
             res.status(500).send('Error submitting feedback');
         }
     }));
+
 
 };

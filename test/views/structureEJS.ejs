@@ -26,10 +26,13 @@
     <header class="SiteHeader">
         <h1>Maths inCoding<img style = "float: right;" width="120" height = "120" src="\public\images\linux_site_logo.PNG" alt="Pi with numbers">
 	</h1>
-        <div id="missionStatement">
-            <h3>... learning maths through coding computer games</h3>
-        </div>
-    </header>
+                   <h3>... learning maths through coding computer games</h3>
+                </div>
+            <!-- New navigation div for About Us link -->
+            <nav class="header-bottom">
+                <a href="../public/about_us.html" class="about-us-link">About Us</a> 
+            </nav>
+       </header>
 
 <div class="content-container">
 
@@ -37,22 +40,10 @@
        <!-- Display sections -->
 
         <div class="content-container">
-
-        <% if (clearVideoFlags) { %>
-    <script>
-        // This script runs when the page is loaded
-        document.addEventListener('DOMContentLoaded', (event) => {
-            // Loop over localStorage items
-            for (let i = 0; i < localStorage.length; i++) {
-                const key = localStorage.key(i);
-                // Clear items that match the pattern used for video flags
-                if (key.startsWith('questionsAnswered_')) {
-                    localStorage.removeItem(key);
-                }
-            }
-        });
-    </script>
-<% } %>
+            <script>
+                // This script will clear the generic 'questionsAnswered' flag
+                localStorage.removeItem('questionsAnswered');
+            </script>
 
 
 
@@ -110,11 +101,11 @@
         </a>
 
     </div>
-    <a href="../public/feedback_form.html">
-        <div class="wordWrapper2">
-            <h4>If you have any queries about the information presented here, please click this link</h4>
-        </div>
-    </a>
+<a href="../public/feedback_form.html" class="feedback-link">
+    <div class="wordWrapper2">
+        <h4>If you have any queries about the information presented here, please click this link</h4>
+    </div>
+</a>
 </footer>
 </body>
 </html>

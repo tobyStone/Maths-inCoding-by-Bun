@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Maths questions starter</title>
     <link rel="icon" type="image/png" href="/public/images/linux_site_logo.png" sizes="32x32">
-    <link href="/../public/styleVideo.css" rel="stylesheet">
+    <link href="/../public/style.css" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -96,6 +96,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.location.href = 'https://corbettmaths.com/2013/05/03/sine-rule-missing-sides/';
             }
         } else {
+            alert("Else block")
+            const questionsAnsweredKey = `questionsAnswered`;
+            localStorage.setItem(questionsAnsweredKey, 'true');
             redirectToPreviousVideo();
         }
     });

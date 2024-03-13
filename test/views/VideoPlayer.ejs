@@ -31,15 +31,15 @@
         </div>
         </main>
         <script>
+        alert(localStorage)
             document.addEventListener('DOMContentLoaded', (event) => {
                 const video = document.getElementById('video');
                 const videoData = JSON.parse('<%- JSON.stringify(videoData[0]) %>');
 
 
                 video.addEventListener('timeupdate', function () {
-                    const questionsAnswered = localStorage.getItem(`questionsAnswered_${videoData.time_stop_1}`);
+                    const questionsAnswered = localStorage.getItem(`questionsAnswered`);
                     if (video.currentTime >= videoData.time_stop_1 && !questionsAnswered) {
-                        localStorage.setItem(`questionsAnswered_${videoData.time_stop_1}`, 'true');
                         video.pause();
                         window.location.href = videoData.link_questions_1;
                     }

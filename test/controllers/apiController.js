@@ -129,7 +129,11 @@ module.exports = function (app) {
     // Importing a library for escaping HTML
     const escapeHtml = require('escape-html');
 
-    // Route to handle form submissions
+    /**
+  * Handles submission of user feedback via a POST request.
+  * The user's name, email address, and feedback message are sanitized and stored.
+  * @param {Express.Application} app - The Express application instance to which the route is added.
+  */
     app.post('/submit-feedback', asyncRouteHandler(async (req, res) => {
         // Extracting and immediately sanitizing feedback details from the request body
         const feedbackName = escapeHtml(req.body.feedbackName);
@@ -141,7 +145,7 @@ module.exports = function (app) {
             await Feedback.create({ feedbackName, emailAddress, feedback });
 
             console.log("Feedback submitted:", { feedbackName, emailAddress, feedback });
-            res.redirect('/'); // Redirect to a 'thank you' page
+            res.redirect('/'); // Redirect to a landing page
         } catch (err) {
             console.error("Error submitting feedback:", err);
             res.status(500).send('Error submitting feedback');

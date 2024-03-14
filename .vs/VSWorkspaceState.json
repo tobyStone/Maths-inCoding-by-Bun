@@ -2,12 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\test",
-    "\\test\\config",
     "\\test\\controllers",
     "\\test\\controllers\\seeds",
     "\\test\\models",
+    "\\test\\public",
     "\\test\\test",
     "\\test\\views"
   ],
+  "SelectedNode": "\\test\\public\\feedback_form.html",
   "PreviewInSolutionExplorer": false
 }

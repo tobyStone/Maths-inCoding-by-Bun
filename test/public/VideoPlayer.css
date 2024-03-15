@@ -1,7 +1,7 @@
-﻿/* Fonts - Using the same font import as the filtering page */
+/* Fonts - Using the same font import as the filtering page */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
 
-﻿
+
 /* Reset browser styles */
 * {
     margin: 0;
@@ -39,6 +39,9 @@ header.SiteHeader {
     text-align: center;
     color: black;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between;
 }
 
     header.SiteHeader h1 {
@@ -47,6 +50,20 @@ header.SiteHeader {
         margin-bottom: 0.5em;
         font-weight: 700;
     }
+
+.header-bottom {
+    align-self: flex-start; /* Aligns the navigation to the left */
+    margin-left: 20px; /* Add margin to align with the rest of the content */
+    margin-bottom: 10px; /* Space from the bottom of the header */
+}
+
+/* Image and heading container */
+.image-and-heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 
 /* Heading styles */
 h1, h3, h4 {
@@ -130,7 +147,7 @@ button {
 }
 
     button:hover {
-        background-color: darken(#6d7bab, 10%); /* Darken the button on hover */
+        background-color: #6d7bab; /* Darken the button on hover */
     }
 
 

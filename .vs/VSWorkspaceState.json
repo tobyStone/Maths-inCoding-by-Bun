@@ -9,6 +9,6 @@
     "\\test\\test",
     "\\test\\views"
   ],
-  "SelectedNode": "\\test\\public\\feedback_form.html",
+  "SelectedNode": "\\test\\controllers\\apiController.js",
   "PreviewInSolutionExplorer": false
 }

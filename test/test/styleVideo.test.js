@@ -18,7 +18,7 @@ describe('CSS Styling for Video Page', function () {
 
 
         // Read the CSS file contents asynchronously
-        const cssContent = await fs.readFile('../maths_in_coding_by_node/public/styleVideo.css', 'utf-8');
+        const cssContent = await fs.readFile('../maths_in_coding_by_node/public/VideoPlayer.css', 'utf-8');
 
         // Set up the CSS and HTML content for the page
         const htmlContent = `

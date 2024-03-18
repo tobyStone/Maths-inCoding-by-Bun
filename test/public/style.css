@@ -20,12 +20,21 @@ body {
     color: #333;
 }
 
-
+/* Color Variables */
+:root {
+    --primary-color: #6d7bab;
+    --secondary-color: #575f8a;
+    --background-color: #82a2c2;
+    --text-color: #333;
+    --text-color-light: #fff;
+    --border-color: #ccc;
+    --shadow-color: rgba(0,0,0,0.2);
+}
 
 
 /* Header styles */
 header.SiteHeader {
-    background: #6d7bab;
+    background-color: rgb(109, 123, 171);
     padding: 20px 0;
     text-align: center;
     color: white;

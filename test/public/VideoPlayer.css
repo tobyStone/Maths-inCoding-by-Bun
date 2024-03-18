@@ -1,7 +1,3 @@
-/* Fonts - Using the same font import as the filtering page */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
-
-
 /* Reset browser styles */
 * {
     margin: 0;
@@ -65,27 +61,7 @@ header.SiteHeader {
     margin-top: 20px;
 }
 
-/* Heading styles */
-h1, h3, h4 {
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 0.5em;
-    color: #333;
-}
 
-h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-}
-
-h3 {
-    font-size: 1.8em;
-    font-weight: 600;
-}
-
-h4 {
-    font-size: 1.3em;
-    font-weight: 400;
-}
 
 
 
@@ -120,8 +96,6 @@ h4 {
     background: #6d7bab; /* Match the site header color */
     box-sizing: border-box; /* Include padding in the element's total width and height */
 }
-
-/* Since we're now using absolute positioning for the controls, no need for a top padding */
 
 
 /* Seek bar should match the button color scheme from the filtering page */

@@ -17,33 +17,40 @@
             <h3>... learning maths through coding computer games</h3>
         </div>
     </header>
-    <% if (videoData && videoData.length > 0) { %>
-        <div class="video-container" id="video-container">
-            <video controls class="video" id="video" preload="auto" poster="<%= videoData[0].imgSrc %>">
-                <source src="<%= videoData[0].video %>" type="video/mp4">
-            </video>
 
+       <% if (page && page.videoData && page.videoData.length > 0) { %>
+            <div class="video-container" id="video-container">
+                <!-- Video Player Content -->
+                <video controls class="video" id="video" preload="auto" poster="<%= page.videoData[0].imgSrc %>">
+                    <source src="<%= page.videoData[0].video %>" type="video/mp4">
+                </video>
             <div class="video-controls" id="video-controls">
                 <button id="play-pause-btn">Play</button>
                 <input type="range" id="volume-control" min="0" max="1" step="0.1">
                 <input type="range" id="seek-bar" min="0" value="0">
                 <span id="current-time">00:00</span> / <span id="total-duration">00:00</span>
             </div>
+
         </div>
+          <% if (page && page.description) { %>
+            <section class="description-container">
+                <h3><%= page.description %></h3>
+            </section>
+        <% } %>
+
         </main>
         <script>
            document.addEventListener('DOMContentLoaded', (event) => {
                 const video = document.getElementById('video');
-                const videoData = JSON.parse('<%- JSON.stringify(videoData[0]) %>');
+  const videoData = JSON.parse('<%- JSON.stringify(page.videoData) %>');
 
-
-                video.addEventListener('timeupdate', function () {
-                    const questionsAnswered = localStorage.getItem(`questionsAnswered`);
-                    if (video.currentTime >= videoData.time_stop_1 && !questionsAnswered) {
-                        video.pause();
-                        window.location.href = videoData.link_questions_1;
-                    }
-                });
+    video.addEventListener('timeupdate', function () {
+        const questionsAnswered = localStorage.getItem('questionsAnswered');
+        // Assuming time_stop_1 is a property on the first videoData object
+        if (video.currentTime >= videoData[0].time_stop_1 && !questionsAnswered) {
+            video.pause();
+            window.location.href = videoData[0].link_questions_1;
+        }        });
 
                 const params = new URLSearchParams(window.location.search);
                 const startTime = params.get('t');
@@ -105,10 +112,11 @@
             }
         </script>
     <% } %>
-
+ 
+ 
     <footer id="FatFooter">
     <div class="wordWrapper">
-        <h3>How to set up</h3>
+        <h4>How to set up</h4>
     </div>
     <div>
         <a href="https://www.youtube.com/watch?v=F1LzrEUtcHI" target="_blank">
@@ -138,11 +146,6 @@
         </a>
 
     </div>
-<a href="/../public/feedback_form.html" class="feedback-link">
-    <div class="wordWrapper2">
-        <h4>If you have any queries about the information presented here, please click this link</h4>
-    </div>
-</a>
 </footer>
 </body>
 </html>

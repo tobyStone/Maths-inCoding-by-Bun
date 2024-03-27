@@ -145,11 +145,37 @@ module.exports = function (app) {
             await Feedback.create({ feedbackName, emailAddress, feedback });
 
             console.log("Feedback submitted:", { feedbackName, emailAddress, feedback });
-            res.redirect('/'); // Redirect to a landing page
-        } catch (err) {
+            res.send(`
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Thank You!</title>
+                    <!-- Favicon -->
+                    <link rel="icon" type="image/png" href="/public/images/linux_site_logo.PNG" sizes="32x32">
+                    <!-- Stylesheet -->
+                    <link href="../public/style.css" rel="stylesheet">
+                </head>
+
+                <body>
+                    <header class="SiteHeader">
+                        <h1>Maths inCoding<img style="float: right;" width="120" height="120" src="/public/images/linux_site_logo.PNG" alt="Pi with numbers"></h1>
+                        <h3>... learning maths through coding computer games</h3>
+                    </header>
+
+                    <main class="thank-you-container">
+                        <!-- Thank You message after feedback submission -->
+                        <h1>Thank you for your feedback, ${feedbackName}!</h1>
+                        <a href="/" class="myButton">Return to the Landing Page</a>
+                    </main>
+                </body>
+                </html>
+    `);      } catch (err) {
             console.error("Error submitting feedback:", err);
             res.status(500).send('Error submitting feedback');
         }
+  
     }));
 
 

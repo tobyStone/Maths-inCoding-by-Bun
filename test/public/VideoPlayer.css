@@ -6,6 +6,8 @@
     font-size: 100%;
     vertical-align: baseline;
     box-sizing: border-box;
+    align-items: center; /* Centers children along the cross axis */
+    justify-content: center; /* Centers children along the main axis */
 }
 
 
@@ -37,7 +39,8 @@ header.SiteHeader {
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     display: flex;
     flex-direction: column; /* Stack children vertically */
-    justify-content: space-between;
+    align-items: center; /* Centers children along the cross axis */
+    justify-content: center; /* Centers children along the main axis */
 }
 
     header.SiteHeader h1 {
@@ -130,6 +133,12 @@ button {
 /* Feedback link */
 .wordWrapper2 {
     margin-top: 20px;
+}
+
+.description-container {
+    width: 100%; /* Full width */
+    text-align: center; /* Center text within the container */
+    margin: 0 auto; /* Center container in its parent if necessary */
 }
 
 

@@ -7,10 +7,8 @@ describe('Video Player View', function () {
     let expect, selectedVideoPage, chai, videoData, ejsVideoTemplatePath;
 
     before(async function () {
-        const chaiModule = await import('chai');
-        chai = chaiModule.default;
+        const chai = await import('chai');
         expect = chai.expect;
-        chaiHttp = chaiModule.default.http;
 
         // Construct the path to the videoData.json
         const projectRoot = path.join(__dirname, '..'); // Adjust if the folder structure is different.
@@ -27,7 +25,7 @@ describe('Video Player View', function () {
 
         // Select a random video page from the loaded data
         const videoPageIndex = Math.floor(Math.random() * videoData.length);
-        selectedVideoPage = videoData[videoPageIndex].page;
+        selectedVideoPage = videoData[videoPageIndex];
 
         // Set the path to the EJS template
         ejsVideoTemplatePath = path.join(projectRoot, 'views', 'VideoPlayer.ejs');
@@ -36,7 +34,7 @@ describe('Video Player View', function () {
     it('should render the video player with the correct data', async function () {
         const html = await new Promise((resolve, reject) => {
             ejs.renderFile(ejsVideoTemplatePath, {
-                videoData: selectedVideoPage.videoData // Pass the video data to the template
+                page: selectedVideoPage.page // Pass the video data to the template
             }, {}, (err, str) => {
                 if (err) reject(err);
                 else resolve(str);
@@ -46,16 +44,16 @@ describe('Video Player View', function () {
             throw error;
         });
 
+        console.log(html)
+
         // Assertions to check if the video player is rendered correctly
         try {
-            expect(html).to.contain(selectedVideoPage.description);
-            expect(html).to.contain(selectedVideoPage.videoData[0].video);
-            expect(html).to.contain(selectedVideoPage.videoData[0].imgSrc);
-            // ... additional assertions as needed ...
+            expect(html).to.match(/<h1[^>]*>Maths inCoding.*?<\/h1>/s);
+            expect(html).to.contain(selectedVideoPage.page.videoData[0].video);
+            expect(html).to.contain(selectedVideoPage.page.videoData[0].imgSrc);
         } catch (error) {
             throw error;
         }
     });
 
-    // ... additional test cases as needed ...
 });

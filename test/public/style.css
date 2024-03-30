@@ -192,7 +192,7 @@ h4 {
     margin-top: 20px; /* Space above the button */
     text-transform: uppercase; /* Uppercase text */
     font-weight: bold; /* Bold text */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Shadow for depth /
+    box-shadow: 2px 4px rgba(0,0,0,0.2); /* Shadow for depth /
 transition: background-color 0.3s; / Smooth transition for hover effect */
 }
 
@@ -273,6 +273,27 @@ transition: background-color 0.3s; / Smooth transition for hover effect */
     }
 
 
+
+.thank-you-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .thank-you-container:hover {
+        transform: scale(1.05);
+    }
+
+    .thank-you-container h1 {
+        color: #333;
+    }
+
+    .thank-you-container p {
+        color: #666;
+    }
 
 /* Custom styles for mobile responsiveness */
 @media (max-width: 768px) {

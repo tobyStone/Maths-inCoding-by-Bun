@@ -32,15 +32,15 @@ module.exports = function (app) {
 
     app.get('*/videoPlayer/*', asyncRouteHandler(async (req, res) => {
         const fullPath = req.path;
-        const videoContent = await Videos.findOne({
+        const videoData = await Videos.findOne({
             'page.url_stub': fullPath
         }).exec();
 
-        if (videoContent && videoContent.page &&
-            videoContent.page.videoData &&
-            videoContent.page.videoData.length > 0) {
+        if (videoData && videoData.page &&
+            videoData.page.videoData &&
+            videoData.page.videoData.length > 0) {
             res.render('VideoPlayer', {
-                videoData: videoContent.page.videoData
+                page: videoData.page
             });
         } else {
             res.status(404).send('Video not found');
@@ -171,11 +171,12 @@ module.exports = function (app) {
                     </main>
                 </body>
                 </html>
-    `);      } catch (err) {
+    `);
+        } catch (err) {
             console.error("Error submitting feedback:", err);
             res.status(500).send('Error submitting feedback');
         }
-  
+
     }));
 
 

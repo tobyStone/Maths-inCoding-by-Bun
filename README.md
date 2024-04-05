@@ -2,7 +2,7 @@
 using Bun to bundle Maths inCoding website and NodeJS/Express server
 
 
-![](https://github.com/tobyStone/Maths-inCoding-by-Bun/blob/main/gif_folder/website_running.gif)
+![](https://github.com/tobyStone/Maths-inCoding-by-Bun/blob/main/gif_folder/landing_page.PNG)
 
 
 

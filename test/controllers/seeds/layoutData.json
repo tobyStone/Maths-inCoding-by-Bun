@@ -7,7 +7,7 @@
 				{
 					"id": "number",
 					"title": "Number",
-					"imgSrc": "public/images/number_image.PNG",
+					"imgSrc": "public/images/number_image.webp",
 					"imgAlt": "Number",
 					"link": "/number"
 
@@ -15,28 +15,28 @@
 				{
 					"id": "algebra",
 					"title": "Algebra",
-					"imgSrc": "public/images/algebra_image.PNG",
+					"imgSrc": "public/images/algebra_image.webp",
 					"imgAlt": "Algebra",
 					"link": "/algebra"
 				},
 				{
 					"id": "ratio",
 					"title": "Ratio and Proportion",
-					"imgSrc": "public/images/ratio2.PNG",
+					"imgSrc": "public/images/ratio2.webp",
 					"imgAlt": "Ratio and Proportion",
 					"link": "/ratio"
 				},
 				{
 					"id": "probability",
 					"title": "Probability",
-					"imgSrc": "public/images/probability.PNG",
+					"imgSrc": "public/images/probability.webp",
 					"imgAlt": "Probability",
 					"link": "/probability"
 				},
 				{
 					"id": "geometry",
 					"title": "Geometry",
-					"imgSrc": "public/images/geometry.PNG",
+					"imgSrc": "public/images/geometry.webp",
 					"imgAlt": "Geometry",
 					"link": "/geometry"
 
@@ -44,7 +44,7 @@
 				{
 					"id": "statistics",
 					"title": "Statistics",
-					"imgSrc": "public/images/statistics.PNG",
+					"imgSrc": "public/images/statistics.webp",
 					"imgAlt": "Statistics",
 					"link": "/statistics"
 				}
@@ -60,7 +60,7 @@
 				{
 					"id": "Age 11-12",
 					"title": "Age 11-12",
-					"imgSrc": "public/images/age11_12.PNG",
+					"imgSrc": "public/images/age11_12.webp",
 					"imgAlt": "Age 11 to 12",
 					"link": "/number/11_12_age_maths",
 					"UK_yearGroup": "Year 7",
@@ -69,7 +69,7 @@
 				{
 					"id": "Age 12-13",
 					"title": "Age 12-13",
-					"imgSrc": "public/images/age12_13.PNG",
+					"imgSrc": "public/images/age12_13.webp",
 					"imgAlt": "Age 12 to 13",
 					"link": "/number/12_13_age_maths",
 					"UK_yearGroup": "Year 8",
@@ -78,7 +78,7 @@
 				{
 					"id": "Age 13-14",
 					"title": "Age 13-14",
-					"imgSrc": "public/images/age13_14.PNG",
+					"imgSrc": "public/images/age13_14.webp",
 					"imgAlt": "Age 13 to 14",
 					"link": "/number/13_14_age_maths",
 					"UK_yearGroup": "Year 9",
@@ -87,7 +87,7 @@
 				{
 					"id": "Age 14-15",
 					"title": "Age 14-15",
-					"imgSrc": "public/images/age14_15.PNG",
+					"imgSrc": "public/images/age14_15.webp",
 					"imgAlt": "Age 14 to 15",
 					"link": "/number/14_15_age_maths",
 					"UK_yearGroup": "Year 10",
@@ -96,7 +96,7 @@
 				{
 					"id": "Age 15-16",
 					"title": "Age 15-16",
-					"imgSrc": "public/images/age15_16.PNG",
+					"imgSrc": "public/images/age15_16.webp",
 					"imgAlt": "Age 15 to 16",
 					"link": "/number/15_16_age_maths",
 					"UK_yearGroup": "Year 11",
@@ -105,7 +105,7 @@
 				{
 					"id": "Age 16-18",
 					"title": "Age 16-18",
-					"imgSrc": "public/images/age16_18.PNG",
+					"imgSrc": "public/images/age16_18.webp",
 					"imgAlt": "Age 16 to 18",
 					"link": "/number/16_18_age_maths",
 					"UK_yearGroup": "Year 12/13",
@@ -124,7 +124,7 @@
 				{
 					"id": "Age 11-12",
 					"title": "Age 11-12",
-					"imgSrc": "public/images/age11_12.PNG",
+					"imgSrc": "public/images/age11_12.webp",
 					"imgAlt": "Age 11 to 12",
 					"link": "/algebra/11_12_age_maths",
 					"UK_yearGroup": "Year 7",
@@ -136,7 +136,7 @@
 
 					"id": "Age 12-13",
 					"title": "Age 12-13",
-					"imgSrc": "public/images/age12_13.PNG",
+					"imgSrc": "public/images/age12_13.webp",
 					"imgAlt": "Age 12 to 13",
 					"link": "/algebra/12_13_age_maths",
 					"UK_yearGroup": "Year 8",
@@ -149,7 +149,7 @@
 
 					"id": "Age 13-14",
 					"title": "Age 13-14",
-					"imgSrc": "public/images/age13_14.PNG",
+					"imgSrc": "public/images/age13_14.webp",
 					"imgAlt": "Age 13 to 14",
 					"link": "/algebra/13_14_age_maths",
 					"UK_yearGroup": "Year 9",
@@ -162,7 +162,7 @@
 
 					"id": "Age 14-15",
 					"title": "Age 14-15",
-					"imgSrc": "public/images/age14_15.PNG",
+					"imgSrc": "public/images/age14_15.webp",
 					"imgAlt": "Age 14 to 15",
 					"link": "/algebra/14_15_age_maths",
 					"UK_yearGroup": "Year 10",
@@ -175,7 +175,7 @@
 
 					"id": "Age 15-16",
 					"title": "Age 15-16",
-					"imgSrc": "public/images/age15_16.PNG",
+					"imgSrc": "public/images/age15_16.webp",
 					"imgAlt": "Age 15 to 16",
 					"link": "/algebra/15_16_age_maths",
 					"UK_yearGroup": "Year 11",
@@ -188,7 +188,7 @@
 
 					"id": "Age 16-18",
 					"title": "Age 16-18",
-					"imgSrc": "public/images/age16_18.PNG",
+					"imgSrc": "public/images/age16_18.webp",
 					"imgAlt": "Age 16 to 18",
 					"link": "/algebra/16_18_age_maths",
 					"UK_yearGroup": "Year 12/13",
@@ -207,7 +207,7 @@
 				{
 					"id": "Age 11-12",
 					"title": "Age 11-12",
-					"imgSrc": "public/images/age11_12.PNG",
+					"imgSrc": "public/images/age11_12.webp",
 					"imgAlt": "Age 11 to 12",
 					"link": "/ratio/11_12_age_maths",
 					"UK_yearGroup": "Year 7",
@@ -218,7 +218,7 @@
 
 					"id": "Age 12-13",
 					"title": "Age 12-13",
-					"imgSrc": "public/images/age12_13.PNG",
+					"imgSrc": "public/images/age12_13.webp",
 					"imgAlt": "Age 12 to 13",
 					"link": "/ratio/12_13_age_maths",
 					"UK_yearGroup": "Year 8",
@@ -230,7 +230,7 @@
 
 					"id": "Age 13-14",
 					"title": "Age 13-14",
-					"imgSrc": "public/images/age13_14.PNG",
+					"imgSrc": "public/images/age13_14.webp",
 					"imgAlt": "Age 13 to 14",
 					"link": "/ratio/13_14_age_maths",
 					"UK_yearGroup": "Year 9",
@@ -242,7 +242,7 @@
 
 					"id": "Age 14-15",
 					"title": "Age 14-15",
-					"imgSrc": "public/images/age14_15.PNG",
+					"imgSrc": "public/images/age14_15.webp",
 					"imgAlt": "Age 14 to 15",
 					"link": "/ratio/14_15_age_maths",
 					"UK_yearGroup": "Year 10",
@@ -254,7 +254,7 @@
 
 					"id": "Age 15-16",
 					"title": "Age 15-16",
-					"imgSrc": "public/images/age15_16.PNG",
+					"imgSrc": "public/images/age15_16.webp",
 					"imgAlt": "Age 15 to 16",
 					"link": "/ratio/15_16_age_maths",
 					"UK_yearGroup": "Year 11",
@@ -266,7 +266,7 @@
 
 					"id": "Age 16-18",
 					"title": "Age 16-18",
-					"imgSrc": "public/images/age16_18.PNG",
+					"imgSrc": "public/images/age16_18.webp",
 					"imgAlt": "Age 16 to 18",
 					"link": "/ratio/16_18_age_maths",
 					"UK_yearGroup": "Year 12/13",
@@ -284,7 +284,7 @@
 				{
 					"id": "Age 11-12",
 					"title": "Age 11-12",
-					"imgSrc": "public/images/age11_12.PNG",
+					"imgSrc": "public/images/age11_12.webp",
 					"imgAlt": "Age 11 to 12",
 					"link": "/probability/11_12_age_maths",
 					"UK_yearGroup": "Year 7",
@@ -295,7 +295,7 @@
 
 					"id": "Age 12-13",
 					"title": "Age 12-13",
-					"imgSrc": "public/images/age12_13.PNG",
+					"imgSrc": "public/images/age12_13.webp",
 					"imgAlt": "Age 12 to 13",
 					"link": "/probability/12_13_age_maths",
 					"UK_yearGroup": "Year 8",
@@ -307,7 +307,7 @@
 
 					"id": "Age 13-14",
 					"title": "Age 13-14",
-					"imgSrc": "public/images/age13_14.PNG",
+					"imgSrc": "public/images/age13_14.webp",
 					"imgAlt": "Age 13 to 14",
 					"link": "/probability/13_14_age_maths",
 					"UK_yearGroup": "Year 9",
@@ -319,7 +319,7 @@
 
 					"id": "Age 14-15",
 					"title": "Age 14-15",
-					"imgSrc": "public/images/age14_15.PNG",
+					"imgSrc": "public/images/age14_15.webp",
 					"imgAlt": "Age 14 to 15",
 					"link": "/probability/14_15_age_maths",
 					"UK_yearGroup": "Year 10",
@@ -331,7 +331,7 @@
 
 					"id": "Age 15-16",
 					"title": "Age 15-16",
-					"imgSrc": "public/images/age15_16.PNG",
+					"imgSrc": "public/images/age15_16.webp",
 					"imgAlt": "Age 15 to 16",
 					"link": "/probability/15_16_age_maths",
 					"UK_yearGroup": "Year 11",
@@ -343,7 +343,7 @@
 
 					"id": "Age 16-18",
 					"title": "Age 16-18",
-					"imgSrc": "public/images/age16_18.PNG",
+					"imgSrc": "public/images/age16_18.webp",
 					"imgAlt": "Age 16 to 18",
 					"link": "/probability/16_18_age_maths",
 					"UK_yearGroup": "Year 12/13",
@@ -361,7 +361,7 @@
 				{
 					"id": "Age 11-12",
 					"title": "Age 11-12",
-					"imgSrc": "public/images/age11_12.PNG",
+					"imgSrc": "public/images/age11_12.webp",
 					"imgAlt": "Age 11 to 12",
 					"link": "/geometry/11_12_age_maths",
 					"UK_yearGroup": "Year 7",
@@ -372,7 +372,7 @@
 
 					"id": "Age 12-13",
 					"title": "Age 12-13",
-					"imgSrc": "public/images/age12_13.PNG",
+					"imgSrc": "public/images/age12_13.webp",
 					"imgAlt": "Age 12 to 13",
 					"link": "/geometry/12_13_age_maths",
 					"UK_yearGroup": "Year 8",
@@ -384,7 +384,7 @@
 
 					"id": "Age 13-14",
 					"title": "Age 13-14",
-					"imgSrc": "public/images/age13_14.PNG",
+					"imgSrc": "public/images/age13_14.webp",
 					"imgAlt": "Age 13 to 14",
 					"link": "/geometry/13_14_age_maths",
 					"UK_yearGroup": "Year 9",
@@ -396,7 +396,7 @@
 
 					"id": "Age 14-15",
 					"title": "Age 14-15",
-					"imgSrc": "public/images/age14_15.PNG",
+					"imgSrc": "public/images/age14_15.webp",
 					"imgAlt": "Age 14 to 15",
 					"link": "/geometry/14_15_age_maths",
 					"UK_yearGroup": "Year 10",
@@ -408,7 +408,7 @@
 
 					"id": "Age 15-16",
 					"title": "Age 15-16",
-					"imgSrc": "public/images/age15_16.PNG",
+					"imgSrc": "public/images/age15_16.webp",
 					"imgAlt": "Age 15 to 16",
 					"link": "/geometry/15_16_age_maths",
 					"UK_yearGroup": "Year 11",
@@ -420,7 +420,7 @@
 
 					"id": "Age 16-18",
 					"title": "Age 16-18",
-					"imgSrc": "public/images/age16_18.PNG",
+					"imgSrc": "public/images/age16_18.webp",
 					"imgAlt": "Age 16 to 18",
 					"link": "/geometry/16_18_age_maths",
 					"UK_yearGroup": "Year 12/13",
@@ -438,7 +438,7 @@
 				{
 					"id": "Age 11-12",
 					"title": "Age 11-12",
-					"imgSrc": "public/images/age11_12.PNG",
+					"imgSrc": "public/images/age11_12.webp",
 					"imgAlt": "Age 11 to 12",
 					"link": "/statistics/11_12_age_maths",
 					"UK_yearGroup": "Year 7",
@@ -449,7 +449,7 @@
 
 					"id": "Age 12-13",
 					"title": "Age 12-13",
-					"imgSrc": "public/images/age12_13.PNG",
+					"imgSrc": "public/images/age12_13.webp",
 					"imgAlt": "Age 12 to 13",
 					"link": "/statistics/12_13_age_maths",
 					"UK_yearGroup": "Year 8",
@@ -461,7 +461,7 @@
 
 					"id": "Age 13-14",
 					"title": "Age 13-14",
-					"imgSrc": "public/images/age13_14.PNG",
+					"imgSrc": "public/images/age13_14.webp",
 					"imgAlt": "Age 13 to 14",
 					"link": "/statistics/13_14_age_maths",
 					"UK_yearGroup": "Year 9",
@@ -473,7 +473,7 @@
 
 					"id": "Age 14-15",
 					"title": "Age 14-15",
-					"imgSrc": "public/images/age14_15.PNG",
+					"imgSrc": "public/images/age14_15.webp",
 					"imgAlt": "Age 14 to 15",
 					"link": "/statistics/14_15_age_maths",
 					"UK_yearGroup": "Year 10",
@@ -485,7 +485,7 @@
 
 					"id": "Age 15-16",
 					"title": "Age 15-16",
-					"imgSrc": "public/images/age15_16.PNG",
+					"imgSrc": "public/images/age15_16.webp",
 					"imgAlt": "Age 15 to 16",
 					"link": "/statistics/15_16_age_maths",
 					"UK_yearGroup": "Year 11",
@@ -497,7 +497,7 @@
 
 					"id": "Age 16-18",
 					"title": "Age 16-18",
-					"imgSrc": "public/images/age16_18.PNG",
+					"imgSrc": "public/images/age16_18.webp",
 					"imgAlt": "Age 16 to 18",
 					"link": "/statistics/16_18_age_maths",
 					"UK_yearGroup": "Year 12/13",
@@ -518,7 +518,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/number/11_12_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -528,7 +528,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/number/11_12_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -537,7 +537,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/number/11_12_age_maths/videoPlayer/water_bucket.js"
 
@@ -547,7 +547,7 @@
 
 					"id": "Physics simulator",
 					"title": "Physics simulator in Scratch",
-					"imgSrc": "/public/images/physics_simulator.PNG",
+					"imgSrc": "/public/images/physics_simulator.webp",
 					"imgAlt": "physics simulator",
 					"link": "/number/11_12_age_maths/videoPlayer/physics_simulator.js"
 
@@ -557,7 +557,7 @@
 
 					"id": "Egg Hatching in Roblox",
 					"title": "Egg Hatching in Roblox",
-					"imgSrc": "/public/images/eggHatching.PNG",
+					"imgSrc": "/public/images/eggHatching.webp",
 					"imgAlt": "Egg Hatching in Roblox",
 					"link": "/number/11_12_age_maths/videoPlayer/egg_hatching.js"
 
@@ -584,7 +584,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/algebra/11_12_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -594,7 +594,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/algebra/11_12_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -603,7 +603,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/algebra/11_12_age_maths/videoPlayer/water_bucket.js"
 
@@ -650,7 +650,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/ratio/11_12_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -660,7 +660,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/ratio/11_12_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -669,7 +669,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/ratio/11_12_age_maths/videoPlayer/water_bucket.js"
 
@@ -716,7 +716,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/probability/11_12_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -726,7 +726,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/probability/11_12_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -735,7 +735,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/probability/11_12_age_maths/videoPlayer/water_bucket.js"
 
@@ -782,7 +782,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/geometry/11_12_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -792,7 +792,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/geometry/11_12_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -801,7 +801,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/geometry/11_12_age_maths/videoPlayer/water_bucket.js"
 
@@ -848,7 +848,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/statistics/11_12_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -858,7 +858,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/statistics/11_12_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -867,7 +867,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/statistics/11_12_age_maths/videoPlayer/water_bucket.js"
 
@@ -917,7 +917,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/number/12_13_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -927,7 +927,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/number/12_13_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -936,7 +936,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/number/12_13_age_maths/videoPlayer/water_bucket.js"
 
@@ -983,7 +983,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/algebra/12_13_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -993,7 +993,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/algebra/12_13_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1002,7 +1002,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/algebra/12_13_age_maths/videoPlayer/water_bucket.js"
 
@@ -1049,7 +1049,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/ratio/12_13_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1059,7 +1059,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/ratio/12_13_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1068,7 +1068,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/ratio/12_13_age_maths/videoPlayer/water_bucket.js"
 
@@ -1115,7 +1115,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/probability/12_13_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1125,7 +1125,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/probability/12_13_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1134,7 +1134,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/probability/12_13_age_maths/videoPlayer/water_bucket.js"
 
@@ -1181,7 +1181,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/geometry/12_13_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1191,7 +1191,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/geometry/12_13_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1200,7 +1200,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/geometry/12_13_age_maths/videoPlayer/water_bucket.js"
 
@@ -1247,7 +1247,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/statistics/12_13_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1257,7 +1257,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/statistics/12_13_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1266,7 +1266,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/statistics/12_13_age_maths/videoPlayer/water_bucket.js"
 
@@ -1315,7 +1315,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/number/13_14_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1325,7 +1325,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/number/13_14_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1334,7 +1334,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/number/13_14_age_maths/videoPlayer/water_bucket.js"
 
@@ -1381,7 +1381,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/algebra/13_14_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1391,7 +1391,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/algebra/13_14_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1400,7 +1400,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/algebra/13_14_age_maths/videoPlayer/water_bucket.js"
 
@@ -1447,7 +1447,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/ratio/13_14_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1457,7 +1457,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/ratio/13_14_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1466,7 +1466,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/ratio/13_14_age_maths/videoPlayer/water_bucket.js"
 
@@ -1513,7 +1513,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/probability/13_14_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1523,7 +1523,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/probability/13_14_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1532,7 +1532,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/probability/13_14_age_maths/videoPlayer/water_bucket.js"
 
@@ -1579,7 +1579,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/geometry/13_14_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1589,7 +1589,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/geometry/13_14_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1598,7 +1598,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/geometry/13_14_age_maths/videoPlayer/water_bucket.js"
 
@@ -1645,7 +1645,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/statistics/13_14_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1655,7 +1655,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/statistics/13_14_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1664,7 +1664,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/statistics/13_14_age_maths/videoPlayer/water_bucket.js"
 
@@ -1714,7 +1714,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/number/14_15_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1724,7 +1724,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/number/14_15_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1733,7 +1733,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/number/14_15_age_maths/videoPlayer/water_bucket.js"
 
@@ -1781,7 +1781,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/algebra/14_15_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1791,7 +1791,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/algebra/14_15_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1800,7 +1800,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/algebra/14_15_age_maths/videoPlayer/water_bucket.js"
 
@@ -1848,7 +1848,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/ratio/14_15_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1858,7 +1858,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/ratio/14_15_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1867,7 +1867,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/ratio/14_15_age_maths/videoPlayer/water_bucket.js"
 
@@ -1915,7 +1915,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/probability/14_15_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1925,7 +1925,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/probability/14_15_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -1934,7 +1934,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/probability/14_15_age_maths/videoPlayer/water_bucket.js"
 
@@ -1982,7 +1982,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/geometry/14_15_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -1992,7 +1992,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/geometry/14_15_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2001,7 +2001,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/geometry/14_15_age_maths/videoPlayer/water_bucket.js"
 
@@ -2049,7 +2049,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/statistics/14_15_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2059,7 +2059,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/statistics/14_15_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2068,7 +2068,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/statistics/14_15_age_maths/videoPlayer/water_bucket.js"
 
@@ -2119,7 +2119,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/number/15_16_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2129,7 +2129,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/number/15_16_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2138,7 +2138,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/number/15_16_age_maths/videoPlayer/water_bucket.js"
 
@@ -2186,7 +2186,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/algebra/15_16_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2196,7 +2196,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/algebra/15_16_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2205,7 +2205,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/algebra/15_16_age_maths/videoPlayer/water_bucket.js"
 
@@ -2253,7 +2253,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/ratio/15_16_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2262,8 +2262,8 @@
 				{
 
 					"id": "3D game engine in Scratch",
-					"title": "3D game engine in Scratch in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"title": "3D game engine in Scratch",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/ratio/15_16_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2272,7 +2272,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/ratio/15_16_age_maths/videoPlayer/water_bucket.js"
 
@@ -2320,7 +2320,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/probability/15_16_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2330,7 +2330,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/probability/15_16_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2339,7 +2339,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/probability/15_16_age_maths/videoPlayer/water_bucket.js"
 
@@ -2387,7 +2387,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/geometry/15_16_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2397,7 +2397,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/geometry/15_16_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2406,7 +2406,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/geometry/15_16_age_maths/videoPlayer/water_bucket.js"
 
@@ -2454,7 +2454,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/statistics/15_16_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2464,7 +2464,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/statistics/15_16_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2473,7 +2473,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/statistics/15_16_age_maths/videoPlayer/water_bucket.js"
 
@@ -2522,7 +2522,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/number/16_18_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2532,7 +2532,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/number/16_18_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2541,7 +2541,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/number/16_18_age_maths/videoPlayer/water_bucket.js"
 
@@ -2589,7 +2589,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/algebra/16_18_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2599,7 +2599,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/algebra/16_18_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2608,7 +2608,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/algebra/16_18_age_maths/videoPlayer/water_bucket.js"
 
@@ -2656,7 +2656,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/ratio/16_18_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2666,7 +2666,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/ratio/16_18_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2675,7 +2675,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/ratio/16_18_age_maths/videoPlayer/water_bucket.js"
 
@@ -2723,7 +2723,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/probability/16_18_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2733,7 +2733,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/probability/16_18_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2742,7 +2742,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/probability/16_18_age_maths/videoPlayer/water_bucket.js"
 
@@ -2790,7 +2790,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/geometry/16_18_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2800,7 +2800,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/geometry/16_18_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2809,7 +2809,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/geometry/16_18_age_maths/videoPlayer/water_bucket.js"
 
@@ -2857,7 +2857,7 @@
 
 					"id": "Lemonoids",
 					"title": "Lemonoids in Scratch",
-					"imgSrc": "/public/images/lemonoids.PNG",
+					"imgSrc": "/public/images/lemonoids.webp",
 					"imgAlt": "Lemonoids",
 					"link": "/statistics/16_18_age_maths/videoPlayer/lemonoids_coding.js"
 
@@ -2867,7 +2867,7 @@
 
 					"id": "3D game engine in Scratch",
 					"title": "3D game engine in Scratch",
-					"imgSrc": "/public/images/3D_game_engine.PNG",
+					"imgSrc": "/public/images/3D_game_engine.webp",
 					"imgAlt": "3D game engine in Scratch",
 					"link": "/statistics/16_18_age_maths/videoPlayer/3D_game_engine_Scratch.js"
 				},
@@ -2876,7 +2876,7 @@
 
 					"id": "water bucket",
 					"title": "Water Bucket in Python",
-					"imgSrc": "/public/images/water_bucket.PNG",
+					"imgSrc": "/public/images/water_bucket.webp",
 					"imgAlt": "water bucket",
 					"link": "/statistics/16_18_age_maths/videoPlayer/water_bucket.js"
 

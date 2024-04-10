@@ -67,17 +67,18 @@ header.SiteHeader {
 
 .about-us-link {
     font-size: 1em;
-    color: white; /* or any color that fits your design */
+    color: white;
     text-decoration: none;
     padding: 8px 15px;
-    background: #6d7bab; /* or any other color */
+    background: #445577;
     border-radius: 4px;
-    margin-left: 20px; /* or adjust based on your layout */
+    margin-left: 20px;
+    /
 }
 
     .about-us-link:hover {
-        background: #575f8a; /* Darker shade for hover */
-        text-decoration: underline; /* Optional: adds an underline on hover */
+        background: #2c3e50;
+        text-decoration: underline;
     }
 
 .containerImg {

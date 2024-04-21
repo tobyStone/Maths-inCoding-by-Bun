@@ -14,4 +14,4 @@ Setting up:
 4) Download the bun version you want to use (Linux/Windows) from https://bun.sh/
 5) When both are downloaded, navigate using a terminal to the cloned folder and type 'bun install'. It will need to access package.json in order to load the dependencies for this project.
 6) Type 'bun run dev' to run tests and website on localhost 3000.
-7) For images/videos etc to work you will need to download these separately into public/images or public/videos. The maths questions folder is public/images/question_images
+7) Please let me know if any of this doesn't work. Feedback in general would be very much appreciated. 

@@ -13,5 +13,5 @@ Setting up:
 3) Install node from https://nodejs.org/en/download. 
 4) Download the bun version you want to use (Linux/Windows) from https://bun.sh/
 5) When both are downloaded, navigate using a terminal to the cloned folder and type 'bun install'. It will need to access package.json in order to load the dependencies for this project.
-6) Type 'bun run dev' to run tests and website on localhost 3000.
+6) Type 'bun run dev' to run tests and website on secure socket (https) on localhost 3000.
 7) Please let me know if any of this doesn't work. Feedback in general would be very much appreciated. 

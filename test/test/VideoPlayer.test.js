@@ -44,7 +44,7 @@ describe('Video Player View', function () {
             throw error;
         });
 
-        console.log(html)
+        //        console.log(html)
 
         // Assertions to check if the video player is rendered correctly
         try {

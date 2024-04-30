@@ -35,7 +35,7 @@ describe('API Controller', function () {
         // Extend timeout to accommodate seeding time if needed
         this.timeout(TIMEOUT);
 
-        console.log('Starting dynamic imports for tests...');
+        //       console.log('Starting dynamic imports for tests...');
 
         // Dynamically import supertest and the app
         const supertestModule = await import('supertest');
@@ -51,7 +51,7 @@ describe('API Controller', function () {
         const layoutModule = await import('../models/linkedPage.js');
         global.Layout = layoutModule.default;
 
-        console.log('Dynamic imports completed. Tests can now start.');
+        //       console.log('Dynamic imports completed. Tests can now start.');
     });
 
 

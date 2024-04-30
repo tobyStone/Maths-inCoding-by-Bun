@@ -3,12 +3,11 @@
     "",
     "\\test",
     "\\test\\controllers",
-    "\\test\\controllers\\seeds",
-    "\\test\\models",
     "\\test\\public",
     "\\test\\public\\fonts",
     "\\test\\public\\images",
     "\\test\\public\\images\\question_images (2)",
+    "\\test\\public\\videos",
     "\\test\\test",
     "\\test\\views"
   ],

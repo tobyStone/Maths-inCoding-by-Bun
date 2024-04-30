@@ -92,7 +92,7 @@ module.exports = function (app) {
             // Alternatively, for real client IP if behind a proxy
             // const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
             const geo = geoip.lookup(ip);
-            console.log("IP: ", ip, "Geo: ", geo); // Debugging line
+            //            console.log("IP: ", ip, "Geo: ", geo); // Debugging line
 
 
 

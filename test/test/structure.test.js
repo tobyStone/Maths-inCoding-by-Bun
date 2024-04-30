@@ -81,7 +81,7 @@ describe('Layout View', function () {
                     }
                 });
 
-                console.log(`Page ${pageData.page.url_stub} passed the tests.`);
+                //                console.log(`Page ${pageData.page.url_stub} passed the tests.`);
             } catch (error) {
                 // If an assertion fails, log the error and the failing page
                 console.error(`Test failed for page ${pageData.page.url_stub}:`, error);

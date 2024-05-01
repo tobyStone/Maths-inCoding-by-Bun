@@ -35,6 +35,10 @@ const options = {
 
 console.log('Hello world');
 
+app.get("/", (req, res) => {
+    res.send("Hello World!");
+});
+
 // Handle the SIGINT event to gracefully shut down the server
 process.on('SIGINT', function () {
     console.log("\nGracefully shutting down from SIGINT (Ctrl+C)");

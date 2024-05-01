@@ -17,7 +17,7 @@ const options = {
     key: fs.readFileSync('./ssl certificate/key.pem'),
     cert: fs.readFileSync('./ssl certificate/cert.pem')
 };
-
+//
 // Initialize controllers and connect to DB
 (async () => {
     await init(app);
@@ -38,7 +38,7 @@ const options = {
 
 console.log('Hello world');
 
-app.get("/", (req, res) => {
+app.get("/testing", (req, res) => {
     res.send("Hello World!");
 });
 

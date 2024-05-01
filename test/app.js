@@ -6,7 +6,7 @@ const https = require('https');
 const fs = require('fs');
 
 const app = express();
-const PORT = 80;
+const PORT = process.env.PORT || 3000;
 const HOST = '0.0.0.0';
 
 app.set('view engine', 'ejs');
@@ -25,12 +25,15 @@ const options = {
     apiController(app);
 
     // Start the server only if not in test mode
-    if (process.env.NODE_ENV !== 'test') {
-        // Create an HTTPS server and pass the Express app as the handler
-        const httpsServer = https.createServer(options, app);
+    //if (process.env.NODE_ENV !== 'test') {
+    //    // Create an HTTPS server and pass the Express app as the handler
+    //    const httpsServer = https.createServer(options, app);
 
-        httpsServer.listen(PORT, HOST, () => console.log(`Server running on ${HOST}:${PORT}`));
-    }
+    //    httpsServer.listen(PORT, HOST, () => console.log(`Server running on ${HOST}:${PORT}`));
+    //}
+    app.listen(port, () => {
+        console.log(`App listening at http://localhost:${port}`);
+    });
 })();
 
 console.log('Hello world');

@@ -11,7 +11,7 @@ const HOST = '0.0.0.0';
 console.log("DIRNAME: ", __dirname)
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '..','test', 'views'));
 
 app.use('/', express.static(__dirname + '/public'));
 

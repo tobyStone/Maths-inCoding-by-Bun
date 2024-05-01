@@ -10,7 +10,7 @@ const PORT = 3000;
 const HOST = '0.0.0.0';
 
 app.set('view engine', 'ejs');
-app.use('/public', express.static(__dirname + '/public'));
+app.use('/', express.static(__dirname + '/public'));
 
 // SSL options
 const options = {

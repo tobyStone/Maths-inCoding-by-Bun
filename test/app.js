@@ -6,7 +6,7 @@ const https = require('https');
 const fs = require('fs');
 
 const app = express();
-const PORT = 3000;
+const PORT = 80;
 const HOST = '0.0.0.0';
 
 app.set('view engine', 'ejs');

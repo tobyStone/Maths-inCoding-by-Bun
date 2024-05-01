@@ -13,7 +13,7 @@ console.log("DIRNAME: ", __dirname)
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '..','test', 'views'));
 
-app.use('/', express.static(__dirname + '/test/public'));
+app.use('/test', express.static(__dirname + '/test/public'));
 
 // SSL options
 const options = {

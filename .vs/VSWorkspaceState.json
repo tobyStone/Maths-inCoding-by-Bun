@@ -1,15 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\test",
-    "\\test\\controllers",
-    "\\test\\public",
-    "\\test\\public\\fonts",
-    "\\test\\public\\images",
-    "\\test\\public\\images\\question_images (2)",
-    "\\test\\public\\videos",
-    "\\test\\test",
-    "\\test\\views"
+    "\\test"
   ],
+  "SelectedNode": "\\test\\vercel.json",
   "PreviewInSolutionExplorer": false
 }

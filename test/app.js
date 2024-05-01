@@ -8,6 +8,7 @@ const fs = require('fs');
 const app = express();
 const PORT = 3000;
 const HOST = '0.0.0.0';
+console.log("DIRNAME: ", __dirname)
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));

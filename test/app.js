@@ -13,7 +13,7 @@ console.log("Hello. In app.js")
 console.log("DIRNAME: ", __dirname)
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '..','test', 'views'));
+app.set('views', path.join(__dirname,'/views'));
 
 app.use('/public', express.static(__dirname + '/public'));
 

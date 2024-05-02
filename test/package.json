@@ -15,7 +15,7 @@
     "test": "cross-env NODE_ENV=test mocha --require @babel/register test/test_runner.js",
     "watch:json": "nodemon --verbose --watch controllers/seeds/*.json -e json --exec npm run test",
     "dev": "concurrently --kill-others-on-fail \"npm run start\" \"npm run test\" \"npm run watch:json\"",
-    "production": "cross-env SEED_DB=true node app.js"
+    "production": "cross-env NODE_ENV=production node app.js"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
